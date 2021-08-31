@@ -51,9 +51,6 @@ blockquote{
     margin:0 auto;
     position:relative;
 }
-#header{
-   
-}
 .top{
     background:#f3f3f3;
 }
@@ -502,12 +499,8 @@ ul.top-control li em.bgSpriteSignIn {
     top: 11px;
     left: -6px;
 }
-
-
-
-
 #cat-nav{
-    background:#2b2a2f;
+    background:#232f3e;
 }
 .homepage-2 #cat-nav{
     background:#ffffff;
@@ -4303,16 +4296,16 @@ margin-left:15px;
 .homepage-1 #cat-nav .mega-sub ul li a{
 padding:0;
 }
-.short-form{
+.short-form{ 
     float:right;
-    max-width:200px;
+    max-width:200px; 
     width:100%;
 }
 .tab-1, .tab-2, .tab-5{
     margin-bottom:80px;
 }
 .cent{
-    text-align:center;
+    text-align:center; 
 }
 
 
