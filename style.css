@@ -4374,7 +4374,7 @@ padding:0;
     margin: 0 auto;
     height: 32px;
     width: 32px;
-    background: no-repeat url(../images/sprite_fa.svg);
+    background: no-repeat url(images/sprite_fa.svg);
 }
 
 .top ul.menu li em.bgSpriteCart {
@@ -4386,7 +4386,7 @@ padding:0;
 }
 
 .top ul.menu li em.bgSpriteTrackOrder {
-    background-position: -101px -32px;
+    background-position: -101px -32px; 
 }
 
 .top ul.menu li em.bgSpriteWallet {
