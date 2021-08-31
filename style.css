@@ -4292,7 +4292,7 @@ color:#fff;
     -webkit-transition: all .3s ease;
 }
 .homepage-1 #cat-nav ul li a{
-    padding:15px 21px;
+padding:15px 21px;
 }
 .homepage-1 #cat-nav ul li a i{ 
 margin-left:15px;
@@ -4310,6 +4310,87 @@ padding:0;
 }
 .cent{
     text-align:center; 
+}
+.top ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top ul.menu li {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+}
+
+.top ul.menu li a {
+    font-size: 12px;
+    display: inline-block;
+    padding-top: 0;
+    line-height: 1.17;
+    letter-spacing: .6px;
+    color: #333;
+    text-align: center;
+}
+
+.top ul.menu li span {
+    text-align: center;
+    display: inline-block;
+}
+
+.top ul.menu li .wallet-rs {
+    position: absolute;
+    border: 2px solid #fff;
+    background-color: #ea3761;
+    color: #fff!important;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    right: -22px;
+    padding: 1px 6px;
+    margin: -3px 0 0;
+}
+
+.top ul.menu li p#cartCountId {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: 2px solid #fff;
+    background-color: #ea3761;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    right: -10px;
+}
+
+.top ul.menu li em {
+    display: block;
+    margin: 0 auto;
+    height: 32px;
+    width: 32px;
+    background: no-repeat url(../images/sprite_fa.svg);
+}
+
+.top ul.menu li em.bgSpriteCart {
+    background-position: -150px -32px;
+}
+
+.top ul.menu li em.bgSpriteSignIn {
+    background-position: -195px -32px;
+}
+
+.top ul.menu li em.bgSpriteTrackOrder {
+    background-position: -101px -32px;
+}
+
+.top ul.menu li em.bgSpriteWallet {
+    background-position: -58px -32px;
 }
 
 
