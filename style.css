@@ -4313,7 +4313,7 @@ padding:0;
 }
 .top ul.menu {
     margin: 0;
-    padding: 0;
+    padding:5px 0;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -4349,7 +4349,7 @@ padding:0;
     border-radius: 50%;
     text-align: center;
     font-size: 12px;
-    right: -22px;
+    right: -12px;
     padding: 1px 6px;
     margin: -3px 0 0;
 }
@@ -4386,7 +4386,7 @@ padding:0;
 }
 
 .top ul.menu li em.bgSpriteTrackOrder {
-    background-position: -101px -32px; 
+    background-position: -101px -32px;
 }
 
 .top ul.menu li em.bgSpriteWallet {
