@@ -525,6 +525,7 @@ ul.top-control li em.bgSpriteSignIn {
     position:relative;
    
 }
+
 #cat-nav ul li a{
     color:#747475;
     font-size:13px;
@@ -536,6 +537,9 @@ ul.top-control li em.bgSpriteSignIn {
     transition: all .3s ease;
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
+}
+#cat-nav-mega > ul > li > a{
+    color:#FFFFFF;
 }
 .homepage-2 #cat-nav ul li a{
     color:#364a62;
@@ -4317,11 +4321,6 @@ padding:0;
         top: 0;
         left: 0;
     }
-
-    .fixed #cat-nav ul li a {
-        color: #FFFFFF;
-    }
-
     .fixed #cat-nav ul li a:hover {
         color: #66cef6;
     }
