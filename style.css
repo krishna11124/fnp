@@ -51,9 +51,6 @@ blockquote{
     margin:0 auto;
     position:relative;
 }
-#header{
-   
-}
 .top{
     background:#f3f3f3;
 }
@@ -348,7 +345,7 @@ ul.top-control li em.bgSpriteSignIn {
     padding-bottom:5px;
     font-weight:700;
     text-transform:uppercase;
-    color:#2b2a2f;
+    color:#232f3e;
     font-size:13px;
     transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -386,13 +383,13 @@ ul.top-control li em.bgSpriteSignIn {
 }
 #believe-nav .navbar-default .navbar-nav>.active>a, #believe-nav .navbar-default .navbar-nav>.active>a:focus, #believe-nav .navbar-default .navbar-nav>.active>a:hover, #believe-nav .navbar-default .navbar-nav a:hover{
     background:none;
-    color:#66cef6;
-
+    color: #232f3e;
+    opacity: 0.5;
 }
 .homepage-2 #believe-nav .navbar-default .navbar-nav>.active>a, .homepage-2 #believe-nav .navbar-default .navbar-nav>.active>a:focus, .homepage-2 #believe-nav .navbar-default .navbar-nav>.active>a:hover, .homepage-2 #believe-nav .navbar-default .navbar-nav a:hover{
     background:none;
-    color:#293b51;
-
+    color: #232f3e;
+    opacity: 0.5;
 }
 .homepage-2.gold #believe-nav .navbar-default .navbar-nav>.active>a, .homepage-2.gold #believe-nav .navbar-default .navbar-nav>.active>a:focus, .homepage-2.gold #believe-nav .navbar-default .navbar-nav>.active>a:hover, .homepage-2.gold #believe-nav .navbar-default .navbar-nav a:hover{
     background:none;
@@ -494,13 +491,13 @@ ul.top-control li em.bgSpriteSignIn {
     top: 10px;
 }
 .navbar .sub-menu:after {
-    border-top: 6px solid transparent;
+    border-top: 6px solid transparent; 
     border-left: none;
     border-right: 6px solid #fff;
     border-bottom: 6px solid transparent;
     left: 10px;
     top: 11px;
-    left: -6px;
+    left: -6px; 
 }
 
 /* sidebar desizn on home screen */
@@ -661,6 +658,7 @@ ul.top-control li em.bgSpriteSignIn {
     position:relative;
    
 }
+
 #cat-nav ul li a{
     color:#747475;
     font-size:13px;
@@ -764,12 +762,12 @@ ul.top-control li em.bgSpriteSignIn {
     position: relative;
 }
 .srch-form .search-wid{
-    border:1px solid #d7d7d7 ;
-    border-right:1px solid transparent:
+    border:1px solid #232f3e ;
+    color: #232f3e;
+    min-width: 250px;
 }
 .srch-form .search-wid:focus{
-    border:1px solid #d7d7d7 ;
-    border-right:1px solid transparent:
+    border:1px solid #232f3e ;
 }
 .srch-form .side-search {
     border-bottom: none;
@@ -2165,18 +2163,20 @@ text-align:center;
 .btn-side-serach{
     font-size: 18px;
     color:#fff;
-    background: #66ccf4 ;
-    border: 1px solid #66ccf4 ;
+    background: #232f3e;
+    border: 1px solid #232f3e;
     padding-left:23px;
     padding-right:23px;
 }
-.btn-side-serach:hover, .btn-side-serach:focus{
-    color:#fff;
-    background: #34b0df ;
-    border: 1px solid #34b0df ;
-    padding-left:23px;
-    padding-right:23px;
-    border-left:none;
+.btn-side-serach:hover,
+.btn-side-serach:focus {
+    color: #FFFFFF !important;
+    background: #232f3e;
+    border: 1px solid #232f3e; 
+    padding-left: 23px;
+    padding-right: 23px;
+    border-left: none;
+    opacity: 0.7;
 }
 .side-search{
     border-bottom:1px dashed #d7d7d7;
@@ -4604,18 +4604,143 @@ margin-left:15px;
 .homepage-1 #cat-nav .mega-sub ul li a{
 padding:0;
 }
-.short-form{
+.short-form{ 
     float:right;
-    max-width:200px;
+    max-width:200px; 
     width:100%;
 }
 .tab-1, .tab-2, .tab-5{
     margin-bottom:80px;
 }
 .cent{
-    text-align:center;
+    text-align:center; 
+}
+.top ul.menu {
+    margin: 0;
+    padding:5px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.top ul.menu li {
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+}
+
+.top ul.menu li a {
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 0;
+    line-height: 1.17;
+    letter-spacing: .6px;
+    color: #232f3e;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+.top ul.menu li a:hover {
+    color: #232f3e;
+    opacity: 0.5;
+}
+.top ul.menu li:nth-child(4) a,
+.top ul.menu li:nth-child(5) a {
+    font-size: 20px;
+    display: inline-block;
+    padding-top: 0;
+    line-height: 1.17;
+    letter-spacing: .6px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    background-color: #232f3e;
+    padding: 9px 13px;
+    border-radius: 66px;
+    border: 1px solid #232f3e;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.top ul.menu li span {
+    text-align: center;
+    display: inline-block;
+}
+
+.top ul.menu li .wallet-rs {
+    position: absolute;
+    border: 2px solid #fff;
+    background-color: #ea3761;
+    color: #fff!important;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    right: -12px;
+    padding: 1px 6px;
+    margin: -3px 0 0;
+    z-index: 9;
+    font-weight: bold;
+    top: -13px;
+}
+
+.top ul.menu li p#cartCountId {
+     margin: 0;
+    padding: 0;
+    position: absolute;
+    border: 2px solid #fff;
+    background-color: #ea3761;
+    color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-size: 12px;
+    right: -10px;
+    z-index: 9;
+    font-weight: bold;
+}
+
+.top ul.menu li em {
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+.top ul.menu li:nth-child(4) a:hover:after,
+.top ul.menu li:nth-child(5) a:hover:after {
+    left: 40px;
+}
+
+.top ul.menu li:nth-child(4) a:after,
+.top ul.menu li:nth-child(5) a:after {
+    background-color: #232f3e;
+    content: '';
+    color: #232f3e;
+    position: absolute;
+    left: -40px;
+    transition: 0.5s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.top ul.menu li:nth-child(4) a {
+    padding: 9px 10px;
+}
+.top ul.menu li:nth-child(4) a:hover,
+.top ul.menu li:nth-child(5) a:hover {
+    background-color: transparent;
+    color: #232f3e;
+    opacity: 1;
+}
+.top ul.menu li:nth-child(4),
+.top ul.menu li:nth-child(5) {
+    margin-left: 10px;
+}
 
 @media (min-width:1201px){
     .fixed #cat-nav {
@@ -4625,11 +4750,6 @@ padding:0;
         top: 0;
         left: 0;
     }
-
-    .fixed #cat-nav ul li a {
-        color: #FFFFFF;
-    }
-
     .fixed #cat-nav ul li a:hover {
         color: #66cef6;
     }
