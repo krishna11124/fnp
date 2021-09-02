@@ -19,6 +19,11 @@
     <link href="style.css" rel="stylesheet">
     <link href="responsive.css" rel="stylesheet">
     
+       <!-- sidemenu -->
+    <!-- <link rel="stylesheet" href="sidemenu.css"> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <!-- Slider -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
@@ -29,9 +34,42 @@
   </head>
   <body>
 
-      <div id="wrapper" class="homepage-1"> <!-- wrapper -->
-          <div id="header"> <!-- header -->
-              <div class="top"> <!-- top -->
+              <!-- side-bar on home screen -->
+    <div class="wrapper">
+        <input type="checkbox" id="btn" hidden>
+        <label for="btn" class="menu-btn">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </label>
+        <nav id="sidebar">
+          <div class="title"><a href="#"> <img src="images/j.png" alt=""> Hello, Sign-in</a></div>
+          <ul class="list-items">
+            <li><a href="#" class="active">Tranding</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="end"><a href="#">Settings</a></li>
+
+            <li><a href="#" class="active">Digital Content And Devices</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Contact us</a></li>
+
+            <li><a href="#" class="active">Shop By Department</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Languages</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- <div id="wrapper" class="homepage-1">
+          <div id="header">
+              <div class="top"> 
                   <div class="container">
                       <ul class="top-support"> 
                           <li><a href="tel:(+800) 123 456 7890"><i class="fa fa-phone"></i></a></li>
@@ -42,7 +80,7 @@
                       </div>
                       <div class="clearfix"></div>
                   </div>
-              </div> <!-- top -->
+              </div> top -->
               
               <div id="believe-nav"> <!-- Nav -->
                   <div class="container">
@@ -70,8 +108,12 @@
                                   </div>
                                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                       <ul class="nav navbar-nav navbar-right">
-                                         <li><a href="#"><img src="images/bag.png" alt="bag"><span>2</span></a></li>
-                                         <li> <a href="" title="Select Delivery Location" class="btn-side-serach"><i class="fa fa-map-marker"></i></a></li>
+                                        <li><a href="#"><img src="images/mywallet.png" alt="bag" width="25"><span>0</span></a></li>
+                                        <li><a href="#"><img src="images/track.png" alt="bag"  width="25"></a></li>
+                                         <li><a href="#"><img src="images/bag.png" alt="bag"  width="25"><span>0</span></a></li>
+                                         <li><a href="#"><img src="images/avatarj.png" alt="bag"  width="25"></a></li>
+                                         <li><a href="#"><img src="images/right-menu-bars.png" alt="bag"  width="25"></a></li>
+                                         <!-- <li> <a href="" title="Select Delivery Location" class="btn-side-serach"><i class="fa fa-map-marker"></i></a></li> -->
                                       </ul>
                                   </div><!-- /.navbar-collapse -->
                               <!--</div> -->
