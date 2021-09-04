@@ -66,14 +66,14 @@
           </ul>
         </nav>
       </div>
-
-      <!-- <div id="wrapper" class="homepage-1">
+<!-- 
+      <div id="wrapper" class="homepage-1">
           <div id="header">
               <div class="top"> 
                   <div class="container">
                     <div class="srch-form">
                         <form class="side-search">
-                          <div class="input-group">
+                           <div class="input-group"> 
                             <input type="text" class="form-control search-wid" placeholder="Search Product Here" aria-describedby="basic-addon2">
                             <a href="" class="input-group-addon btn-side-serach" id="basic-addon2"><i class="fa fa-search"></i></a>
                           </div>
@@ -110,7 +110,7 @@
                     </ul>
                     
                   </div>
-              </div> top -->
+              </div> -->
               
               <div id="believe-nav"> <!-- Nav -->
                   <div class="container">
@@ -128,19 +128,31 @@
                                       <a class="navbar-brand" href="index2.html"><img src="images/r.png" width="125px" alt="" ></a>
                                   </div>
                                   <!-- Collect the nav links, forms, and other content for toggling -->
-                               
+                                  <div class="srch-form">
+                                    <form class="side-search">
+                                       <div class="input-group"> 
+                                        <input type="text" class="form-control search-wid" placeholder="Search Product Here" aria-describedby="basic-addon2">
+                                        <a href="" class="input-group-addon btn-side-serach" id="basic-addon2"><i class="fa fa-search"></i></a>
+                                      </div>
+                                    </form>
+                                  </div>
+
+
                                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                       <ul class="nav navbar-nav navbar-right">
                                         <!-- <li><a href="#"><img src="images/mywallet.png" alt="bag" width="25"><span>0</span></a></li> -->
-                                        <li><a href="#"><img src="images/track.png" alt="bag"  width="25"></a></li>
-                                         <li><a href="#"><img src="images/bag.png" alt="bag"  width="25"><span>0</span></a></li>
-                                         <li><a href="#"><img src="images/avatarj.png" alt="bag"  width="25"> </a></li>
-                                         <li><a href="#"><img src="images/right-menu-bars.png" alt="bag"  width="25"></a></li>
-                                         <!-- <li> <a href="" title="Select Delivery Location" class="btn-side-serach"><i class="fa fa-map-marker"></i></a></li> -->
-                                         <li><a href="#">Home</a></li>
-                                         <li><a href="#">About us</a></li>
-                                         <li><a href="#">Contact us</a></li>
-                                         <li><a href="#">Blog</a></li>
+                                        <li><a href="#"><img src="images/track.png" alt="bag"  width="25"></a>
+                                        <label for="location">Location</label>
+                                        </li>
+                                         <li><a href="#"><img src="images/bag.png" alt="bag"  width="23"><span>0</span></a>
+                                            <label for="location">shop</label>
+                                        </li>
+                                         <li><a href="#"><img src="images/avatarj.png" alt="bag"  width="25"></a>
+                                            <label for="location">signup</label>
+                                        </li>
+                                         <li><a href="#"><img src="images/right-menu-bars.png" alt="bag"  width="25"></a>
+                                            <label for="location">Menu</label>
+                                        </li>
                                       </ul>
                                   </div><!-- /.navbar-collapse -->
                               <!--</div> -->
@@ -170,7 +182,7 @@
                           <ul class="nav navbar-nav">
                               <li class="active"><a href="index.html">Express Delivery</a></li>
                               <li class="dropdown menu-large">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cakes <i class="fa fa-angle-down"></i></a>
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CAKES <i class="fa fa-angle-down"></i></a>
                                   <ul class="dropdown-menu megamenu" role="menu">
                                       <li>
                                           <div class="">
@@ -209,6 +221,24 @@
                                               </div>
 
                                               <div class="mega-sub">
+                                                <div class="mega-sub-title">By Occasions</div>
+                                                <ul>
+                                                    <li><a href="#">Birthday</a></li>
+                                                    <li><a href="#">1st Birthday</a></li>
+                                                    <li><a href="">Anniversary</a></li>
+                                                    <li><a href="">1st Anniversary</a></li>
+                                                    <li><a href="">25th Anniversary</a></li>
+                                                    <li><a href="">Wedding</a></li>
+                                                    <li><a href="">Congratulations</a></li>
+                                                    <li><a href="">I am Sorry</a></li>
+                                                    <li><a href="">Cakes For Kids</a></li>
+                                                    <li><a href="">New Year celebration</a></li>
+                                                </ul>
+                                            </div>
+
+
+                                            <!-- creat list cakes  -->
+                                            <div class="mega-sub">
                                                 <div class="mega-sub-title">By Recipient</div>
                                                 <ul>
                                                     <li><a href="#">Him </a></li>
@@ -225,7 +255,20 @@
                                                     <li><a href="">Friend</a></li>
                                                 </ul>
                                             </div>
-                                              <div class="mega-product">
+
+                                            <div class="mega-sub">
+                                                <div class="mega-sub-title">By Combos</div>
+                                                <ul>
+                                                    <li><a href="">Cake Combos</a></li>
+                                                    <li><a href="">Cake With Flowers</a></li>
+                                                    <li><a href="">Cake With Chocolates</a></li>
+                                                    <li><a href="">Cake With Plants</a></li>
+                                                    <li><a href="">Cakes with Personalised Gifts</a></li>
+                                                    <li><a href="">Friend</a></li>
+                                                </ul>
+                                            </div>
+
+                                              <!-- <div class="mega-product">
                                                   <div class="mega-sub-title">Featured products</div>
                                                   <div class="row">
                                                       <div class="col-md-6 prdct-grid">
@@ -307,10 +350,8 @@
                                                           </div>
                                                       </div>
                                                   </div>
-                                              </div>
-                                              <!-- <div class="mega-offers">
-                                                  <a href=""><img src="images/mega-offers.jpg" class="img-responsive" alt=""></a>
                                               </div> -->
+                                          
 
 
                                               <!-- Second drop items change -->
@@ -320,7 +361,7 @@
                                   </ul>
                               </li>
                                <li class="dropdown menu-large">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Flowers <i class="fa fa-angle-down"></i></a>
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FLOWERS <i class="fa fa-angle-down"></i></a>
                                   <ul class="dropdown-menu megamenu" role="menu">
                                       <li>
                                           <div class="">
@@ -331,13 +372,6 @@
                                                       <li><a href="">600 To 999</a></li>
                                                       <li><a href="">1000 to 1999</a></li>
                                                       <li><a href="">Adove 2000</a></li>
-                                                      <!-- <li><a href="">Cargos, Shorts & 3/4ths</a></li>
-                                                      <li><a href="">Sports Wear</a></li>
-                                                      <li><a href="">Trousers</a></li>
-                                                      <li><a href="">Suits and Blazers</a></li>
-                                                      <li><a href="">Ethnic Wear</a></li>
-                                                      <li><a href="">Inner & Sleep Wear</a></li>
-                                                      <li><a href="">Accessories</a></li> -->
                                                   </ul>
                                               </div>
                                               <div class="mega-sub">
@@ -361,118 +395,190 @@
                                               <div class="mega-sub">
                                                 <div class="mega-sub-title">By Type</div>
                                                 <ul>
-                                                    <li><a href="">All Flowers</a></li>
-                                                    <li><a href="">Roses</a></li>
-                                                    <li><a href="">Carnation</a></li>
-                                                    <li><a href="">Gerberas</a></li>
-                                                    <li><a href="">Liles</a></li>
-                                                    <li><a href="">Orchids</a></li>
-                                                    <li><a href="">Mixed Flowers</a></li>
-                                                    <li><a href="">Artifical Flowers</a></li>
-                                                    <li><a href="">Thank You</a></li>
-                                                    <!-- <li><a href="">Ethnic</a></li>
-                                                    <li><a href="">Boots</a></li> -->
+                                                    <li><a href="#">All Flowers</a></li>
+                                                    <li><a href="#">Roses</a></li>
+                                                    <li><a href="#">Carnation</a></li>
+                                                    <li><a href="#">Gerberas</a></li>
+                                                    <li><a href="#">Liles</a></li>
+                                                    <li><a href="#">Orchids</a></li>
+                                                    <li><a href="#">Mixed Flowers</a></li>
+                                                    <li><a href="#">Artifical Flowers</a></li>
+                                                    <li><a href="#">Thank You</a></li>
                                                 </ul>
                                             </div>
-                                              <div class="mega-product">
-                                                  <div class="mega-sub-title">Featured products</div>
-                                                  <div class="row">
-                                                      <div class="col-md-6 prdct-grid">
-                                                          <div class="product-fade">
-                                                              <div class="product-fade-wrap">
-                                                                  <div id="product-image10" class="owl-carousel owl-theme">
-                                                                      <div class="item"><img src="images/p-9.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-3.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-4.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-5.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-2.jpg" alt="" class="img-responsive"></div>
-                                                                  </div>
-                                                                  <div class="product-fade-ct">
-                                                                      <div class="product-fade-control">
-                                                                          <div class="to-left">
-                                                                              <a href=""><i class="fa fa-heart"></i></a>
-                                                                              <a href=""><i class="fa fa-retweet"></i></a>
-                                                                              <a href=""><i class="fa fa-search"></i></a>
-                                                                          </div>
-                                                                          <div class="to-right">
-                                                                              <div id="product-control10" class="owl-carousel owl-theme">
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                              </div>
-                                                                          </div>
-                                                                          <div class="clearfix"></div>
-                                                                          <a href="" class="btn btn-to-cart"><span class="bag"></span><span>Add To cart</span><div class="clearfix"></div></a>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="product-name">
-                                                              Striped Women's Round Neck T-Shirt
-                                                          </div>
-                                                          <div class="star-1"></div>
-                                                          <div class="product-price">
-                                                              <span>$19.00</span> $15.00
-                                                          </div>
-                                                      </div>
-                                                      <div class="col-md-6 prdct-grid">
-                                                          <div class="product-fade">
-                                                              <div class="product-fade-wrap">
-                                                                  <div id="product-image11" class="owl-carousel owl-theme">
-                                                                      <div class="item"><img src="images/p-1.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-3.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-4.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-5.jpg" alt="" class="img-responsive"></div>
-                                                                      <div class="item"><img src="images/p-1.jpg" alt="" class="img-responsive"></div>
-                                                                  </div>
-                                                                  <div class="product-fade-ct">
-                                                                      <div class="product-fade-control">
-                                                                          <div class="to-left">
-                                                                              <a href=""><i class="fa fa-heart"></i></a>
-                                                                              <a href=""><i class="fa fa-retweet"></i></a>
-                                                                              <a href=""><i class="fa fa-search"></i></a>
-                                                                          </div>
-                                                                          <div class="to-right">
-                                                                              <div id="product-control11" class="owl-carousel owl-theme">
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                                  <div class="item"><div class="bullets"></div></div>
-                                                                              </div>
-                                                                          </div>
-                                                                          <div class="clearfix"></div>
-                                                                          <a href="" class="btn btn-to-cart"><span class="bag"></span><span>Add To cart</span><div class="clearfix"></div></a>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="product-name">
-                                                              Striped Women's Round Neck T-Shirt
-                                                          </div>
-                                                          <div class="star-1"></div>
-                                                          <div class="product-price">
-                                                              <span>$19.00</span> $15.00
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <!-- <div class="mega-offers">
-                                                  <a href=""><img src="images/p--2.jpg" class="img-responsive" alt=""></a>
-                                              </div> -->
+
+
+
+                                            <!-- creat by color list  -->
+                                            <div class="mega-sub">
+                                                <div class="mega-sub-title">By Color</div>
+                                                <ul>
+                                                    <li><a href="#">Pink</a></li>
+                                                    <li><a href="#">Red</a></li>
+                                                    <li><a href="#">White</a></li>
+                                                    <li><a href="#">Yellow</a></li>
+                                                    <li><a href="#">Purple</a></li>
+                                                    <li><a href="#">Orange</a></li>
+                                                    <li><a href="#">Mixed Flowers</a></li>
+                                                </ul>
+                                            </div>
+
+                                              <!-- creat by color list  -->
+                                              <div class="mega-sub">
+                                                <div class="mega-sub-title">Special Flowers</div>
+                                                <ul>
+                                                    <li><a href="#">Exotic Flowers</a></li>
+                                                    <li><a href="#">Glass Vase</a></li>
+                                                    <li><a href="#">Flowers Boxes</a></li>
+                                                    <li><a href="#">Massage Flower Box</a></li>
+                                                    <li><a href="#">Precious Flowers</a></li>
+                                                    <li><a href="#">Flower Basket</a></li>
+                                                    <li><a href="#">Precious Flowers</a></li>
+                                                </ul>
+                                            </div>
+                                            
                                               <div class="clearfix"></div>
                                           </div>
                                       </li>
                                   </ul>
                               </li>
-                            <li><a href="contact.html">Cakes </a></li>
-                              <li><a href="contact.html">BABY & KIDS </a></li>
+                              <!-- <li><a href="contact.html">BABY & KIDS </a></li> -->
+                              <!-- <li><a href="contact.html">Cakes </a></li>
                               <li><a href="contact.html">BOOKS & MEDIA </a></li>
                               <li><a href="contact.html">HOME & KITCHEN </a></li>
                               <li><a href="contact.html">MORE STORES </a></li>
-                              <li><a href="contact.html">OFFERS ZONE </a></li>
+                              <li><a href="contact.html">OFFERS ZONE </a></li> -->
                           </ul>
                            
+                          <!-- new nav  -->
+                          
+
+                            <!-- Paste new nav  -->
+                            <ul class="nav navbar-nav">
+                                <!-- <li class="active"><a href="index.html">Express Delivery</a></li> -->
+                                <li class="dropdown menu-large">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CHOCOLATES <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu megamenu" role="menu">
+                                        <li>
+                                            <div class="">
+                                                <div class="mega-sub">
+                                                    <div class="mega-sub-title">By Types</div>
+                                                    <ul>
+                                                        <li><a href="#">All Chocolates</a></li>
+                                                        <li><a href="#">Best Seller</a></li>
+                                                        <li><a href="#">Chocolates Bouquests</a></li>
+                                                        <li><a href="#">Homemade Chocolates</a></li>
+                                                        <li><a href="#">Personalised Chocolates</a></li>
+                                                        <li><a href="#">Expiosion Boxes</a></li>
+                                                        <li><a href="#">Suger Free Chocolates</a></li>
+                                                        <li><a href="#">Candy</a></li>
+                                                        <li><a href="#">New Arrivals Chocolates</a></li>
+                                                        <li><a href="#">Same Day Delivery</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mega-sub">
+                                                    <div class="mega-sub-title">By Flavour</div>
+                                                    <ul>
+                                                        <li><a href="">Dark Chocolate</a></li>
+                                                        <li><a href="#">Milk Chocolate</a></li>
+                                                        <li><a href="#">Nuts Chocolate</a></li>
+                                                        <li><a href="#">White Chocolate</a></li>
+                                                        <li><a href="#">Fruit Chocolate</a></li>
+                                                        <li><a href="#">Wafer Chocolate</a></li>
+                                                        <li><a href="#">Mint Chocolate</a></li>
+                                                        <li><a href="#">Strawberry Wafer</a></li>
+                                                    </ul>
+                                                </div>
+  
+                                                <div class="mega-sub">
+                                                  <div class="mega-sub-title">By Brands</div>
+                                                  <ul>
+                                                      <li><a href="#">Cadbury</a></li>
+                                                      <li><a href="#">Ferrero Rocher</a></li>
+                                                      <li><a href="#">Nestle</a></li>
+                                                      <li><a href="#">Important Chocolates-Cococart</a></li>
+                                                      <li><a href="#">Choco Swiss</a></li>
+                                                      <li><a href="#">Amul</a></li>
+                                                      <li><a href="#">Snickers</a></li>
+                                                      <li><a href="#">KitKat</a></li>
+                                                      <li><a href="#">Rage</a></li>
+                                                      <li><a href="#">Hershey's</a></li>
+                                                      <li><a href="#">Luvit</a></li>
+                                                      <!-- <li><a href="#">Friend</a></li> -->
+                                                  </ul>
+                                              </div>
+
+                                              <div class="mega-sub">
+                                                <div class="mega-sub-title">By Combos</div>
+                                                <ul>
+                                                    <li><a href="#">All Chocolate Combos</a></li>
+                                                    <li><a href="#">Chocolates& Flowers</a></li>
+                                                    <li><a href="#">Chocolates & Plants</a></li>
+                                                  
+                                                    <!-- <li><a href="#">Friend</a></li> -->
+                                                </ul>
+                                            </div>
+
+
+                                            <div class="mega-sub">
+                                                <div class="mega-sub-title">By Occasions</div>
+                                                <ul>
+                                                    <li><a href="#">Birthday</a></li>
+                                                    <li><a href="#">Anniversary</a></li>
+                                                    <li><a href="#">Love n romance</a></li>
+                                                    <li><a href="">Appericiation</a></li>
+                                                    <li><a href="">Cheer Up</a></li>
+                                                    <li><a href="">Congratulations</a></li>
+                                                    <li><a href="">Get Well Soon</a></li>
+                                                    <li><a href="">I am Sorry</a></li>
+                                                    <li><a href="">Love & Affection</a></li>
+                                                    <!-- <li><a href="#">Friend</a></li> -->
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="contact.html">BABY & KIDS </a></li> -->
+                            <!-- <li><a href="contact.html">Cakes </a></li>
+                            <li><a href="contact.html">BOOKS & MEDIA </a></li>
+                            <li><a href="contact.html">HOME & KITCHEN </a></li>
+                            <li><a href="contact.html">MORE STORES </a></li>
+                            <li><a href="contact.html">OFFERS ZONE </a></li> -->
+                        </ul>            
+                                  
+                        <!-- new nav creat for Events  -->
+                        <ul class="nav navbar-nav">
+                            <!-- <li class="active"><a href="index.html">Express Delivery</a></li> -->
+                            <li class="dropdown menu-large" id="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu megamenu" id="event" role="menu">
+                                    <li>
+                                        <div class="">
+                                            <div class="mega-sub">
+                                                <div class="mega-sub-title">By Types</div>
+                                                <ul>
+                                                    <li><a href="#">All Chocolates</a></li>
+                                                    <li><a href="#">Best Seller</a></li>
+                                                    <li><a href="#">Chocolates Bouquests</a></li>
+                                                    <li><a href="#">Homemade Chocolates</a></li>
+                                                    <li><a href="#">Personalised Chocolates</a></li>
+                                                    <li><a href="#">Expiosion Boxes</a></li>
+                                                    <li><a href="#">Suger Free Chocolates</a></li>
+                                                    <li><a href="#">Candy</a></li>
+                                                    <li><a href="#">New Arrivals Chocolates</a></li>
+                                                    <li><a href="#">Same Day Delivery</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="contact.html">BABY & KIDS </a></li> -->
+                        <!-- <li><a href="contact.html">Cakes </a></li> -->
+                    </ul>  
                       </div><!-- /.navbar-collapse -->
                       <!--</div> -->
                   </nav>
@@ -534,28 +640,22 @@
                 <div class="item-cont">
                     <div class="cont1">
                         <img src="images/gift1.jpg" alt="">
-                      <!-- <div class="label">cakes</div> -->
                       <h5>Cakes</h5>
                     </div>
                     <div class="cont1"><img src="images/gift3.jpg" alt="">
-                        <!-- <div class="label">cakes</div> -->
-                        <h5>Cakes</h5>
+                        <h5>Birthday</h5>
                     </div>
                     <div class="cont1"><img src="images/gift4.jpg" alt="">
-                        <!-- <div class="label">cakes</div> -->
-                        <h5>Cakes</h5>
+                        <h5>Flowers</h5>
                     </div>
                     <div class="cont1"><img src="images/gift5.jpg" alt="">
-                        <!-- <div class="label">cakes</div> -->
-                        <h5>Cakes</h5>
+                        <h5>Taddy</h5>
                     </div>
                     <div class="cont1"><img src="images/gift6.jpg" alt="">
-                        <!-- <div class="label">cakes</div> -->
-                        <h5>Cakes</h5>
+                        <h5>Plants</h5>
                     </div>
                     <div class="cont1"><img src="images/shake.jpg" alt="">
-                        <!-- <div class="label">cakes</div> -->
-                        <h5>Cakes</h5>
+                        <h5>Combo</h5>
                     </div>
         
                 </div>
@@ -563,50 +663,59 @@
             </section>
              <!-- flower aura send gift section  end-->
 
-
-          <div id="content"> <!-- Content -->
-              <div class="container">
-                  <div class="home-content">
-                      <div class="cat-offers">
-                          <div class="row">
-                              <div class="col-md-4">
-                                  <div class="cat-sec-1">
-                                      <img src="images/cat-1.jpg" class="img-responsive" alt="">
-                                      <div class="cat-desc">
-                                          <div class="cat-inner">
-                                              <div class="cat-title">man<span>Clothing</span></div>
-                                              <a href="" class="btn btn-border">Buy Now</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-4">
-                                  <div class="cat-sec-2">
-                                      <img src="images/cat-2.jpg" class="img-responsive" alt="">
-                                       <div class="cat-desc">
-                                           <div class="cat-inner">
-                                              <div class="cat-title">woman<span>Clothing</span></div>
-                                              <a href="" class="btn btn-border">Buy Now</a>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-4">
-                                  <div class="cat-sec-3">
-                                      <img src="images/cat-3.jpg" class="img-responsive" alt="">
-                                       <div class="cat-desc">
-                                           <div class="cat-inner">
-                                              <div class="cat-title">accessories<span>collections - 2014</span></div>
-                                              <a href="" class="btn btn-border">shop Now</a>
-                                           </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+            <!-- this is my Cart Content  -->
+          <div class="our-cards">
+              <div class="headcard">
+                  <h2>Shop By Bestseller Categories</h2>
+                  <button class="card-btn"><a href="#">View all</a></button>
               </div>
+            <div class="cardscont">
+              <a href=""><div class="cards">
+                    <img src="images/birthday.jpg" alt="">
+                    <div class="labelcards">Birthday</div>
+                </div></a>
+              <a href=""><div class="cards">
+                    <img src="images/f2.jpg" alt="">
+                    <div class="labelcards">Chocolates</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/f3.jpg" alt="">
+                    <div class="labelcards">Gifts</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/f4.jpg" alt="">
+                    <div class="labelcards">Roses</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/allflower.jpg" alt="">
+                    <div class="labelcards">All flowers</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/f6.jpg" alt="">
+                    <div class="labelcards">Cakes</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/giftmall.jpg" alt="">
+                    <div class="labelcards">Giftmall</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/anni.jpg" alt="">
+                    <div class="labelcards">Anniversary</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/plantforhome.jpg" alt="">
+                    <div class="labelcards">Plants</div>
+                </div></a>
+                <a href=""><div class="cards">
+                    <img src="images/dairymilk.jpg" alt="">
+                    <div class="labelcards">Surprise Gift</div>
+                </div></a>
+        </div>
+        </div>
+
+
               
+        <!-- section about Features -->
               <div class="newest">
                   <div class="container">
                       <div class="newest-content">
@@ -622,7 +731,6 @@
                                       <a href="#3" role="tab" id="cat-3" data-toggle="tab" aria-controls="3">Best Seller</a>
                                   </li>
                               </ul>
-                              
                               
                               <div id="myTabContent" class="tab-content">
                                   <div role="tabpanel" class="tab-pane fade in active" id="1" aria-labelledby="cat-1">
@@ -1076,41 +1184,37 @@
           <!-- <section> for fotter send gift</section> -->
           <section class="cake-footer">
               
+              <div class="cakeheading2"><h2>How it works</h2></div>
               <div class="cake-container2">
-            <!-- <div class="cakeheading"><h2>Send Gift</h2></div> -->
             <div class="item-cont2">
                 <div class="cont2">
-                    <img src="images/gift1.jpg" alt="">
-                  <!-- <div class="label">cakes</div> -->
-                  <h5>Cakes</h5>
+                  <a href=""> <img src="images/maploc.png" alt="">
+                  <a href=""><h5>Select Your Location</h5></a>
                 </div>
-                <div class="cont2"><img src="images/gift3.jpg" alt="">
-                    <!-- <div class="label">cakes</div> -->
-                    <h5>doll</h5>
+                <div class="cont2">
+                   <a href=""> <img src="images/bakery-shop.png" alt="">
+                    <h5>Find best Bakery</h5></a>
                 </div>
-                <div class="cont2"><img src="images/gift4.jpg" alt="">
-                    <!-- <div class="label">cakes</div> -->
-                    <h5>flowers</h5>
+                <div class="cont2">
+                    <a href=""><img src="images/cake.png" alt="">
+                   <h5>Select your Cake</h5></a> 
                 </div>
-                <div class="cont2"><img src="images/gift5.jpg" alt="">
-                    <!-- <div class="label">cakes</div> -->
-                    <h5>Cakes</h5>
+                <div class="cont2">
+                    <a href=""><img src="images/debit-card.png" alt="">
+                    <h5>Select Payment & Pay</h5></a>
                 </div>
-                <div class="cont2"><img src="images/gift6.jpg" alt="">
-                    <!-- <div class="label">cakes</div> -->
-                    <h5>Cakes</h5>
+                <div class="cont2">
+                    <a href=""><img src="images/food-delivery.png" alt="">
+                    <h5>Delivery</h5></a>
                 </div>
-                <div class="cont2"><img src="images/shake.jpg" alt="">
-                    <!-- <div class="label">cakes</div> -->
-                    <h5>Cakes</h5>
+                <!-- <div class="cont2">
+                    <a href=""><img src="images/shake.jpg" alt="">
+                    <h5>Cakes</h5></a>
                 </div>
-    
+     -->
             </div>
         </div>
-        </section>
-
-
-
+        </section> <!--footer icon section end-->
 
 
           <div id="footer"><!-- Footer -->

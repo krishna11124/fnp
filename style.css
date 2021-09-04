@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 html,body{
     width:100%;
     margin:0;
@@ -500,6 +502,28 @@ ul.top-control li em.bgSpriteSignIn {
     left: -6px; 
 }
 
+/* navbar right li label */
+.navbar-right{
+    /* background-color: cyan; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-right ul li label{
+    display: flex;
+    align-items: center;
+    /* background-color: purple; */
+}
+.navbar-right label{
+    /* padding-left: 8px; */
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+
 /* sidebar desizn on home screen */
 .wrapper{
     height: 100%;
@@ -511,7 +535,7 @@ ul.top-control li em.bgSpriteSignIn {
   .wrapper .menu-btn{
     position: absolute;
     left: 20px;
-    top: 22px;
+    top: 38px;
     background: #232f3e;
     color: #fff;
     height: 40px;
@@ -623,12 +647,94 @@ ul.top-control li em.bgSpriteSignIn {
     width: 120%;
   }
 
+/* My cards Content  */
+.our-cards{
+    width: 93%;
+    height: 135vh;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 2px 1px 1px 0.5px #ccc;
+    border: 1px solid #ccc;
+    margin: 45px;
+    margin-left: 4.5rem;
+}
+.headcard{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+}
+.cardscont{
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
 
+.cards{
+    border: 2px solid white;
+    display: inline-block;
+    justify-content: center;
+    /* flex-wrap: wrap;  */
+        text-align: center;
+        background-color: #fff;
+        outline: 1px solid #ccc;
+        box-shadow: 2px 1px 1px 1px #ccc;
+        margin-left: 5px;
+        margin-top: 15px;
+       padding: 5px;         
+}
+.cardscont a{
+    text-decoration: none;
+    color: black;
+}
+.cardscont a:hover{
+    text-decoration: none;
+    color: black;
+}
+.cards img{
+    width: 22rem;
+    height: 45vh;
+}
+.labelcards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    font-weight: bold;
+    font-size: 18px;
+}
+.card-btn{
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: #232f3e;
+    outline: none;
+    border: none;
+}
+.card-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.card-btn a:hover{
+        background-color: #16699c;
+}
+.card-btn:hover{
+    background-color: #16699c;
+}
 
-
-
-
-
+/* creat class for events */
+#event{
+    width: auto;
+    position: absolute;
+    left: 41%;
+}
+/* .eventhandle{
+    margin-left: 200%;
+  
+} */
 
 
 #cat-nav{
@@ -760,6 +866,9 @@ ul.top-control li em.bgSpriteSignIn {
 }
 .srch-form{
     position: relative;
+    right: 22rem;
+    display: flex;
+    align-items: center;
 }
 .srch-form .search-wid{
     border:1px solid #232f3e ;
@@ -779,7 +888,7 @@ ul.top-control li em.bgSpriteSignIn {
     position: relative;
     display: table;
     border-collapse: separate;
-    width: 175%;
+    width: 145%;
 }
 #home-slider{
     background: #66cef6 ;
@@ -1482,7 +1591,7 @@ section h2{
     /* desizn for send gift section for footer  */
     .cake-container2{
         width: 100%;
-        height: 30vh;
+        height: 22vh;
         background-color: #2b2a2f;
         display: flex;
         align-items: center;
@@ -1495,22 +1604,22 @@ section h2{
        justify-content: space-around;
     }
     .item-cont2 img{
-        width: 12rem;
-        height: 20vh;
-        border-radius: 50%;
+        width: 72px;
+        height: 72px;
+        /* border-radius: 50%; */
     }
     .cont2{
        display: inline-block;
        justify-content: center;
        text-align: center;
     }
-    .cont2 img:hover{
-       border: 3px solid white;
-       
+    .cont2 a:hover{
+     text-decoration: none;
     }
     .cont2 h5{
         color: #fff;
         font-weight: bold;
+        font-size: 12px;
     }
     /* .cont1 .label{
         color: #1b1b1b;
@@ -1523,6 +1632,21 @@ section h2{
         color: white;
         font-weight: bold;
     } */
+
+    .cakeheading2{
+        background-color: #2b2a2f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+    }
+
+    .cakeheading2 h2{
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+    }
     @media (max-width:952px){
     
     .cake-container2{
@@ -2160,6 +2284,8 @@ text-align:center;
     box-shadow:none;
     background: #f9f9f9
 }
+
+/* serch button change style  */
 .btn-side-serach{
     font-size: 18px;
     color:#fff;
@@ -2171,7 +2297,7 @@ text-align:center;
 .btn-side-serach:hover,
 .btn-side-serach:focus {
     color: #FFFFFF !important;
-    background: #232f3e;
+    background: #00b1fd;
     border: 1px solid #232f3e; 
     padding-left: 23px;
     padding-right: 23px;
