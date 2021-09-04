@@ -37,12 +37,24 @@
               <!-- side-bar on home screen -->
     <div class="wrapper">
         <input type="checkbox" id="btn" hidden>
-        <label for="btn" class="menu-btn">
+        <!-- <label for="btn" class="menu-btn">
           <i class="fas fa-bars"></i>
           <i class="fas fa-times"></i>
-        </label>
+        </label> -->
         <nav id="sidebar">
-          <div class="title"><a href="#"> <img src="images/j.png" alt=""> Hello, Sign-in</a></div>
+          <!-- <div class="title sideTItle"><a href="#"> <img src="images/j.png" alt=""> Hello, Sign-in</img></a> -->
+            <!-- <label for="btn" class="menu-btn"> -->
+                <!-- <i class="fas fa-bars"></i> -->
+                <!-- <i class="fas fa-times"></i> -->
+              </label>
+        <!-- </div> -->
+        <div class="SideHeader">
+            <a href="#"> <img src="images/j.png" alt=""> Hello, Sign-in</img></a>
+                <label for="btn" class="menu-btn SIdeMednuIcons">
+                <i class="fas fa-bars"></i>
+                <!-- <i class="fas fa-times"></i> -->
+              </label>
+        </div>
           <ul class="list-items">
             <li><a href="#" class="active">Tranding</a></li>
             <li><a href="#">Clients</a></li>
@@ -113,7 +125,7 @@
               </div> -->
               
               <div id="believe-nav"> <!-- Nav -->
-                  <div class="container">
+                  <div class="container-fluid">
                       <div class="min-marg">
                           <nav class="navbar navbar-default">
                               <!-- <div class="container-fluid"> -->
@@ -145,13 +157,46 @@
                                         <label for="location">Location</label>
                                         </li>
                                          <li><a href="#"><img src="images/bag.png" alt="bag"  width="23"><span>0</span></a>
-                                            <label for="location">shop</label>
+                                            <label for="location">Cart</label>
                                         </li>
-                                         <li><a href="#"><img src="images/avatarj.png" alt="bag"  width="25"></a>
-                                            <label for="location">signup</label>
+                                         <!-- <li><a href="#"><img src="images/avatarj.png" alt="bag"  width="25"></a>
+                                            <label for="location">Signin</label>
                                         </li>
-                                         <li><a href="#"><img src="images/right-menu-bars.png" alt="bag"  width="25"></a>
-                                            <label for="location">Menu</label>
+                                        <li><a href="#"><img src="images/avatarj.png" alt="bag"  width="25"></a>
+                                            <label for="location">Signup</label>
+                                        </li> -->
+                                         <li><a href="#"></a>
+                                            <ul class="nav navbar-nav">
+                                                <!-- <li class="active"><a href="index.html">Express Delivery</a></li> -->
+                                                <li class="dropdown menu-large Nomargin">
+                                                        <div class="MoreIcons_Text">
+                                                            <img src="images/right-menu-bars.png" alt="bag"  width="25"></img>
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More</a>
+                                                        </div>
+                                                    <ul class="dropdown-menu " id="more" role="menu">
+                                                        <li>
+                                                            <div class="">
+                                                                <!-- <div class="mega-sub"> -->
+                                                                    <!-- <div class="mega-sub-title">By Types</div> -->
+                                                                    <ul class="More_List">
+                                                                        <li><a href="#">Signup</a></li>
+                                                                        <li><a href="#">Login</a></li>
+                                                                        <li><a href="#">My Order</a></li>
+                                                                        <li><a href="#">Track Order</a></li>
+                                                                        <li><a href="#">Address Book</a></li>
+                                                                        <li><a href="#">Gift Voucher</a></li>
+                                                                        <!-- <li><a href="#">Track Order</a></li> -->
+                                                                    </ul>
+                                                                <!-- </div> -->
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <!-- <li><a href="contact.html">BABY & KIDS </a></li> -->
+                                            <!-- <li><a href="contact.html">Cakes </a></li> -->
+                                        </ul> 
                                         </li>
                                       </ul>
                                   </div><!-- /.navbar-collapse -->
@@ -180,7 +225,11 @@
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="cat-nav-mega">
                           <ul class="nav navbar-nav">
-                              <li class="active"><a href="index.html">Express Delivery</a></li>
+                              <li class="Side-mennu"> <label for="btn" class="menu-btn">
+                                <i class="fas fa-bars"></i>
+                                <!-- <i class="fas fa-times"></i> -->
+                              </label></li>
+                              <!-- <li class="active"><a href="index.html">Express Delivery</a></li> -->
                               <li class="dropdown menu-large">
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CAKES <i class="fa fa-angle-down"></i></a>
                                   <ul class="dropdown-menu megamenu" role="menu">
@@ -552,7 +601,7 @@
                         <ul class="nav navbar-nav">
                             <!-- <li class="active"><a href="index.html">Express Delivery</a></li> -->
                             <li class="dropdown menu-large" id="">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events <i class="fa fa-angle-down"></i></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">EVENTS <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu megamenu" id="event" role="menu">
                                     <li>
                                         <div class="">
@@ -635,6 +684,7 @@
           
             <!-- flower aura send gift section  -->
             <section>
+            <div class="Send_GIftContainer">
                 <h2>Send Gift</h2>
             <div class="cake-container">
                 <div class="item-cont">
@@ -660,6 +710,7 @@
         
                 </div>
             </div>
+        </div>
             </section>
              <!-- flower aura send gift section  end-->
 
@@ -712,11 +763,84 @@
                 </div></a>
         </div>
         </div>
+                <!-- Trananding Section  -->
+                <div class="our-cards">
+                    <div class="headcard">
+                        <h2>Tranding</h2>
+                        <!-- <button class="card-btn"><a href="#">View all</a></button> -->
+                    </div>
+                  <div class="cardscont">
+                    <a href=""><div class="cards">
+                          <img src="images/birthday.jpg" alt="">
+                          <div class="labelcards">Birthday</div>
+                      </div></a>
+                    <a href=""><div class="cards">
+                          <img src="images/f2.jpg" alt="">
+                          <div class="labelcards">Chocolates</div>
+                      </div></a>
+                      <a href=""><div class="cards">
+                          <img src="images/f3.jpg" alt="">
+                          <div class="labelcards">Gifts</div>
+                      </div></a>
+                      <a href=""><div class="cards">
+                          <img src="images/f4.jpg" alt="">
+                          <div class="labelcards">Roses</div>
+                      </div></a>
+                      <a href=""><div class="cards">
+                          <img src="images/allflower.jpg" alt="">
+                          <div class="labelcards">All flowers</div>
+                      </div></a>
+                  
+              </div>
+              </div>
+        <!-- image gallary section -->
+        <div class="imagegallary_Container">
+            <h2>Cakes Online</h2>
+        <div class="lightbox">
+            <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <img
+                  src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/all-cakes-1-19-apr-2021.jpg"
+                  alt="Lightbox image 1"
+                  class="w-100 mb-2 mb-md-4 shadow-1-strong rounded LeftImage"
+                />
+                <h4>All Cakes</h4>
+                <p>Celebration-Ready</p>
+                <img
+                  src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/black-forest-19-apr-2021.jpg"
+                  alt="Lightbox image 2"
+                  class="w-100 shadow-1-strong rounded LeftImage"
+                />
+                <h4>Blackforest Cakes</h4>
+                <p>Best of Two Worlds</p>
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/chocolate-19-apr-2021.jpg"
+                  alt="Lightbox image 3"
+                  class="w-100 shadow-1-strong rounded RightImage"
+                />
+                <h4>Chocolate Cakes</h4>
+                <p>Bittersweet Symphony</p>
+                <img
+                  src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/Pineapple-19-apr-2021.jpg"
+                  alt="Lightbox image 3"
+                  class="w-100 shadow-1-strong rounded RightImage"
+                />
+                <h4>Pineapple Cakes</h4>
+                <p>Tangy Temptations</p>
+              </div>
+            </div>
+        </div>
+          </div>
+        </div>
+        <!-- end of image gallary section -->
 
 
               
         <!-- section about Features -->
-              <div class="newest">
+              <!-- <div class="newest">
                   <div class="container">
                       <div class="newest-content">
                           <div class="newest-tab">
@@ -1087,26 +1211,26 @@
                           </div>
                       </div>
                   </div>
-              </div>
+              </div> -->
               
-              <div class="content-offers">
-                  <div class="container">
+              <!-- <div class="content-offers"> -->
+                  <!-- <div class="container">
                       <div class="ct-offers">
                           <div class="ct-offers-title">Tommy Hilfiger<br/>Women’s</div>
                           <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour</p>
                           <a href="" class="btn btn-blue">Discover more Product</a>
                       </div>
-                  </div>
-              </div>
+                  </div> -->
+              <!-- </div> -->
               
-              <div class="brands">
+              <!-- <div class="brands">
                   <div class="container">
                       <div class="brands-inner">
                           <div class="brand-title">
                               <span>Brands</span>
                           </div>
                           
-                          <div id="slider-home"> <!-- Slider -->
+                          <div id="slider-home"> 
                               <div id="brand-carousel" class="owl-carousel owl-theme">
                                   <div class="item">
                                       <img src="images/brand-2.png" alt="slide-1" class="img-responsive">
@@ -1139,14 +1263,14 @@
                                       <img src="images/brand-5.png" alt="slide-1" class="img-responsive">
                                   </div>
                               </div>
-                          </div> <!-- Slider -->
+                          </div> 
                           
                       </div>
                   </div>
-              </div>
+              </div> -->
               
               
-              <div class="rec-blog">
+              <!-- <div class="rec-blog">
                   <div class="container">
                       <div class="rec-blog-inner">
                           <div class="blog-title">
@@ -1177,44 +1301,72 @@
                           </div>
                       </div>
                   </div>
-              </div>
+              </div> -->
               
           </div> <!-- Content -->
 
+          
+          <!-- Dummy Lorem Content  -->
+            
+    <div class="content-div">
+        <div class="content-text">
+        <h3>Send Flowers Online with Ferns N Petals (FNP): India's Biggest Florist Chain</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum. Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae, voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia dolorem minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex consequuntur quos iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis quidem sed delectus quis excepturi quisquam! Deserunt excepturi quia nostrum eligendi, in amet! Consequatur itaque inventore, mollitia nisi quas vero id nihil adipisci nesciunt libero. Est totam adipisci ea itaque aspernatur veritatis, omnis dolorum excepturi ex esse qui at dignissimos placeat quos doloribus fugiat quia voluptates provident quis nobis porro ipsa reprehenderit repellat veniam? Quaerat facilis vero quisquam nobis officia consectetur, quasi architecto porro perferendis suscipit qui nulla quod recusandae, pariatur dolorum sapiente eveniet mollitia velit magni praesentium laudantium aliquid deleniti incidunt!</p>
+    </div>
+    <div class="content-text">
+        <h3>International Presence</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum. Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae, voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia dolorem   </p>
+        <p>
+            minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex consequuntur quos iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis quidem sed delectus quis excepturi quisquam! Deserunt excepturi quia nostrum eligendi, in amet! Consequatur itaque inventore, mollitia nisi quas vero id nihil adipisci nesciunt libero. Est totam adipisci ea itaque aspernatur veritatis, omnis dolorum excepturi ex esse qui at dignissimos placeat quos doloribus fugiat quia voluptates provident quis nobis porro ipsa reprehenderit repellat veniam? Quaerat facilis vero quisquam nobis officia consectetur, quasi architecto porro perferendis suscipit qui nulla quod recusandae, pariatur dolorum sapiente eveniet mollitia velit magni praesentium laudantium aliquid deleniti incidunt!</p>
+    </div>
+
+    <div class="content-text">
+        <h3>Same Day Flower Delivery - in 2 Hours or even less!</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum. Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae, voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia dolorem   
+            minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex consequuntur quos iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis quidem sed Quaerat facilis vero quisquam nobis officia consectetur, quasi architecto porro perferendis suscipit qui nulla quod recusandae, pariatur dolorum sapiente eveniet mollitia velit magni praesentium laudantium aliquid deleniti incidunt!</p>
+    </div>
+    <div class="content-text">
+        <h3>Create Colorful Memories with Our Spectacular Birthday Cakes and Gifts</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum. Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae, voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia dolorem   
+            minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex consequuntur quos iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis quidem sed </p>
+            <p>Quaerat facilis vero quisquam nobis officia consectetur, quasi architecto porro perferendis suscipit qui nulla quod recusandae, pariatur dolorum sapiente eveniet mollitia velit magni praesentium laudantium aliquid deleniti incidunt!</p>
+    </div>
+    </div> 
+    <!-- Dummy Lorem Content Section End  -->
+
           <!-- <section> for fotter send gift</section> -->
           <section class="cake-footer">
-              
-              <div class="cakeheading2"><h2>How it works</h2></div>
-              <div class="cake-container2">
-            <div class="item-cont2">
-                <div class="cont2">
-                  <a href=""> <img src="images/maploc.png" alt="">
-                  <a href=""><h5>Select Your Location</h5></a>
-                </div>
-                <div class="cont2">
-                   <a href=""> <img src="images/bakery-shop.png" alt="">
-                    <h5>Find best Bakery</h5></a>
-                </div>
-                <div class="cont2">
-                    <a href=""><img src="images/cake.png" alt="">
-                   <h5>Select your Cake</h5></a> 
-                </div>
-                <div class="cont2">
-                    <a href=""><img src="images/debit-card.png" alt="">
-                    <h5>Select Payment & Pay</h5></a>
-                </div>
-                <div class="cont2">
-                    <a href=""><img src="images/food-delivery.png" alt="">
-                    <h5>Delivery</h5></a>
-                </div>
-                <!-- <div class="cont2">
-                    <a href=""><img src="images/shake.jpg" alt="">
-                    <h5>Cakes</h5></a>
-                </div>
-     -->
-            </div>
-        </div>
-        </section> <!--footer icon section end-->
+            <div class="cakeheading2"><h2>How it works</h2></div>
+            <div class="cake-container2">
+          <div class="item-cont2">
+              <div class="cont2">
+                <a href=""> <img src="images/maploc.png" alt="">
+                <a href=""><h5>Select Your Location</h5></a>
+              </div>
+              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="cont2">
+                 <a href=""><img src="images/bakery-shop.png" alt="">
+                  <h5>Find best Bakery</h5></a>
+              </div>
+              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="cont2">
+                  <a href=""><img src="images/cake.png" alt="">
+                 <h5>Select your Cake</h5></a> 
+              </div>
+              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="cont2">
+                  <a href=""><img src="images/debit-card.png" alt="">
+                  <h5>Select Payment & Pay</h5></a>
+              </div>
+              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="cont2">
+                  <a href=""><img src="images/food-delivery.png" alt="">
+                  <h5>Delivery</h5></a>
+              </div>
+              <!-- <div class="arrow"><img src="images/right-arrow-next.png" alt=""></div> -->
+          </div>
+      </div>
+      </section> <!--footer icon section end-->
 
 
           <div id="footer"><!-- Footer -->
