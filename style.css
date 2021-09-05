@@ -649,90 +649,6 @@ ul.top-control li em.bgSpriteSignIn {
   }
 
 /* My cards Content  */
-.our-cards{
-    width: 93%;
-    height: 135vh;
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #fff;
-    box-shadow: 2px 1px 1px 0.5px #ccc;
-    border: 1px solid #ccc;
-    margin: 45px;
-    margin-left: 4.5rem;
-    border-radius: 8px;
-}
-.headcard{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 25px;
-}
-.headcard h1 {
-    font-size: 26px !important;
-}
-.cardscont{
-    width: 100%;
-    margin-left: 20px;
-    padding-bottom: 20px;
-}
-
-.cards{
-    border: 2px solid white;
-    display: inline-block;
-    justify-content: center;
-    /* flex-wrap: wrap;  */
-        text-align: center;
-        background-color: #fff;
-        outline: 1px solid #ccc;
-        box-shadow: 2px 1px 1px 1px #ccc;
-        margin-left: 5px;
-        margin-top: 15px;
-       padding: 5px;         
-}
-.cardscont a{
-    text-decoration: none;
-    color: black;
-}
-.cardscont a:hover{
-    text-decoration: none;
-    color: black;
-}
-.cards img{
-    width: 22rem;
-    height: 45vh;
-}
-.labelcards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-    font-weight: bold;
-    font-size: 18px;
-}
-.card-btn{
-    margin-top: 15px;
-    width: 100px;
-    height: 43px;
-    background-color: #232f3e;
-    outline: none;
-    border: none;
-    border-radius:5px;
-    font-weight: 600 !important;
-    padding: 10px 0;
-    transition: 250ms ease-in-out;
-}
-.card-btn a{
-    color: #fff;
-    text-decoration: none;
-}
-.card-btn a:hover{
-        background-color: #16699c;
-}
-.card-btn:hover{
-    background-color: #16699c;
-}
 
 /* creat class for events */
 #event{
@@ -914,7 +830,7 @@ ul.top-control li em.bgSpriteSignIn {
 
 #home-slider .item img{
     width:100%;
-    height:100vh;
+    height:80vh;
 }
 .slider-desc{
     position:absolute;
@@ -1569,13 +1485,9 @@ text-align:left;
     font-weight: bold;
     font-size: 18px !important;
 }
-/* .cont1 .label{
-    color: #1b1b1b;
-    display: inline-block;
-    justify-content: center;
-} */
+
 section h2{ 
-    padding-left: 55px;
+    padding-left: 105px;
     /* background-color: yellow; */
     font-weight: bold;
     font-size: 32px;
@@ -1651,18 +1563,7 @@ section h2{
         font-weight: bold;
         font-size: 12px;
     }
-    /* .cont1 .label{
-        color: #1b1b1b;
-        display: inline-block;
-        justify-content: center;
-    } */
-    /* .cake-foter h2{ 
-        padding-left: 55px;
-        background-color: yellow;
-        color: white;
-        font-weight: bold;
-    } */
-
+    
     .cakeheading2{
         background-color: #2b2a2f;
         display: flex;
@@ -5081,7 +4982,7 @@ padding:0;
 }
 
 
-/* My Tranding cards Content  */
+/* My shop by best seller cards Content  */
 .our-cards{
     width: 93%;
     height: auto;
@@ -5090,10 +4991,11 @@ padding:0;
     align-items: center;
     flex-wrap: wrap;
     background-color: #fff;
-    box-shadow: 2px 1px 1px 0.5px #ccc;
+    box-shadow: 2px 1px 2px  #ccc;
     border: 1px solid #ccc;
+    border-radius: 5px;
     margin: 45px;
-    margin-left: 4.5rem;
+    margin-left: 4.6rem;
 }
 .headcard{
     width: 100%;
@@ -5103,7 +5005,7 @@ padding:0;
 }
 .cardscont{
     width: 100%;
-    margin-left: 20px;
+    margin-left: 15px;
     padding-bottom: 20px;
 }
 
@@ -5116,8 +5018,7 @@ padding:0;
         background-color: #fff;
         outline: 1px solid #ccc;
         box-shadow: 2px 1px 1px 1px #ccc;
-        margin-left: 5px;
-        margin-top: 15px;
+       margin: 5px;
        padding: 5px;         
 }
 .cardscont a{
@@ -5129,8 +5030,8 @@ padding:0;
     color: black;
 }
 .cards img{
-    width: 22rem;
-    height: 45vh;
+    width: 275px;
+    height: 320px;
 }
 .labelcards{
     display: flex;
@@ -5147,6 +5048,7 @@ padding:0;
     background-color: #232f3e;
     outline: none;
     border: none;
+    margin-right: 10px;
 }
 .card-btn a{
     color: #fff;
@@ -5349,6 +5251,7 @@ padding:0;
 }
 .content-text{
     padding: 5px 15px;
+    margin: 10px;
 }
 .content-text h3{
     font-size: 20px;
@@ -5360,4 +5263,66 @@ padding:0;
 }
 
 
-/* slider buttons  */
+/* tranding desizn */
+
+.our-cards2{
+    width: 93%;
+    height: auto;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 2px 1px 2px  #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 45px;
+    margin-left: 4.6rem;
+}
+.headcard{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+}
+.cardscont2{
+    width: 100%;
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+
+.cards2{
+    border: 2px solid white;
+    display: inline-block;
+    justify-content: center;
+    /* flex-wrap: wrap;  */
+        text-align: center;
+        background-color: #fff;
+        outline: 1px solid #ccc;
+        box-shadow: 2px 1px 1px 1px #ccc;
+       margin: 5px;
+       padding: 5px;         
+}
+.cardscont2 a{
+    text-decoration: none;
+    color: black;
+}
+.cardscont2 a:hover{
+    text-decoration: none;
+    color: black;
+}
+.cards2 img{
+    width: 275px;
+    height: 320px;
+}
+.labelcards2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
