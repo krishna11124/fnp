@@ -975,6 +975,7 @@ ul.top-control li em.bgSpriteSignIn {
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    text-align: left;
 }
 .slider-desc a.btn{
     width:140px;
@@ -5353,6 +5354,10 @@ padding:0;
     font-size: 20px;
     font-weight: bold;
 }    
-.content p{
+.mypara{
+    text-align: left;
     font-size: 13px;
 }
+
+
+/* slider buttons  */
