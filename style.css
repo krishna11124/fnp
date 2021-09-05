@@ -830,7 +830,11 @@ ul.top-control li em.bgSpriteSignIn {
 
 #home-slider .item img{
     width:100%;
+<<<<<<< HEAD
     height:80vh;
+=======
+    height:75vh;
+>>>>>>> 66a4d77b322e9369969b0c3a822f31c31db51da9
 }
 .slider-desc{
     position:absolute;
@@ -1461,7 +1465,7 @@ text-align:left;
 }
 .item-cont img{
     width: 160px;
-    height: 25vh;
+    height: 160px;
     border-radius: 50%;
     cursor: pointer;
     transition:150ms ease-in-out;
@@ -5263,6 +5267,7 @@ padding:0;
 }
 
 
+<<<<<<< HEAD
 /* tranding desizn */
 
 .our-cards2{
@@ -5326,3 +5331,34 @@ padding:0;
 
 
 
+=======
+/* slider buttons  */
+
+/* .button_CrusalLeft{
+    position: absolute;
+    top: 62%;
+    left: 35px;
+    z-index: 999;
+} */
+
+.buton{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: absolute;
+    top: 60%;
+    z-index: 9999;
+    width: 100%;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.buton button{
+    background: rgba(255, 255, 255, .4);
+    border-radius: 21px;
+    border:1px solid lightgray;
+}
+.buton button:nth-child(1) {
+    transform: rotate(180deg)
+}
+>>>>>>> 66a4d77b322e9369969b0c3a822f31c31db51da9
