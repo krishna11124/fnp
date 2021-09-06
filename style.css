@@ -309,7 +309,8 @@ ul.top-control li em.bgSpriteSignIn {
     -webkit-transition: all .3s ease;
 }
 #believe-nav{
-    padding:30px 0;
+    padding:0px 0;
+    background-color: #131921;
 }
 .homepage-2 #believe-nav{
     padding:15px 0 35px;
@@ -670,7 +671,7 @@ ul.top-control li em.bgSpriteSignIn {
 
 
 #cat-nav{
-    background:#212738;
+    background:#232f3e;
 }
 .homepage-2 #cat-nav{
     background:#ffffff;
@@ -698,7 +699,7 @@ ul.top-control li em.bgSpriteSignIn {
 }
 
 #cat-nav ul li a{
-    color:#747475;
+    color:white;
     font-size:13px;
     font-weight:700;
     padding:15px 17px;
@@ -822,7 +823,11 @@ ul.top-control li em.bgSpriteSignIn {
     position: relative;
     display: table;
     border-collapse: separate;
-    width: 145%;
+    width: 100%;
+}
+.input-group input[type=text]{
+    background-color: white;
+    border: 1px solid lightgray;
 }
 #home-slider{
     background: #66cef6 ;
@@ -2214,15 +2219,15 @@ text-align:center;
 .btn-side-serach{
     font-size: 18px;
     color:#fff;
-    background: #232f3e;
-    border: 1px solid #232f3e;
+    background: #f3a847;
+    border: 1px solid #f3a847;
     padding-left:23px;
     padding-right:23px;
 }
 .btn-side-serach:hover,
 .btn-side-serach:focus {
     color: #FFFFFF !important;
-    background: #00b1fd;
+    background: #f89f2a;
     border: 1px solid #232f3e; 
     padding-left: 23px;
     padding-right: 23px;
@@ -4807,7 +4812,7 @@ padding:0;
     margin: 60px 20px;
 }
 .navbar-brand{
-    margin-left: 55px;
+    /* margin-left: 55px; */
 }
 .Side-mennu label {
     color:white !important;
@@ -5401,3 +5406,6 @@ padding:0;
     font-size: 18px;
 }
 
+.HomeSearchBar{
+    margin: 12px 0 10px 0;
+}
