@@ -89,12 +89,28 @@
                     </div>
                     <div class="col-sm-6 col-md-7">
                         <div class="HomeSearchBar">
-                            <form >
+                            <div class="search_Container">
+                                <select>
+                                    <option>All</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                </select>
+                                <input type="text" placeholder="Search Items" autocomplete="on"></input>
+                                <!-- <a href="#" class="input-group-addon btn-side-serach" id="basic-addon2"><i class="fa fa-search"></i></a> -->
+                                <button class="btn"><i class="fa fa-search"></i></button>
+                            </div>
+                            <!-- <form>
                                 <div class="input-group">
                                  <input type="text" class="form-control search-wid" placeholder="Search Product Here" aria-describedby="basic-addon2">
                                  <a href="#" class="input-group-addon btn-side-serach" id="basic-addon2"><i class="fa fa-search"></i></a>
                                </div>
-                             </form>
+                             </form> -->
                         </div>
                     </div>
                     <div class="col-sm-3 col-md-3">
@@ -102,17 +118,17 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
                               <!-- <li><a href="#"><img src="images/mywallet.png" alt="bag" width="25"><span>0</span></a></li> -->
-                              <li><a href="#"><img src="images/trackblack.png" alt="bag"  width="25"></a>
+                              <li><a href="#"><img src="images/track-white.png" alt="bag"  width="25"></a>
                               <label for="location">Location</label>
                               </li>
-                               <li><a href="#"><img src="images/bag.png" alt="bag"  width="23"><span>0</span></a>
+                               <li><a href="#"><img src="images/shopping-bag.png" alt="bag"  width="23"><span>0</span></a>
                                   <label for="location">Cart</label>
                               </li>
                                <li><a href="#"></a>
                                   <ul class="nav navbar-nav">
                                       <li class="dropdown menu-large Nomargin">
                                               <div class="MoreIcons_Text">
-                                                  <img src="images/right-menu-bars.png" alt="bag"  width="25"></img>
+                                                  <img src="images/menu-white.png" alt="bag"  width="25"></img>
                                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More</a>
                                               </div>
                                           <ul class="dropdown-menu " id="more" role="menu">
@@ -120,7 +136,7 @@
                                                   <div class="">
                                             
                                                           <ul class="More_List">
-                                                              <li><a href="#">Signup</a></li>
+                                                              <li><a href="#"  class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="Signup">Signup</a></li>
                                                               <li><a href="#">Login</a></li>
                                                               <li><a href="#">My Order</a></li>
                                                               <li><a href="#">Track Order</a></li>
@@ -441,16 +457,16 @@
                                             <div class="mega-sub">
                                                 <div class="mega-sub-title">By Types</div>
                                                 <ul>
-                                                    <li><a href="#">All Chocolates</a></li>
-                                                    <li><a href="#">Best Seller</a></li>
-                                                    <li><a href="#">Chocolates Bouquests</a></li>
-                                                    <li><a href="#">Homemade Chocolates</a></li>
-                                                    <li><a href="#">Personalised Chocolates</a></li>
-                                                    <li><a href="#">Expiosion Boxes</a></li>
-                                                    <li><a href="#">Suger Free Chocolates</a></li>
-                                                    <li><a href="#">Candy</a></li>
-                                                    <li><a href="#">New Arrivals Chocolates</a></li>
-                                                    <li><a href="#">Same Day Delivery</a></li>
+                                                    <li><a href="#">Diwali</a></li>
+                                                    <li><a href="#">Holi</a></li>
+                                                    <li><a href="#">Chocolate Day</a></li>
+                                                    <li><a href="#">Valentione's Day</a></li>
+                                                    <li><a href="#">Taddy Day</a></li>
+                                                    <li><a href="#">Rose Day</a></li>
+                                                    <li><a href="#">Kiss Day</a></li>
+                                                    <li><a href="#">Promise Day</a></li>
+                                                    <li><a href="#">Hug Day</a></li>
+                                                    <li><a href="#">Propose Day</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -467,10 +483,7 @@
           </div> <!-- header -->
           <!-- Slider -->
           <div id="main-slider"> 
-              <div class="buton">
-                  <button class="btn"><img src="images/right-arrow-next.png" alt=""></button>
-                  <button class="btn"><img src="images/right-arrow-next.png" alt=""></button>  
-              </div>
+           
               <div id="home-slider" class="owl-carousel owl-theme ">
                 
                   <div class="item">
@@ -624,6 +637,7 @@
                 </div></a>
         </div>
         </div>
+
                 <!-- Trananding Section  -->
                 <div class="our-cards2">
                     <div class="headcard">
@@ -650,6 +664,8 @@
                   
               </div>
               </div>
+
+           
         <!-- image gallary section -->
         <div class="imagegallary_Container">
             <h2>Cakes Online</h2>
@@ -731,22 +747,22 @@
                 <a href=""> <img src="images/maploc.png" alt="">
                 <a href=""><h5>Select Your Location</h5></a>
               </div>
-              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
               <div class="cont2">
                  <a href=""><img src="images/bakery-shop.png" alt="">
                   <h5>Find best Bakery</h5></a>
               </div>
-              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
               <div class="cont2">
                   <a href=""><img src="images/cake.png" alt="">
                  <h5>Select your Cake</h5></a> 
               </div>
-              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
               <div class="cont2">
                   <a href=""><img src="images/debit-card.png" alt="">
                   <h5>Select Payment & Pay</h5></a>
               </div>
-              <div class="arrow"><a href=""><img src="images/right-arrow-next.png" alt=""></a></div>
+              <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
               <div class="cont2">
                   <a href=""><img src="images/food-delivery.png" alt="">
                   <h5>Delivery</h5></a>
@@ -764,14 +780,20 @@
                           <div class="col-md-3">
                               <div class="text-widget">
                                   <div class="wid-title">Welcome to</div>
-                                  <img src="images/cakemart.jpg" width="125px" alt="ft-logo">
+                                  <!-- <img src="images/cakemart.jpg" width="125px" alt="ft-logo">
                                   <ul class="ft-soc clearfix">
                                       <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
                                       <li><a href=""><i class="fa fa-twitter"></i></a></li>
                                       <li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
                                       <li><a href=""><i class="fa fa-instagram"></i></a></li>
                                       <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                  </ul>
+                                  </ul> -->
+                                  <div class="leftsidedata">
+                                    <div class="leftside-heading">Localities In Banguluru</div>
+                                    <div class="secondline">
+                                      Noida | Gaziabad | Mumbai | Bangalore <br>Hyderabad | Chennai
+                                    </div>
+                                </div>
                                   <div class="clearfix"></div>
                               </div>
                           </div>
@@ -789,7 +811,7 @@
                               </div>
                           </div>
                           <div class="col-md-2">
-                              <div class="term">
+                              <!-- <div class="term">
                                   <div class="wid-title">&nbsp;</div>
                                   <p>
                                       <a href="#">Tearms & condition</a><br/>
@@ -797,6 +819,17 @@
                                       <a href="#">Privacy Policy</a><br/>
                                       <a href="#">Legal Desclaimer</a><br/>
                                   </p>
+                              </div> -->
+                              <div class="social-heading">Connect with Us</div>
+                              <div class="social-media">
+                                  <div class="socialicon1">
+                                      <a href="#"><img src="images/facebook (1).png" alt=""></a></div>
+                                  <div class="socialicon2">
+                                      <a href="#"><img src="images/twitter.png" alt=""></a></div>
+                                  <div class="socialicon3">
+                                      <a href="#"><img src="images/pinterest.png" alt=""></a></div>
+                                  <div class="socialicon4">
+                                      <a href="#"><img src="images/instagram.png" alt=""></a></div>
                               </div>
                           </div>
                           <div class="col-md-2">
@@ -831,13 +864,126 @@
                       </div>
                   </div>
               </div>
-              <div class="footer-text">
-                  <div class="container">
-                      <p>Copyright © 2021 Believe. - All Rights Reserved.</p>
+
+                     <!-- Div for brands slider -->
+                     <div class="brands">
+                        <div class="container">
+                            <div class="brands-inner">
+                                <!-- <div class="brand-title">
+                                    <span>Brands</span>
+                                </div> -->
+                                
+                                <div id="slider-home"> <!-- Slider -->
+                                    <div id="brand-carousel" class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <img src="images/brand-2.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-3.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-4.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-1.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-5.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-2.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-3.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-4.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-1.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                        <div class="item">
+                                            <img src="images/brand-5.png" alt="slide-1" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div> <!-- Slider -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+        
+        
+                      <!-- <div class="footer-text">
+                          <div class="container">
+                              <p>Copyright © 2021 Believe. - All Rights Reserved.</p>
+                          </div>
+                      </div> -->
+                  </div><!-- Footer -->
+              </div> <!-- wrapper -->
+                
+           
+         <!-- Model For Signup -->
+         <div class="model-container2">
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <div class="login_wrapper">
+                          <div class="row">
+                              <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6"> <a href="#" class="btn btn-primary facebook"><img src="images/facebook.png" alt="">  Facebook</a> </div>
+                              <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6"> <a href="#" class="btn btn-primary google-plus"><img src="images/popgoogleicon.png" alt=""> Google </a> </div>
+                          </div>
+                         <div class="or">
+                              <p id="text2"><span>Or user email</span></p>
+                         </div>
+                      <form method="">
+                          <!-- <p class="hint-text">Fill in this form to create your account!</p> -->
+                         
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="email" required="required">
+                          </div>
+                          <div class="form-group">
+                              <input type="password" class="form-control" placeholder="Password" required="required">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Mobile" required="required">
+                        </div>
+                          <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                          </form>
+                  <div class="login_message">
+                      <p>Already have an account?<a href="#"> Log in </a> </p>
+                  </div>
+                </div>
               </div>
-          </div><!-- Footer -->
-      </div> <!-- wrapper -->
+            </div>
+          </div>
+        
+    
+             <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+          <!-- jQuery library -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+          <!-- Popper JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+          <!-- Latest compiled JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/library.js"></script>

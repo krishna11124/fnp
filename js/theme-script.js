@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
             slideSpeed : 300,
             paginationSpeed : 400,
             pagination: false,
-            navigation: false,
+            navigation: true,
         });
         
         $("#brand-carousel-2").owlCarousel({
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
             slideSpeed : 300,
             paginationSpeed : 400,
             pagination: false,
-            navigation: false,
+            navigation: true,
         });
     });
     
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
             paginationSpeed : 300,
             singleItem:true,
             pagination:false,
-            navigation : false,
+            navigation : true,
             autoPlay: 5000, //Set AutoPlay to 3 seconds
             transitionStyle : "fadeUp"
 
