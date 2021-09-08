@@ -8,6 +8,9 @@ html,body{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color:#2b2a2f;
+    background: linear-gradient(
+        120deg
+        , white, #146eb4);
 }
 a{
     color:#66cef6;
@@ -4947,6 +4950,7 @@ padding:0;
     margin: 20px 3.5% 30px 3.5%;
     border-radius: 4px;
     box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+    background-color: white;
 }
 .imagegallary_Container h2,h4,p{
     text-align: center;
@@ -5246,7 +5250,7 @@ padding:0;
     background-color: white;
 }
 .content-text{
-    padding: 5px 15px;
+    padding: 5px 35px;
     margin: 10px;
 }
 .content-text h3{
@@ -5256,6 +5260,7 @@ padding:0;
 .mypara{
     text-align: left;
     font-size: 13px;
+    text-align: justify;
 }
 
 /* tranding desizn */
@@ -5563,6 +5568,7 @@ padding:0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 15px;
     
 }
 .social-media img{
@@ -5754,6 +5760,66 @@ input[type=submit].btn-block:hover{
     outline: none !important;
 }
 
+/* trending css */
+.card_Container{
+    border: 1px solid lightgray;
+    background:white;
+    border-radius:8px;
+    box-shadow: 2px 1px 2px #ccc;
+    transition:250ms ease-in-out;
+}
 
+.card_Container:hover{
+    opacity: .7;
+    cursor:pointer;
+}
+.card_Container img{
+    border-radius: 8px 8px 0px 0px;
+    padding: 5px;
+}
+.card_Container p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
 
+.trending_Container{
+    border: 1px solid white;
+    margin: 20px 3.5% 30px 3.5%;
+    padding: 10px 20px 30px 20px;
+    background:white;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+}
+.trending_title h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.trending_title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.trending_title button{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    transition:250ms ease-in-out;
+
+}
+.trending_title button:focus{
+    outline: none;
+}
+.trending_title button:hover{
+    background-color: white;
+    color:#f04d6f;
+    border: 1px solid #f04d6f;
+}
+.pd_LR{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.shopCard{
+    margin-top: 20px;
+}
