@@ -8,9 +8,10 @@ html,body{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color:#2b2a2f;
-    background: linear-gradient(
+    /* background: linear-gradient(
         120deg
-        , white, #146eb4);
+        , white, #146eb4); */
+        background-color: #eaeded;
 }
 a{
     color:#66cef6;
@@ -5251,11 +5252,12 @@ padding:0;
 }
 .content-text{
     padding: 5px 35px;
-    margin: 10px;
+    margin:0 10px;
 }
 .content-text h3{
     font-size: 20px;
     font-weight: bold;
+    margin: 10px 0;
 }    
 .mypara{
     text-align: left;
@@ -5822,4 +5824,8 @@ input[type=submit].btn-block:hover{
 }
 .shopCard{
     margin-top: 20px;
+}
+.fotCont{
+    padding: 0px !important;
+    background:white
 }
