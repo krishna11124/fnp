@@ -5148,101 +5148,7 @@ padding:0;
             }
         }
 
-        .cake-container2{
-            width: 100%;
-            height: 22vh;
-            background-color: #2b2a2f;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
     
-        .item-cont2{
-            width: 90%;
-            display: flex;
-           justify-content: space-around;
-           flex-wrap: wrap;
-        }
-        .item-cont2 img{
-            width: 72px;
-            height: 72px;
-            /* border-radius: 50%; */
-        }
-        .arrow{
-            /* width: 50px; */
-            display: flex;
-            align-items: center;
-        }
-        .arrow img{
-            width: 12px;
-            height: 15px;
-        }
-        .cont2{
-           display: inline-block;
-           justify-content: center;
-           text-align: center;
-        }
-        .cont2 a:hover{
-         text-decoration: none;
-        }
-        .cont2 h5{
-            color: #fff;
-            font-weight: bold;
-            font-size: 12px;
-        }
-        .cakeheading2{
-            background-color: #2b2a2f;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* text-align: center; */
-        }
-    
-        .cakeheading2 h2{
-            color: #fff;
-            font-size: 20px;
-            text-transform: uppercase;
-            font-family: 'Rubik', sans-serif;
-        }
-        @media (max-width:952px){
-    
-        .cake-container2{
-            display: block;
-            justify-content: center;
-            height: auto;
-            width: auto;
-        }
-        .item-con2{
-            display: block;
-            justify-content: center;
-            /* margin: 5px 25px; */
-        }
-        }
-        
-        @media (max-width:320px){
-            .cake-footer{
-                display: block;
-                justify-content: center;
-                height: auto;
-                width: auto;
-            }
-            .cake-container2{
-                display: block;
-                justify-content: center;
-                height: auto;
-                width: auto;
-            }
-            .item-con2{
-                display: block;
-                justify-content: center;
-            }
-            .cont2{
-                display: block;
-                justify-content: center;
-                text-align: center;
-                margin-top: 10px;
-             }
-            }
     /* Dummy Lorem Content css  */
 .content-div{
     width: 100%;
@@ -5262,69 +5168,6 @@ padding:0;
     font-size: 13px;
     text-align: justify;
 }
-
-/* tranding desizn */
-
-.our-cards2{
-    width: 93%;
-    height: auto;
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #fff;
-    box-shadow: 2px 1px 2px  #ccc;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 45px;
-    margin-left: 4.6rem;
-}
-.headcard{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 25px;
-}
-.cardscont2{
-    width: 100%;
-    margin-left: 15px;
-    padding-bottom: 20px;
-}
-
-.cards2{
-    border: 2px solid white;
-    display: inline-block;
-    justify-content: center;
-    /* flex-wrap: wrap;  */
-        text-align: center;
-        background-color: #fff;
-        outline: 1px solid #ccc;
-        box-shadow: 2px 1px 1px 1px #ccc;
-       margin: 5px;
-       padding: 5px;         
-}
-.cardscont2 a{
-    text-decoration: none;
-    color: black;
-}
-.cardscont2 a:hover{
-    text-decoration: none;
-    color: black;
-}
-.cards2 img{
-    width: 275px;
-    height: 320px;
-}
-.labelcards2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-
 
 
 /* slider buttons  */
@@ -5445,6 +5288,7 @@ padding:0;
     transition:200ms ease-in-out !important;
 }
 
+/* This is right Container of fotter icons  */
 .cake-container2{
     width: 100%;
     height: 22vh;
@@ -5595,29 +5439,25 @@ right: 80px;
 
 
 /* model sign in desizn css */
-.model{
-    height: auto;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+
 .modal-content{
-    width: 85%;
+    width: 70%;
     position: sticky;
     top: 0;
-    z-index: 100;
-    height: auto;
+    overflow: visible;
+    margin-left: 70px;
+    background: linear-gradient(to top,	#FFA500, #FFD700) ;
 }
 .modal-body{
-    padding: 2.5rem;
+    padding: 2rem;
 } 
-@media (min-width: 768px){
-.modal-dialog {
-    width: 512px;
-    margin: 30px auto;
-}}
+
+.modal-title{
+    margin-left: auto;
+    font-size: 25px;
+}
+
 h4{
-    /* padding-left: 75px; */
     font-size: 25px;
     color: rgb(107, 107, 107);
     font-weight: 400;
@@ -5626,11 +5466,14 @@ h4{
 
 input[type=submit].btn-block {
     width: 100%;
-    background-color: #f04d6f;
+    background-color: #000;
     border: none;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 input[type=submit].btn-block:hover{
-    background-color: #f04d6f;
+    background-color: #FFA500;
 }
 .btn-primary {
     color: #fff;
@@ -5640,10 +5483,12 @@ input[type=submit].btn-block:hover{
 .btn-primary:hover{
     background-color: #f04d6f;
 }
-/* .col-md-12{
-    display: flex;
-    justify-content: center;
-} */
+.form-group input[type="text"],
+input[type="email"]{
+    
+        border-radius: 10px;
+        height: 50px;
+}
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
     display: block;
@@ -5653,6 +5498,11 @@ input[type=submit].btn-block:hover{
     background-color: #fff;
     color: #121212;
     border: 1px solid black;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
 }
 .facebook:hover {
     background-color: #fff;
@@ -5675,11 +5525,11 @@ input[type=submit].btn-block:hover{
 #text2 span{
     display: inline-block;
     width: auto;
-    height: 30px;
-    top: -17px;
+    /* height: 30px; */
+    top: -14px;
     position: relative;
     padding: 0 7px;
-    background-color: #fff;
+    background-color: #ffa6009c;
     font-size: 14px;
 }
 .or{
@@ -5687,15 +5537,28 @@ input[type=submit].btn-block:hover{
     top: 10px;
 }
 .login_message p {
-    line-height: 5.8rem;
-    text-align: end;
-    font-size: 16px;
-    margin: 0
+    padding-top: 10px;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 15px;
+    /* font-weight: 700; */
+    margin: 0;
+    color:#fff;
 }
 .login_message a,
 .login_message a:hover{
+
     text-decoration: none;
-    color: #f04d6f;
+    color: black;
+}
+
+
+.signup-para{
+    text-align: center;
+    padding-top: 12px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 600;
 }
 .modal-header .close {
     margin-top: -44px;
@@ -5717,6 +5580,7 @@ input[type=submit].btn-block:hover{
     background-color: #fff;
     text-align: left;
 }
+/* model style end  */
 
 .search_Container{
     display: flex;
