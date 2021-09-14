@@ -463,6 +463,7 @@ ul.top-control li em.bgSpriteSignIn {
     line-height: 1.42857143;
     color: #333;
     white-space: nowrap;
+    /* font-size: 12px; */
 }
 
 .sidebar-nav {
@@ -509,6 +510,7 @@ ul.top-control li em.bgSpriteSignIn {
 
 /* navbar right li label */
 .navbar-right{
+    width: 240px;
     /* background-color: cyan; */
     display: flex;
     align-items: center;
@@ -519,12 +521,9 @@ ul.top-control li em.bgSpriteSignIn {
 .navbar-right ul li label{
     display: flex;
     align-items: center;
-    /* background-color: purple; */
 }
 .navbar-right label{
-    /* padding-left: 8px; */
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 10px;
     display: flex;
     justify-content: center;
     color: white;
@@ -655,14 +654,46 @@ ul.top-control li em.bgSpriteSignIn {
     width: 120%;
   }
 
-/* My cards Content  */
 
-/* creat class for events */
+
+/* creat id for dropdown menu*/
 #event{
     width: auto;
     position: absolute;
     left: 41%;
 }
+
+#Sweets{
+    width: auto;
+    position: absolute;
+    left: 41%;
+}
+#icecream{
+    width: auto;
+    position: absolute;
+    left: 50%;
+}
+#candy{
+    width: auto;
+    position: absolute;
+    left: 60%;
+}
+#snacks{
+    width: auto;
+    position: absolute;
+    left: 70%;
+}
+#namkeens{
+    width: auto;
+    position: absolute;
+    left: 80%;
+}
+#combo{
+    width: auto;
+    position: absolute;
+    left: 90%;
+}
+/* creat id for dropdown menu end*/
 
 #more{
     width: 300px;
@@ -670,10 +701,6 @@ ul.top-control li em.bgSpriteSignIn {
     right:8%;
     border: 1px solid lightgray;
 }
-/* .eventhandle{
-    margin-left: 200%;
-  
-} */
 
 
 #cat-nav{
@@ -5588,10 +5615,11 @@ input[type="email"]{
     display: flex;
     border: 1px solid lightgray;
     border-radius: 20px;
+    height: 35px;
 }
 .search_Container input[type=text]{
     flex: 1;
-    height:42px;
+    height: 35px;
     border:none !important;
     border-radius: 0 !important;
     padding-left: 10px;
@@ -5607,7 +5635,7 @@ input[type="email"]{
     padding-left: 5px;
     padding-right: 5px;
     width: 55px;
-    height:42px;
+    height:35px;
     border: none !important;
 }
 
@@ -5618,6 +5646,7 @@ input[type="email"]{
     background:#f3a847;
     border-radius: 0 20px 20px 0 !important;
     width: 65px;
+    height: 35px;
     font-size: 18px;
     color: black;
     outline: none;
@@ -5701,13 +5730,15 @@ input[type="email"]{
     background:white;
     margin: 12px 0 10px 0;
     border-radius: 20px;
-    width: 90%;
+    width: 80%;
+    height: 35px;
 }
+
 .Search_contnr > input[type="text"] {
     flex: .7;
     border: none;
-    padding-left: 20px;
-    height:42px;
+    padding-left: 15px;
+    height:35px;
     border-radius: 0 20px 20px 0;
 }
 .Search_contnr > input[type="text"]:focus-visible{
