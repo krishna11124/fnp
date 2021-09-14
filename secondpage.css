@@ -114,8 +114,10 @@ ul li a img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 5px 65px;
 }
 .card-img, .card-img-bottom {
+    /* border-radius: 50px; */
     border-bottom-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
     height: 29vh;
@@ -146,7 +148,11 @@ ul li a img{
     /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
-    padding: 0px 25px;
+    padding: 0px 50px;
+}
+.title h2{
+    font-size: 25px;
+    font-weight: bold;
 }
 .title-btn{
     background-color: tomato;
@@ -157,7 +163,7 @@ ul li a img{
     color: #fff;
 }
 .Doordash-Card, .card-deck{
-    padding: 25px;
+    padding:  15px 50px;
     /* margin: 0px 15px; */
 }
 
@@ -173,7 +179,7 @@ ul li a img{
     flex-shrink: 0;
     width: 100%;
     padding: 1px;
-    height: 30vh;
+    height: 28vh;
 }
 @media (min-width: 576px){
 .card-deck .card {
@@ -189,8 +195,9 @@ ul li a img{
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 0.75rem;
+    padding: 0rem;
 }
+
 .card-title {
     margin-bottom: .5rem;
     font-size: 17px;
