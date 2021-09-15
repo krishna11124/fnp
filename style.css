@@ -3210,6 +3210,7 @@ margin-left:22px;
     font-weight: 700;
     font-size: 13px;
     margin-bottom:15px;
+
 }
 .homepage-2 .wid-title{
     color:#364a62;
@@ -3306,10 +3307,13 @@ margin-left:22px;
 .term a:hover{
     color:#66cef6;
 }
+
 .subscribe p{
+    /* background-color: peru; */
     font-size: 13px;
     color:#000;
     line-height:21px;
+    text-align: justify;
 }
 .subscribe .form-control{
     height:40px;
