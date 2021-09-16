@@ -4948,6 +4948,8 @@ padding:0;
         color: #333;
         font-weight: 600;
         transition: 250ms ease-in-out;
+        text-align: left;
+        color: black;
   }
   
   .Nomargin{
@@ -5469,26 +5471,7 @@ position: relative;
 right: 80px;
 
 }
-
-
-/* model sign in desizn css */
-
-.modal-content{
-    width: 70%;
-    position: sticky;
-    top: 0;
-    overflow: visible;
-    margin-left: 70px;
-    background: linear-gradient(to top,	#FFA500, #FFD700) ;
-}
-.modal-body{
-    padding: 2rem;
-} 
-
-.modal-title{
-    margin-left: auto;
-    font-size: 25px;
-}
+s
 
 h4{
     font-size: 25px;
@@ -5751,4 +5734,404 @@ input[type="email"]{
 .Search_contnr > img{ 
     margin-left:20px;
     width: 20px;
+}
+
+
+
+/* modal css  */
+
+/* .CloseIcons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding:10px 10px;
+}
+.Login_titl{
+    text-align: center;
+    padding: 10px 10px;
+}
+.Login_titl > span{
+    font-size: 20px;
+    font-weight: 600;
+} */
+
+.modal-content123{
+    width: 75%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    margin-left: 5rem;
+    overflow: visible;
+   background: url(./images/loginbac2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.modal-contentSingup{   
+    width: 75%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    margin-left: 5rem;
+    overflow: visible;
+    /* background: #1E88E5 !important; */
+   /* background: url(./images/loginbac2.jpg); */
+   /* background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center; */
+   background-image: linear-gradient(0deg, #F6BE00, #ffd300);
+}
+.modal-body{
+    margin-top: 100px;
+    padding: 1.8rem;
+    /* height: 70vh; */
+} 
+.modal-header{
+    border-bottom: none;
+}
+.modal-title{
+    margin-left: auto;
+    font-size: 25px;
+}
+
+h4{
+    padding-left: 75px;
+    font-size: 25px;
+    color: rgb(107, 107, 107);
+    font-weight: 400;
+    /* line-height: 10px; */
+} 
+
+input[type=submit].btn-block {
+    width: 100%;
+    background-color: #000;
+    border: none;
+    /* height: 50px; */
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn-success {
+    color: #000;
+    background-color:#fff;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+.btn-success:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn-success img{
+    width: 24px;
+    position: relative;
+    right: 60px;
+}
+.form-group input[type="tel"]{
+        width: 100%;
+        border-radius: 5px;
+        /* height: 50px; */
+        padding-left: 45px;
+}
+
+.form-group img{
+    position: relative;
+    top: 34px;
+    left: 10px;
+    /* border-right: 1px solid #ccc; */
+}
+
+.iti input, .iti input[type=text], .iti input[type=tel] {
+    position: relative;
+    z-index: 0;
+    width: 315px;
+    height: 40px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-right: 36px;
+    margin-right: 0;
+    border: none;
+    padding-left: 100px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    display: block;
+}
+.facebook,
+.google-plus{
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    height: 45px;
+}
+.facebook:hover {
+    background-color: #fff;
+    color: #121212;
+    transition: 0.5s;
+    border: none;
+    /* border: 1px solid #FFA500; */
+}
+@media (min-width: 992px){
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 60%;
+    padding-top: 18px;
+}}
+.google-plus:hover {
+    background-color: #fff;
+    color: #121212;
+    transition: 0.5s;
+    border: none;
+    /* border: 1px solid #FFA500; */
+}
+#text2 {
+    height: 1px;
+    text-align: center;
+    margin: 20px 0;
+    border-top: 1px solid #b7b7b79a;
+    margin-bottom: 35px;
+}
+#text2 span{
+    display: inline-block;
+    width: auto;
+    /* height: 30px; */
+    top: -15px;
+    position: relative;
+    padding: 0 7px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+}
+.or{
+    position: relative;
+    top: 10px;
+}
+.login_message p {
+    line-height: 2.8rem;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    color:#fff;
+}
+.login_message a,
+.login_message a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* img {
+    vertical-align: middle;
+    border-style: none;
+    width: 25px;
+} */
+.signup-para{
+    text-align: center;
+    padding-top: 12px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+button.close{
+    font-size: 25px;
+    background-color: #fff;
+}
+.modal-header .close {
+    padding: 2px 25px;
+    margin: -1rem -1rem -1rem auto;
+    height: 40px;
+}
+
+
+.moDlLogo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.moDlLogo > img{
+    margin: 80px 0;
+}
+.Mobile_login{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.Mobile_login > input {
+    flex: 1;
+    border: none;
+    height: 40px;
+    padding-left:20px; 
+}
+.Mobile_login > input:focus{
+    outline: none;
+}
+.loGin_container{
+    padding: 0 20px;
+}
+.Mobile_loginBtn{
+    margin: 20px 0 20px 0;
+}
+.Mobile_loginBtn > button{
+    width: 100%;
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: 7px 0;
+    font-size: 18px;
+    transition: 250ms ease-in-out;
+    border-radius: 8px;
+}
+.Mobile_loginBtn > button:hover{
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+.Mobile_loginBtn > button:focus{
+    outline: none;
+}
+.orSEp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orSEp  span{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -4px;
+}
+.orSEp hr{
+    width: 46%;
+    border: .2px solid white;
+}
+.OrLOginWIth{
+    text-align: center;
+    margin: 20px 0;
+}
+.OrLOginWIth > p{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.SocialMediaLOgin{
+    text-align: center;
+    background: white;
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    
+}
+
+.SocialMediaLOgin img{
+    width: 100%;
+    object-fit: contain;
+    height: 35px;
+}
+
+.SocialMediaLOgin > a{
+    background: white;
+    border-radius: 4px;
+}
+
+.socialContainer{
+    padding: 10px 45px;
+}
+.AlrdyLogin{
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+.AlrdyLogin span{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.AlrdyLogin > span > a{
+    color: black;
+    margin-left: 4px;
+    cursor: pointer;
+}
+/* .AlrdyLogin > span > a:hover{
+    text-decoration: underline;
+} */
+.EmailContinue{
+    margin-top: 13px;
+}
+.EmailContinue button{
+    width: 100%;
+    height: 42px;
+    font-weight: 600;
+}
+.EmailContinue img{
+    margin-right: 20px;
+}
+
+
+/* sign up Pop */
+.CLopPOP{
+    padding-right: 10px;
+}
+.CLopPOP button{
+    width: 40px;
+}
+.sinUp{
+    text-align: center;
+
+}
+.sinUp span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.titleSinup{
+    border-bottom:1px solid  white;
+    padding: 10px 0;
+    margin: 10px 0px 20px 0px;
+    padding: 10px 0 15px 0;
+}
+
+
+.UserName input{
+    height: 50px;
+    width: 100%;
+    background: white;
+    color: black;
+    padding: 10px 10px 10px 20px;
+    border: none;
+    border-radius: 8px;
+}
+.UserName, input:focus{
+    outline: none;
+}
+.UserName{
+    margin: 8px 0;
+    padding: 0px 20px;
+}
+
+.Mobile_SinupBtn{
+    padding: 0 20px;
+    margin-top: 10px !important;
+    color: white;
+}
+
+.Mobile_SinupBtn button{
+    width: 100%;
+    height: 48px;
+    padding: 0px 15px;
+
+}
+
+.sinupOr{
+    padding: 0 20px;
+}
+.socialSInup{
+    padding-top: 0px !important;
 }
