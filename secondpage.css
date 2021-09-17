@@ -66,7 +66,7 @@ ul li a img{
     margin-right: 270px;
 }
 .content{
-    background: #ffffff;
+    background: #fff;
     width: 230px;
     height: 32px;
     border-radius: 20px;
@@ -90,6 +90,7 @@ ul li a img{
     font-size: 14px;
     font-weight: 600;
 }
+
 .shoping{
     width: 65px;
     height: 32px;
@@ -108,29 +109,31 @@ ul li a img{
     color: #fff;
 } 
 
+
+/* buttons section search bar  */
+
+
 /* large card css  */
-.large-images{
+/* .large-images{
     width: 100%;
     height: 30vh;
     margin-top: 50px;
-    /* background-color: purple; */
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding: 5px 65px; */
 }
 .card-img, .card-img-bottom {
-    /* border-radius: 50px; */
     border-bottom-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
-    height: 29vh;
-    width: 100px;
+    height: 31vh;
 }
+
 .no-gutters>.col, .no-gutters>[class*=col-] {
     padding-right: 0;
     padding-left: 0;
     background: rgb(255, 166, 136);
-}
+} */
 
 
 /* vendor page card css  */
@@ -156,10 +159,14 @@ ul li a img{
 .cakeitem >img{
     width: 60px;
 }
+.silderitemlabel{
+    text-align: center;
+    color: black;
+}
 .prewbutton,
 .nextbutton{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,23 +188,24 @@ ul li a img{
     display: flex;
 }
 .butoncontainer{
-    width: 50%;
+    width: 800px;
     /* background: chartreuse; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
-    margin-left: 70px;
+    margin-left: 75px;
 }
 /* dropdown css  */
 .dropbtn {
     background-color: #fff;
-    color: #4CAF50;
-    padding: 3px 16px;
+    color:	#1e90ff;
+    padding: 1px 16px;
     font-size: 16px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
-    border: 2px solid green;
+    border: 2px solid 	#1e90ff;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -206,7 +214,10 @@ ul li a img{
       margin: 5px 5px;
       width: 18px;
   }
- 
+
+ .downarr >img{
+     margin-top: 5px;
+ }
   .dropdown {
     position: relative;
     display: inline-block;
@@ -217,7 +228,6 @@ ul li a img{
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    /* width: 1px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -240,21 +250,71 @@ ul li a img{
   }
   .mybuttons {
     background-color: #fff;
-    border: 2px solid green;
-    color: green;
+    border: 2px solid	#1e90ff;
+    color: 	#1e90ff;
     padding: 3px 16px;
     text-align: center;
     border-radius: 20px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
     margin: 4px 2px;
     cursor: pointer;
   }
-  
+  #mysearch{
+      /* border:2px solid ; */
+      background:	#f8f8ff;
+  }
+
+.selection{
+    width: 100%;
+    height: 50px;
+    /* background: cyan; */
+    padding: 0px 50px;
+   margin: 20px 0px;
+
+}
+.title2{
+    width: 100%;
+    height: 50px;
+    /* background: chocolate; */
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+.leftsidetitle{
+    width: 190px;
+    /* background: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftsidetitle h4{
+    font-size: 21px;
+}
+.rightside{
+    width: 100px;
+   font-weight: 700;
+    font-size: 20px;
+    /* background: hotpink; */
+    text-align: center;
+    padding: 0px 12px;
+}
+.ourarr{
+    padding-left: 12px;
+}
+.line{
+    padding-top: 8px;
+    border-bottom: 2px solid #D7832A;
+  width: 100%;
+  height: 50px;
+}
 
 
-
+  /* cards desizning start  */
 .Doordash-Card{
     width: 100%;
     height: auto;
@@ -298,7 +358,7 @@ ul li a img{
     flex-shrink: 0;
     width: 100%;
     padding: 1px;
-    height: 28vh;
+    height: 30vh;
 }
 @media (min-width: 576px){
 .card-deck .card {
