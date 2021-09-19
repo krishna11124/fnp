@@ -663,6 +663,11 @@ ul.top-control li em.bgSpriteSignIn {
     left: 41%;
 }
 
+#all{
+    width: auto;
+    position: absolute;
+    left: 2%;
+}
 #Sweets{
     width: auto;
     position: absolute;
@@ -681,22 +686,22 @@ ul.top-control li em.bgSpriteSignIn {
 #snacks{
     width: auto;
     position: absolute;
-    left: 70%;
+    left: 72%;
 }
 #namkeens{
     width: auto;
     position: absolute;
-    left: 80%;
+    left: 75%;
 }
 #combo{
     width: auto;
     position: absolute;
-    left: 90%;
+    left: 80%;
 }
 /* creat id for dropdown menu end*/
 
 #more{
-    width: 300px;
+    width: 250px;
     position: absolute;
     right:8%;
     border: 1px solid lightgray;
@@ -3197,9 +3202,9 @@ margin-left:22px;
     color:#808080;
 }
 .text-widget p{
-    line-height: 20px;
+    line-height: 16px;
     font-size: 13px;
-    margin-top:25px;
+    /* margin-top:25px; */
 }
 .homepage-2 .text-widget p, .homepage-2 .subscribe p{
     color: #60686f;
@@ -4925,6 +4930,7 @@ padding:0;
   .More_List{
       width: 100%;
       padding:0px !important;
+      height: 315px;
   }
   .More_List li{
       list-style: none;
@@ -4939,10 +4945,15 @@ padding:0;
       border-bottom: none;
 
 }
+.fixheight{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
   .More_List li a{
       color: black;
       text-decoration: none;
-        padding-left: 20px;
+        padding-left: 10px;
         font-size: 14px;
         letter-spacing: .7px;
         color: #333;
@@ -5462,16 +5473,22 @@ color: #808080;
 }
 
 .leftsidedata{
+    width: 250px;
+    height: auto;
 /* background-color: yellow; */
-text-align: center;
-font-size: 13px;
-font-weight: 600;
-/* margin-left: 10px; */
+text-align: left;
+font-size: 14px;
+/* font-weight: 600; */
+margin-left: 10px;
 position: relative;
-right: 80px;
+right: 12px;
 
 }
-s
+.left-data{
+    font-size: 12px;
+    text-align: left;
+    padding-top: 3px;
+}
 
 h4{
     font-size: 25px;
@@ -6029,22 +6046,26 @@ button.close{
     border-radius: 8px;
     cursor: pointer;
     transition: 250ms ease-in-out;
-    
+
 }
 
 .SocialMediaLOgin img{
-    width: 100%;
+    width: 25px;
     object-fit: contain;
-    height: 35px;
 }
 
 .SocialMediaLOgin > a{
     background: white;
     border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    /* margin-left: 10px; */
 }
 
 .socialContainer{
-    padding: 10px 45px;
+    padding: 10px 20px;
 }
 .AlrdyLogin{
     margin: 20px 0 30px 0;
@@ -6083,14 +6104,12 @@ button.close{
 .CLopPOP button{
     width: 40px;
 }
-.sinUp{
-    text-align: center;
+.sinUp img{
+   width: 230px;
+   position: relative;
+   left: 108px;
+}
 
-}
-.sinUp span{
-    font-size: 20px;
-    font-weight: 600;
-}
 .titleSinup{
     border-bottom:1px solid  white;
     padding: 10px 0;
@@ -6100,7 +6119,7 @@ button.close{
 
 
 .UserName input{
-    height: 50px;
+    height: 45px;
     width: 100%;
     background: white;
     color: black;
@@ -6134,4 +6153,203 @@ button.close{
 }
 .socialSInup{
     padding-top: 0px !important;
+}
+
+/* category css  */
+
+.catDishDetails{
+    background-color: #171A29;
+}
+.catBigImag_container{
+    padding: 10px 10px 10px 30px;
+}
+.catBigImag_container > img{
+    width: 100%;
+    object-fit: contain;
+    height: 220px;
+}
+
+.catProdtName_container{
+    padding: 12px 0px;
+}
+.catProdtName_container > p{
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;    
+}
+.catProdtName_container > span {
+    color: lightgray;
+    line-height: 30px;
+}
+.catProdtName_container a > span{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+.catProdtName_container a > img{
+    margin-left: 10px;
+}
+
+.DeliveryTime{
+    margin: 20px 0;
+}
+.DeliveryTime > ul{
+    display: flex;
+    max-width:350px; 
+}
+.DeliveryTime > ul > li{
+    color: white;
+    border-right: 1px solid gray;
+}
+.raTingSec{
+    padding: 10px 14px 10px 10px;
+}
+.raTingSec p{
+    margin-bottom: 0;
+    color: gray;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+}
+.raTingSec p:nth-child(1){
+    color: white;
+    font-size: 16px;
+}
+/* .catMain{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+} */
+
+.imgCatProd{
+    padding: 15px;
+}
+.imgCatProd > img{
+    width: 100%;
+    object-fit: contain;
+    height: 140px;
+    border-radius: 20px;
+}
+
+.cakesinFo{
+    padding: 15px;
+}
+.cakesinFo > p{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    color:black;
+    line-height: 30px;
+    margin-bottom: 4px !important;
+}
+.cakesinFo  p:nth-child(3){
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+}  
+.cakesinFo > a > span{
+    font-size: 20px;
+    font-weight: 700;
+    color:#F6BE00;
+}
+.cakesinFo > a > img{
+    height: 25px;
+} 
+.cakesinFo > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cakesinFo > span{
+    color: lightgray;
+    font-size: 14px;
+    font-weight: 500;
+}
+.catContan{
+    border-bottom: 1px solid lightgray;
+}
+.catProdtListContainer{
+    overflow-y: scroll;
+    height: 450px;
+}
+.catProdtListContainer::-webkit-scrollbar{
+    display: none;
+}
+.emptyCart > h4{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 0 !important;
+    padding-top: 30px;
+}
+.emptyCart {
+    position: sticky;
+    top: 0;
+}
+
+.emptyCart > img{
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
+
+.catLeftCheck{
+    border: 1px solid lightgray;
+    /* text-align: center; */
+    margin: 20px 20px;
+    background: white;
+    padding: 13px 30px 20px 30px;
+    border-radius: 8px;
+    background: white;
+}
+.catLeftCheck > ul{
+    display: block !important;
+    margin-bottom: 0 !important;
+}
+.catLeftCheck > ul > li > span{
+    /* display: flex;
+    align-content: center;
+    justify-content: flex-start; */
+    font-size: 18px;
+    font-weight: 600;
+}
+.catLeftCheck > ul > li > input{
+    margin-right:10px;
+    height: 15px;
+    width: 15px;
+}
+.catLeftCheck > h2{ 
+    font-size: 22px !important;
+}
+
+.Signatur{
+    padding-top: 20px;
+}
+.Signatur > p{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left !important;
+    margin-bottom: 0px;
+}
+.Signatur > span{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left !important;
+    color: gray;
+} 
+
+.myfooterrow{
+    width: 100%;
+    /* background-color: firebrick; */
+    display: flex;
+    justify-content: space-between;
+}
+.set-width{
+    width: 1300px;
+    position: relative;
+    right: 70px;
+    /* background-color: yellow; */
+}
+
+.SinupContainer{
+    padding: 0px 15px;
 }

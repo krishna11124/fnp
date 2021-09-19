@@ -153,15 +153,15 @@
                                                 <div class="">
 
                                                     <ul class="More_List">
-                                                        <li><a href="#" class="btn" data-toggle="modal"
+                                                        <li class="fixheight"><img src="images/user-black.png"><a href="#" class="btn" data-toggle="modal"
                                                                 data-target="#exampleModalCenter">Signup</a></li>
-                                                        <li><a href="#" class="btn" data-toggle="modal"
+                                                        <li class="fixheight"><img src="images/enter.png"><a href="#" class="btn" data-toggle="modal"
                                                                 data-target="#exampleModalLong">Login</a></li>
-                                                        <li><a href="#">My Order</a></li>
-                                                        <li><a href="#">Track Order</a></li>
-                                                        <li><a href="#">Address Book</a></li>
-                                                        <li><a href="#">Gift Voucher</a></li>
-
+                                                        <li><img src="images/order.png"><a href="#">My Order</a></li>
+                                                        <li><img src="images/pin.png"><a href="#">Track Order</a></li>
+                                                        <li><img src="images/address.png"><a href="#">Address Book</a></li>
+                                                        <li><img src="images/gift-card.png"><a href="#">Gift Voucher</a></li>
+                                                        <li><img src="images/dots.png"><a href="#">More</a></li>    
                                                     </ul>
                                                     <!-- </div> -->
                                                 </div>
@@ -197,13 +197,52 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="set-width">
                 <div class="collapse navbar-collapse" id="cat-nav-mega">
                     <ul class="nav navbar-nav">
                         <li class="Side-mennu"> <label for="btn" class="menu-btn">
                                 <i class="fas fa-bars"></i>
                                 <!-- <i class="fas fa-times"></i> -->
                             </label></li>
-                        <li class="dropdown menu-large">
+
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown menu-large" id="">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-expanded="false">ALL <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu megamenu" id="all" role="menu">
+                                        <li>
+                                            <div class="">
+                                                <div class="mega-sub">
+                                                    <div class="mega-sub-title">By Types</div>
+                                                    <ul>
+                                                        <li><a href="#">Cakes</a></li>
+                                                        <li><a href="#">Chocolates</a></li>
+                                                        <li><a href="#">Sweets</a></li>
+                                                        <li><a href="#">Candy</a></li>
+                                                        <li><a href="#">Snacks</a></li>
+                                                        <li><a href="#">Namkeens</a></li>
+                                                        <li><a href="#">Events</a></li>
+                                                        <li><a href="#">icecream</a></li>
+                                                        <li><a href="#">Combo</a></li>
+                                                        <!-- <li><a href="#">Modak</a></li> -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- <li><a href="contact.html">Teddy </a></li>
+                                <li><a href="contact.html">Sweets </a></li>
+                                  <li><a href="contact.html">Ice Cream </a></li> -->
+                            </ul>
+                            <li class="dropdown menu-large">
+
+                                <!-- dropdown for all  -->
+                                
+
+
+
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-expanded="false">CAKES <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu megamenu" role="menu">
@@ -682,6 +721,7 @@
                 <!--</div> -->
             </nav>
         </div>
+        </div>
     </div>
     </div> <!-- header -->
     <!-- Slider -->
@@ -1071,20 +1111,16 @@
         <div class="footer-widget">
             <div class="container">
                 <div class="row">
+                    <div class="myfooterrow">
                     <div class="col-md-3">
                         <div class="text-widget">
                             <div class="wid-title">Welcome to</div>
-                            <!-- <img src="images/cakemart.jpg" width="125px" alt="ft-logo">
-                                  <ul class="ft-soc clearfix">
-                                      <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-                                      <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                      <li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
-                                      <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                                      <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                                  </ul> -->
                             <div class="leftsidedata">
                                 <div class="leftside-heading">Localities In Mumbai</div>
-
+                                    <p class="left-data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae rem excepturi, </p>
+                                    <p class="left-data">1786 Stonecoal Road</p>
+                                    <p class="left-data">+0123-865-954</p>
+                                    <p class="left-data">email@gmail.com</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -1127,47 +1163,22 @@
                                       <a href="#"><img src="images/instagram.png" alt=""></a></div>
                               </div>
                           </div> -->
-                    <div class="col-md-2">
-                        <div class="quick-links">
-                            <div class="wid-title">City</div>
-
-                            <ul>
-                                <li><a href="#">Mumbai</a></li>
-                                <li><a href="#">Noida</a></li>
-                                <li><a href="#">Delhi</a></li>
-                                <li><a href="#">Gaziyabad</a></li>
-                                <li><a href="#">Gurugram</a></li>
-                                <li><a href="#">Agra</a></li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="col-md-3">
                         <div class="subscribe">
                             <div class="quick-links">
-                                    <div class="wid-title">My Account</div>
+                                    <div class="wid-title">Service</div>
                                     
                                     <ul>
                                         <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Personal Information</a></li>
-                                        <li><a href="#">Addresses</a></li>
-                                        <li><a href="#">Orders</a></li>
+                                        <li><a href="#">View Cart</a></li>
                                         <li><a href="#">Wishlist</a></li>
-                                        <li><a href="#">track order</a></li>
+                                        <li><a href="#">Track My Order</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <!-- <li><a href="#">Select PayMent</a></li> -->
                                     </ul>
                                 </div>
-                            <!-- <div class="wid-title">Subscribe for OFFERS & UPDATES</div>
-                            <p>
-                                Enter your email and we'll send you a coupon
-                                with 10% off your next order. Add any text here
-                            </p>
-                            <form>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        placeholder="Enter email">
-                                </div>
-                                <button type="submit" class="btn btn-default">Subscribe Now</button>
-                            </form> -->
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -1245,7 +1256,7 @@
                                 <div class="row">
                                     <div class="col-sm-10 col-md-11">
                                         <div class="sinUp">
-                                            <span>Sign Up</span>
+                                            <img src="images/cakemart.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="col-sm-2 col-md-1">
@@ -1290,28 +1301,24 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="SocialMediaLOgin">
-                                            <a href="#"><img src="images/facebook (1).png"></img></a>
+                                            <a href="#"><img src="images/facebook (1).png"></img>    fecebook</a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="SocialMediaLOgin">
-                                            <a href="#"><img src="images/popgoogleicon.png"></img></a>
+                                            <a href="#"><img src="images/popgoogleicon.png"></img>   google</a>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-sm-4 col-md-4 col-lg-4">
-                                        <div class="SocialMediaLOgin">
-                                            <a><img src="images/india.png"></img></a>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                            <div class="AlrdyLogin">
-                                <span>Don't Have an Account?<a data-toggle="modal"
-                                    data-target="#exampleModalCenter">Sign up</a></span>
+                                <div class="AlrdyLogin">
+                                    <span>Already Have an Account?<a data-toggle="modal"
+                                        data-target="#exampleModalLong">Log in</a></span>
+                                </div>
                             </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -1334,7 +1341,7 @@
                         </div>
                         <div class="col-sm-12 md-12">
                             <div class="Mobile_login">
-                                <img src="/images/india.png"></img>
+                                <img src="images/india.png"></img>
                                 <input type="text" placeholder="+ 91"></input>
                             </div>
                         </div>
@@ -1382,11 +1389,11 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                            <div class="AlrdyLogin">
-                                <span>Already Have an Account?<a data-toggle="modal"
-                                    data-target="#exampleModalLong">Log in</a></span>
+                                <div class="AlrdyLogin">
+                                    <span>Don't Have an Account?<a data-toggle="modal"
+                                        data-target="#exampleModalCenter">Sign up</a></span>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 
