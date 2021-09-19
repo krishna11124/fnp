@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1500;
+}
+
  nav{
     width: 100%;
     height: 50px;
@@ -33,6 +41,9 @@
     outline: none;
     border-radius: 20px;
     border: 2px solid #fff;
+}
+.left-btn:focus{
+    outline: none;
 }
 ul {
     display: flex;
@@ -110,32 +121,6 @@ ul li a img{
 } 
 
 
-/* buttons section search bar  */
-
-
-/* large card css  */
-/* .large-images{
-    width: 100%;
-    height: 30vh;
-    margin-top: 50px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.card-img, .card-img-bottom {
-    border-bottom-right-radius: calc(.25rem - 1px);
-    border-bottom-left-radius: calc(.25rem - 1px);
-    height: 31vh;
-}
-
-.no-gutters>.col, .no-gutters>[class*=col-] {
-    padding-right: 0;
-    padding-left: 0;
-    background: rgb(255, 166, 136);
-} */
-
-
 /* vendor page card css  */
 .Category-Products{
     width: 100%;
@@ -157,7 +142,7 @@ ul li a img{
     justify-content: space-around;
 }
 .cakeitem >img{
-    width: 60px;
+    width: 40px;
 }
 .cakeitem{
     cursor: pointer;
@@ -165,6 +150,7 @@ ul li a img{
 .silderitemlabel{
     text-align: center;
     color: black;
+    font-size: 13px;
 }
 .prewbutton,
 .nextbutton{
@@ -212,6 +198,9 @@ ul li a img{
     border-radius: 20px;
     display: flex;
     align-items: center;
+  }
+  .dropbtn:focus{
+    outline: none;
   }
   .dropbtn >img{
       margin: 5px 5px;
@@ -265,6 +254,9 @@ ul li a img{
     margin: 4px 2px;
     cursor: pointer;
   }
+  .mybuttons:focus{
+      outline: none;
+  }
   #mysearch{
       /* border:2px solid ; */
       background:	#f8f8ff;
@@ -272,49 +264,56 @@ ul li a img{
 
 .selection{
     width: 100%;
-    height: 50px;
-    /* background: cyan; */
-    padding: 0px 50px;
+    height: 70px;
+    /* background: black; */
+    padding: 0px 90px;
    margin: 20px 0px;
+   display: flex;
+   align-items: flex-end;
 
 }
-.title2{
+.tabs{
     width: 100%;
-    height: 50px;
-    /* background: chocolate; */
-    display: flex;
-    align-items: center;
-    padding: 0px 50px;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(219, 219, 219);
-}
-.leftsidetitle{
-    width: 190px;
-    /* background: cadetblue; */
+    padding: 0px 5px;
+    /* background: pink; */
+    border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.leftsidetitle h4{
-    font-size: 21px;
+.tabs-button{
+    display: flex;
 }
-.rightside{
+.nav-link{
+    color: #000;
+    font-size: 18px;
+}
+.nav-link:hover, .nav-link:focus{
+    color: #000;
+    background-color:	#f8f8ff;
+    border-bottom: 2px solid chocolate;
+}
+ .nav-item:hover{
+    color: #000;
+    background-color:	#f8f8ff;
+    border-bottom: 2px solid chocolate;
+}
+.rightbut{
     width: 100px;
-   font-weight: 700;
-    font-size: 20px;
-    /* background: hotpink; */
-    text-align: center;
-    padding: 0px 12px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
 }
-.ourarr{
-    padding-left: 12px;
+
+.rightbut >img{
+    width: 16px;
+  margin-left: 5px;
+  margin-top: 10px;
 }
-.line{
-    padding-top: 8px;
-    border-bottom: 2px solid #D7832A;
-  width: 100%;
-  height: 50px;
-}
+
 
 
   /* cards desizning start  */
@@ -344,11 +343,23 @@ ul li a img{
     outline: none;
     color: #fff;
 }
-.Doordash-Card, .card-deck{
-    padding:  15px 50px;
-    /* margin: 0px 15px; */
+.title-btn:focus{
+    outline: none;
 }
-
+.Doordash-Card, .card-deck{
+    padding:  10px 50px;
+}
+/* css for vendor cards  */
+.vendor-card{
+    cursor: pointer;
+    padding: 5px;
+ box-shadow: none;
+}
+.vendor-card:hover{
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 1px 1px 2px 1px #ccc;
+}
 .card-title {
     margin-bottom: 0.5;
 }
@@ -374,8 +385,8 @@ ul li a img{
 }}
 
 .card-content >.card-body {
-    line-height: 5px;
-    padding: 15px 0px;
+    line-height: 2px;
+    padding: 5px 2px;
 }
 
 .card-content >.card-title {
@@ -387,7 +398,7 @@ ul li a img{
 }
 .extracontent{
     width: 100%;
-    height: 75px;
+    height: 42px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
@@ -509,4 +520,23 @@ ul li a img{
     height: 35px;
     border: 1px solid rgb(235, 23, 0);
     border-radius: 8px;
+}
+.caNcal > button:focus{
+    outline: none;
+}
+.apPly > button:focus{
+    outline: none;
+}
+
+.vendorpage-footer{
+    width: 100%;
+    height: 25vh;
+    background: #4d575f;
+    display: flex;
+    justify-content: center;
+}
+.vendorfooter-Content{
+    width: 600px;
+    height: 25vh;
+    background: darksalmon;
 }

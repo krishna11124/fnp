@@ -5780,7 +5780,7 @@ input[type="email"]{
     top: 0;
     margin-left: 5rem;
     overflow: visible;
-   background: url(./images/loginbac2.jpg);
+    background-image: linear-gradient(0deg, #F6BE00, #ffd300);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -5792,11 +5792,6 @@ input[type="email"]{
     top: 0;
     margin-left: 5rem;
     overflow: visible;
-    /* background: #1E88E5 !important; */
-   /* background: url(./images/loginbac2.jpg); */
-   /* background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center; */
    background-image: linear-gradient(0deg, #F6BE00, #ffd300);
 }
 .modal-body{
@@ -5970,6 +5965,7 @@ button.close{
     display: flex;
     align-content: center;
     justify-content: center;
+    height: 28vh;
 }
 .moDlLogo > img{
     margin: 80px 0;
@@ -5985,7 +5981,7 @@ button.close{
 .Mobile_login > input {
     flex: 1;
     border: none;
-    height: 40px;
+    height: 35px;
     padding-left:20px; 
 }
 .Mobile_login > input:focus{
@@ -6068,7 +6064,7 @@ button.close{
     padding: 10px 20px;
 }
 .AlrdyLogin{
-    margin: 20px 0 30px 0;
+    margin: 10px 0 10px 0;
     text-align: center;
 }
 .AlrdyLogin span{
@@ -6095,7 +6091,13 @@ button.close{
 .EmailContinue img{
     margin-right: 20px;
 }
-
+.loginContent{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+}
 
 /* sign up Pop */
 .CLopPOP{
@@ -6105,14 +6107,19 @@ button.close{
     width: 40px;
 }
 .sinUp img{
-   width: 230px;
+   width: 150px;
    position: relative;
-   left: 108px;
+   left: 128px;
+   align-items:center;
+   align-self: center;
+   justify-content: center;
 }
 
 .titleSinup{
     border-bottom:1px solid  white;
     padding: 10px 0;
+    justify-content: center;
+    align-items: center;
     margin: 10px 0px 20px 0px;
     padding: 10px 0 15px 0;
 }
