@@ -4930,13 +4930,16 @@ padding:0;
   .More_List{
       width: 100%;
       padding:0px !important;
-      height: 315px;
+      height: 332px;
   }
   .More_List li{
       list-style: none;
       padding: 10px 10px !important;
         border-bottom: .8px solid lightgray;
 
+  }
+  .More_List li img{
+      width: 20px;
   }
   .More_List li a:hover{
     color:#44C3FA !important;
@@ -5755,27 +5758,9 @@ input[type="email"]{
 
 
 
-/* modal css  */
-
-/* .CloseIcons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding:10px 10px;
-}
-.Login_titl{
-    text-align: center;
-    padding: 10px 10px;
-}
-.Login_titl > span{
-    font-size: 20px;
-    font-weight: 600;
-} */
-
 .modal-content123{
     width: 75%;
-    height: auto;
+    height: 575px;
     position: sticky;
     top: 0;
     margin-left: 5rem;
@@ -5787,7 +5772,7 @@ input[type="email"]{
 }
 .modal-contentSingup{   
     width: 75%;
-    height: auto;
+    height: 565px;
     position: sticky;
     top: 0;
     margin-left: 5rem;
@@ -6093,12 +6078,15 @@ button.close{
 }
 .loginContent{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
     padding: 5px 10px;
     text-align: center;
     color: #fff;
 }
-
+.loginContent >a{
+    color: white;
+    font-size: 13px;
+}
 /* sign up Pop */
 .CLopPOP{
     padding-right: 10px;
