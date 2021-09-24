@@ -6162,14 +6162,15 @@ button.close{
     background-color: #171A29;
     width: 100%;
     margin-top: 5px;
+    height: 230px;
 }
 .catBigImag_container{
     padding: 10px 10px 10px 20px;
 }
 .catBigImag_container > img{
-    width: 110%;
+    width: 100%;
     object-fit: contain;
-    height: 220px;
+    height: 200px;
 }
 
 .catProdtName_container{
@@ -6377,13 +6378,9 @@ button.close{
 .CatLocatioN > select:focus{
     outline: none;
 }
-/* 
-.catOffEr > a > span::before{
-    content: "\E921";
-    color: white;
-} */
+
 .catOffEr > a > span{
-    font-weight: 16px;
+    font-weight: 12px;
     color: white;
 }
 .catOffEr > a > img{
@@ -6413,7 +6410,7 @@ button.close{
 }
 .catLeftCheck > p{
     text-align: left;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
 }
 .catLeftCheck > input{
@@ -6440,11 +6437,10 @@ button.close{
     width: 100%;
     height: 30px;
     background-color: #eaeded;
-    /* border: 2px solid black; */
     border-bottom: 1px solid #ccc;
+
 }
 .inner-listing{
-
     width: 310px;
     height: 28px;
     margin-left: 25px;
@@ -6457,3 +6453,56 @@ button.close{
     position: sticky;
     top: 0;
 }
+
+.ProductSearchcheck{
+    width: 100%;
+    z-index: 1100;
+    display: flex;
+    padding-left: 480px;
+    position: relative;
+    bottom: 30px;
+    /* background-color: red; */
+}
+.checkveg{
+     padding: 2px 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.checkveg label{
+     margin: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: gray;
+}
+
+.checkveg label:hover{
+    color: #171A29;
+}
+
+.content-Super{
+    background: #fff;
+    width: 230px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-right: 20px;
+}
+
+.content-Super img{
+    width: 15px;
+    margin-right: 10px;
+}
+.content-Super input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.content-Super input::placeholder{
+    font-size: 14px;
+    font-weight: 600;
+}
+
