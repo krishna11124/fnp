@@ -6163,6 +6163,9 @@ button.close{
     width: 100%;
     margin-top: 5px;
     height: 230px;
+    top: 49px;
+    position: sticky;
+    z-index: 999;
 }
 .catBigImag_container{
     padding: 10px 10px 10px 20px;
@@ -6171,6 +6174,9 @@ button.close{
     width: 100%;
     object-fit: contain;
     height: 200px;
+}
+.TOpNav{
+    height: 70px;
 }
 
 .catProdtName_container{
@@ -6311,6 +6317,7 @@ button.close{
     border-radius: 8px;
     /* background-color: coral; */
     box-shadow: 3px 3px 5px 5px #aaaaaa;
+    width: 90%;
 }
 .catLeftCheck > ul{
     display: block !important;
@@ -6380,7 +6387,8 @@ button.close{
 }
 
 .catOffEr > a > span{
-    font-weight: 12px;
+    font-size: 12px;
+    font-weight: 600;
     color: white;
 }
 .catOffEr > a > img{
@@ -6390,15 +6398,15 @@ button.close{
 .catOffEr{
     border: 1px solid white;
     padding: 15px;
-    margin:50px 40px;
+    margin:38px 28px;
 }
 
 .catOffEr > span{
     position: absolute;
-    top: 33px;
+    top: 23px;
     font-size: 20px;
     color: white;
-    left: 64px;
+    left: 42px;
     background: #171A29;
     text-transform: uppercase;
     font-weight:600;
@@ -6460,7 +6468,7 @@ button.close{
     display: flex;
     padding-left: 480px;
     position: relative;
-    bottom: 30px;
+    bottom: 42px;
     /* background-color: red; */
 }
 .checkveg{

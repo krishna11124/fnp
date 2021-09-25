@@ -636,5 +636,16 @@ left: 70%;
 .dis a:hover{
     text-decoration: none;
     color: #4d575f;
-}
 
+}
+.vendor-card .dis > a{
+    display: none;
+}
+.vendor-card:hover a{
+    transition: 250ms ease-in-out;
+    display: block !important;
+}
+.PadNone{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
