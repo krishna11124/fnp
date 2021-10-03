@@ -85,7 +85,7 @@
                         <input type="text" class="field" placeholder="Search for" />
                     </div>
                 </form>
-                <div class="shoping">
+                <div class="shoping" onclick="CartPopup()">
                     <img src="images/shopping-cart (1).png" alt="">
                     <span>0</span>
                 </div>
@@ -119,6 +119,68 @@
             <div class="container-fluid">
                 <div class="catogerySection">
                     <div class="row CustomGridS">
+                        <!-- side cart popup -->
+                        <div class="col-sm-12 col-md-12" id="CartLisT">
+                            <div class="CartViewListP_Container">
+                                <div class="container-fluid">
+                                    <div class="CrtPopUpData">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12">
+                                                <div class="CRTClose">
+                                                    <button onclick="CartPopup()" type="button" class="close CRTClBTN"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12">
+                                                <div class="YourOrder">
+                                                    <h6>Your Order</h6>
+                                                    <p>CVS</p>
+                                                    <div class="PriceSecion">
+                                                        <span>Checkout</span>
+                                                        <span>RS 899</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 CRTItm">
+                                                <div class="CartLit">
+                                                    <span>1x</span>
+                                                    <span>Classic CakeClassic Cake...</span>
+                                                    <span>RS 799</span>
+                                                </div>
+                                                <a class="Remov">Remove</a>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 CRTItm">
+                                                <div class="CartLit">
+                                                    <span>1x</span>
+                                                    <span>Classic CakeClassic Cake...</span>
+                                                    <span>RS 799</span>
+                                                </div>
+                                                <a class="Remov">Remove</a>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 CRTItm">
+                                                <div class="CartLit">
+                                                    <span>1x</span>
+                                                    <span>Classic CakeClassic Cake...</span>
+                                                    <span>RS 799</span>
+                                                </div>
+                                                <a class="Remov">Remove</a>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 CRTItm">
+                                                <div class="CartLit">
+                                                    <span>1x</span>
+                                                    <span>Classic CakeClassic Cake...</span>
+                                                    <span>RS 799</span>
+                                                </div>
+                                                <a class="Remov">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of side cart popup -->
                         <div class="col-sm-12 col-md-3">
                             <div class="catLeftSection">
                                 <div class="catLeft">
@@ -213,8 +275,26 @@
                                         </div>
 
                                         <div class="col-sm-12 col-md-12">
-                                            <div class="CatViewMore">
-                                                <p>View More</p>
+                                            <div class="catLeftCheck">
+                                                <h2>Cake Type</h2>
+                                                <ul class="Productleftlist">
+
+                                                    <li><input type="checkbox"></input><span>Eggless</span></li>
+                                                    <li><input type="checkbox"></input><span>Non-Eggless</span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="catLeftCheck">
+                                                <h2>Offers</h2>
+                                                <ul class="Productleftlist">
+
+                                                    <li><input type="checkbox"></input><span>10% Off</span></li>
+                                                    <li><input type="checkbox"></input><span>20% Off</span></li>
+                                                    <li><input type="checkbox"></input><span>30% Off</span></li>
+                                                    <li><input type="checkbox"></input><span>70% Off</span></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -222,7 +302,7 @@
                             </div>
                         </div>
 
-                            <!-- <div class="darkbg">
+                        <!-- <div class="darkbg">
 
                             </div> -->
                         <div class="col-sm-12 col-md-9 cATpADINGlEFT">
@@ -243,23 +323,29 @@
                                                                 <p>Full Cake Name Title</p>
                                                                 <span>Aman Bakery</span><br>
                                                                 <div class="CatLocatioN" onclick="myFunction()">
-                                                                    
-                                                                    <span >Benglore Ashok nagar |
-                                                                        change Outlet</span><i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                                                                    <span>Benglore Ashok nagar |
+                                                                        change Outlet</span><i
+                                                                        class="fa fa-chevron-down"
+                                                                        aria-hidden="true"></i>
                                                                 </div>
                                                                 <div class="AddresCatSection" id="AddresPop">
                                                                     <div class="addContent">
                                                                         <h6>Choose CakeZone Outlet</h6>
-                                                                        <p>1 Outlet Near you  </p>
+                                                                        <p>1 Outlet Near you </p>
                                                                         <div class="addborder"></div>
                                                                         <div class="addrowdata">
-                                                                            <div class="addrowleftdata">Banglore, Mumbai</div>
+                                                                            <div class="addrowleftdata">Banglore, Mumbai
+                                                                            </div>
                                                                             <div class="addrowrightdata">
                                                                                 <div class="addimg">
-                                                                             <img src="images/star-on.png">4.2</div>57MINS</div>
+                                                                                    <img src="images/star-on.png">4.2
+                                                                                </div>57MINS
+                                                                            </div>
                                                                         </div>
-                                                                        <div class="addlastdiv"><img src="images/discount (1).png"> 
-                                                                             60% off | Use CoupenCode
+                                                                        <div class="addlastdiv"><img
+                                                                                src="images/discount (1).png">
+                                                                            60% off | Use CoupenCode
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -320,77 +406,199 @@
                                                             <input type="checkbox" id="vehicle3">
                                                             <label for="vehicle3">Veg Only</label>
                                                         </div>
+                                                        <div class="FavIconsCat">
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <span>Favourite</span>
+                                                        </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- Navigation Menu bar  -->
                                         <div class="menititle">
-                                           <h6>Fullmenu</h6>
-                                          <div class="menutime">12:00 am - 11:29 pm </div>
+                                            <h6>Fullmenu</h6>
+                                            <div class="menutime">12:00 am - 11:29 pm </div>
                                         </div>
                                         <div class="navigation-Menu">
                                             <div class="Menubar">
-                                            <ul class="nav nav-tabs Menutab">
-                                                <li class="nav-item barimg ">
-                                               <img src="images/list-text.png" alt="">
-                                                  </li>
+                                                <ul class="nav nav-tabs Menutab">
+                                                    <li class="nav-item barimg " onclick="menuPopup()">
+                                                        <img src="images/list-text.png" alt="">
+                                                    </li>
 
-                                                <li class="nav-item">
-                                                  <a class="nav-link" href="#">Popular items</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                  <a class="nav-link" href="#">Cakes</a>
-                                                </li>
-                                             
-                                                  <li class="nav-item">
-                                                    <a class="nav-link" href="#">Flowers</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                    <a class="nav-link" href="#">Chocolates</a>
-                                                  </li>
-                                                
-                                                  <li class="nav-item">
-                                                    <a class="nav-link" href="#">Events</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                    <a class="nav-link" href="#">Sweets</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                    <a class="nav-link" href="#">Ice-Cream</a>
-                                                  </li>
-                                                
-                                                  <li class="nav-item">
-                                                    <a class="nav-link" href="#">Candy</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                    <a class="nav-link" href="#">Snacks</a>
-                                                  </li>
-                                                
-                                              </ul>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#popular items">Popular items</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#cakes">Cakes</a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#flowers">Flowers</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Chocolates</a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Events</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Sweets</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ice-Cream</a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Candy</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Snacks</a>
+                                                    </li>
+
+                                                </ul>
                                             </div>
                                         </div>
 
 
-
+                                        <div class="col-sm-12 col-md-12" id="MenuPop">
+                                            <div class="MenuOption_Container">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12">
+                                                        <div class="FuLMenu_container">
+                                                            <div class="FulMenuTItle">
+                                                                <p>Full Menu</p>
+                                                                <span>6:30AM - 10:30PM</span>
+                                                            </div>
+                                                            <button type="button" class="close" onclick="menuPopup()">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12">
+                                                        <div class="MenuListPopup TITLEMenu">
+                                                            <span>Popular Itmes</span>
+                                                            <span>9</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12">
+                                                            <div class="MenuListPopup">
+                                                                <span>Popular Itmes</span>
+                                                                <span>9</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12">
+                                                                <div class="MenuListPopup">
+                                                                    <span>Popular Itmes</span>
+                                                                    <span>9</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-12">
+                                                                    <div class="MenuListPopup">
+                                                                        <span>Popular Itmes</span>
+                                                                        <span>9</span>
+                                                                    </div>
+                                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <div class="col-sm-12 col-ms-12">
                                             <div class="catTypeProdt">
                                                 <div class="row">
-                                                    <div class="col-sm-12 col-md-8 PadNone">
+                                                    <div class="col-sm-12 col-md-12 PadNone" id="popular items">
                                                         <div class="catProdtListContainer">
                                                             <div class="row">
 
                                                                 <div class="col-sm-12 col-md-12">
                                                                     <div class="Signatur">
-                                                                        <p>Signature Cakes</p>
-                                                                        <span>12 ITEMS</span>
+                                                                        <p>Popular items</p>
+                                                                        <!-- <span>12 ITEMS</span> -->
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="row MakeBackgroundwhite">
-                                                                <div class="col-sm-12 col-md-3 ">
+                                                            <div class="col-sm-12 col-md-3 ">
+                                                                    <div class="CatProductList">
+                                                                        <div class="CatPrdtImg">
+                                                                            <img src="images/cake1.jpg" alt=""
+                                                                                title=""></img>
+                                                                            <a data-toggle="modal"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
+                                                                                    aria-hidden="true"></i></a>
+                                                                        </div>
+                                                                     <p>RS 799</p>
+                                                                        <span>classic cakes with Pinaple and
+                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <div class="CatProductList">
+                                                                        <div class="CatPrdtImg">
+                                                                            <img src="images/cake2.jpg" alt=""
+                                                                                title=""></img>
+                                                                            <a data-toggle="modal"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
+                                                                                    aria-hidden="true"></i></a>
+                                                                        </div>
+                                                                        <p>RS 799</p>
+                                                                        <span>classic cakes with Pinaple and
+                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <div class="CatProductList">
+                                                                        <div class="CatPrdtImg">
+                                                                            <img src="images/cake3.jpg" alt=""
+                                                                                title=""></img>
+                                                                            <a data-toggle="modal"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
+                                                                                    aria-hidden="true"></i></a>
+                                                                        </div>
+                                                                        <p>RS 799</p>
+                                                                        <span>classic cakes with Pinaple and
+                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <div class="CatProductList">
+                                                                        <div class="CatPrdtImg">
+                                                                            <img src="images/cake4.jpg" alt=""
+                                                                                title=""></img>
+                                                                            <a data-toggle="modal"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
+                                                                                    aria-hidden="true"></i></a>
+                                                                        </div>
+                                                                        <p>RS 799</p>
+                                                                        <span>classic cakes with Pinaple and
+                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row MakeBackgroundwhite">
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <div class="CatProductList">
+                                                                        <div class="CatPrdtImg">
+                                                                            <img src="images/cake5.jpg" alt=""
+                                                                                title=""></img>
+                                                                            <a data-toggle="modal"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
+                                                                                    aria-hidden="true"></i></a>
+                                                                        </div>
+                                                                        <p>RS 799</p>
+                                                                        <span>classic cakes with Pinaple and
+                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
                                                                     <div class="CatProductList">
                                                                         <div class="CatPrdtImg">
                                                                             <img src="images/cake1.jpg" alt=""
@@ -411,7 +619,8 @@
                                                                             <img src="images/cake2.jpg" alt=""
                                                                                 title=""></img>
                                                                             <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
                                                                                     aria-hidden="true"></i></a>
                                                                         </div>
                                                                         <p>RS 799</p>
@@ -425,21 +634,8 @@
                                                                             <img src="images/cake3.jpg" alt=""
                                                                                 title=""></img>
                                                                             <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
-                                                                                    aria-hidden="true"></i></a>
-                                                                        </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-12 col-md-3">
-                                                                    <div class="CatProductList">
-                                                                        <div class="CatPrdtImg">
-                                                                            <img src="images/cake4.jpg" alt=""
-                                                                                title=""></img>
-                                                                            <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
                                                                                     aria-hidden="true"></i></a>
                                                                         </div>
                                                                         <p>RS 799</p>
@@ -448,14 +644,30 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row MakeBackgroundwhite">
+                                                            <!-- <div class="row MakeBackgroundwhite">
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <div class="CatProductList">
+                                                                        <div class="CatPrdtImg">
+                                                                            <img src="images/cake4.jpg" alt=""
+                                                                                title=""></img>
+                                                                            <a data-toggle="modal"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
+                                                                                    aria-hidden="true"></i></a>
+                                                                        </div>
+                                                                        <p>RS 799</p>
+                                                                        <span>classic cakes with Pinaple and
+                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                </div>
                                                                 <div class="col-sm-12 col-md-3">
                                                                     <div class="CatProductList">
                                                                         <div class="CatPrdtImg">
                                                                             <img src="images/cake5.jpg" alt=""
                                                                                 title=""></img>
                                                                             <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
                                                                                     aria-hidden="true"></i></a>
                                                                         </div>
                                                                         <p>RS 799</p>
@@ -469,7 +681,8 @@
                                                                             <img src="images/cake1.jpg" alt=""
                                                                                 title=""></img>
                                                                             <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
                                                                                     aria-hidden="true"></i></a>
                                                                         </div>
                                                                         <p>RS 799</p>
@@ -480,10 +693,11 @@
                                                                 <div class="col-sm-12 col-md-3">
                                                                     <div class="CatProductList">
                                                                         <div class="CatPrdtImg">
-                                                                            <img src="images/cake2.jpg" alt=""
+                                                                            <img src="images/cake5.jpg" alt=""
                                                                                 title=""></img>
                                                                             <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
+                                                                                data-target="#exampleModalCenter"><i
+                                                                                    class="fa fa-plus"
                                                                                     aria-hidden="true"></i></a>
                                                                         </div>
                                                                         <p>RS 799</p>
@@ -491,86 +705,412 @@
                                                                             Butterscotch</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-12 col-md-3">
-                                                                    <div class="CatProductList">
-                                                                        <div class="CatPrdtImg">
-                                                                            <img src="images/cake3.jpg" alt=""
-                                                                                title=""></img>
-                                                                            <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
-                                                                                    aria-hidden="true"></i></a>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 PadNone" id="cakes">
+                                                            <div class="catProdtListContainer">
+                                                                <div class="row">
+
+                                                                    <div class="col-sm-12 col-md-12">
+                                                                        <div class="Signatur">
+                                                                            <p> Cakes</p>
+                                                                            <!-- <span>12 ITEMS</span> -->
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                 </div>
+                                                                <div class="row MakeBackgroundwhite">
+                                                                    <div class="col-sm-12 col-md-3 ">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake1.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake2.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake3.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake4.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row MakeBackgroundwhite">
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake5.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake1.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake2.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake3.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="row MakeBackgroundwhite">
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake4.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake5.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake1.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake5.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> -->
                                                             </div>
-                                                            <div class="row MakeBackgroundwhite">
-                                                                <div class="col-sm-12 col-md-3">
-                                                                    <div class="CatProductList">
-                                                                        <div class="CatPrdtImg">
-                                                                            <img src="images/cake4.jpg" alt=""
-                                                                                title=""></img>
-                                                                            <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
-                                                                                    aria-hidden="true"></i></a>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 PadNone" id="flowers">
+                                                            <div class="catProdtListContainer">
+                                                                <div class="row">
+
+                                                                    <div class="col-sm-12 col-md-12">
+                                                                        <div class="Signatur">
+                                                                            <p> Flowers</p>
+                                                                            <!-- <span>12 ITEMS</span> -->
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-12 col-md-3">
-                                                                    <div class="CatProductList">
-                                                                        <div class="CatPrdtImg">
-                                                                            <img src="images/cake5.jpg" alt=""
-                                                                                title=""></img>
-                                                                            <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
-                                                                                    aria-hidden="true"></i></a>
+                                                                <div class="row MakeBackgroundwhite">
+                                                                    <div class="col-sm-12 col-md-3 ">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake1.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake2.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake3.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake4.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-12 col-md-3">
-                                                                    <div class="CatProductList">
-                                                                        <div class="CatPrdtImg">
-                                                                            <img src="images/cake1.jpg" alt=""
-                                                                                title=""></img>
-                                                                            <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
-                                                                                    aria-hidden="true"></i></a>
+                                                                <!-- <div class="row MakeBackgroundwhite">
+                                                                        <div class="col-sm-12 col-md-3">
+                                                                            <div class="CatProductList">
+                                                                                <div class="CatPrdtImg">
+                                                                                    <img src="images/cake5.jpg" alt=""
+                                                                                        title=""></img>
+                                                                                    <a data-toggle="modal"
+                                                                                        data-target="#exampleModalCenter"><i
+                                                                                            class="fa fa-plus"
+                                                                                            aria-hidden="true"></i></a>
+                                                                                </div>
+                                                                                <p>RS 799</p>
+                                                                                <span>classic cakes with Pinaple and
+                                                                                    Butterscotch</span>
+                                                                            </div>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
+                                                                        <div class="col-sm-12 col-md-3">
+                                                                            <div class="CatProductList">
+                                                                                <div class="CatPrdtImg">
+                                                                                    <img src="images/cake1.jpg" alt=""
+                                                                                        title=""></img>
+                                                                                    <a data-toggle="modal"
+                                                                                        data-target="#exampleModalCenter"><i
+                                                                                            class="fa fa-plus"
+                                                                                            aria-hidden="true"></i></a>
+                                                                                </div>
+                                                                                <p>RS 799</p>
+                                                                                <span>classic cakes with Pinaple and
+                                                                                    Butterscotch</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-3">
+                                                                            <div class="CatProductList">
+                                                                                <div class="CatPrdtImg">
+                                                                                    <img src="images/cake2.jpg" alt=""
+                                                                                        title=""></img>
+                                                                                    <a data-toggle="modal"
+                                                                                        data-target="#exampleModalCenter"><i
+                                                                                            class="fa fa-plus"
+                                                                                            aria-hidden="true"></i></a>
+                                                                                </div>
+                                                                                <p>RS 799</p>
+                                                                                <span>classic cakes with Pinaple and
+                                                                                    Butterscotch</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-3">
+                                                                            <div class="CatProductList">
+                                                                                <div class="CatPrdtImg">
+                                                                                    <img src="images/cake3.jpg" alt=""
+                                                                                        title=""></img>
+                                                                                    <a data-toggle="modal"
+                                                                                        data-target="#exampleModalCenter"><i
+                                                                                            class="fa fa-plus"
+                                                                                            aria-hidden="true"></i></a>
+                                                                                </div>
+                                                                                <p>RS 799</p>
+                                                                                <span>classic cakes with Pinaple and
+                                                                                    Butterscotch</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> -->
+                                                                <div class="row MakeBackgroundwhite">
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake4.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-sm-12 col-md-3">
-                                                                    <div class="CatProductList">
-                                                                        <div class="CatPrdtImg">
-                                                                            <img src="images/cake5.jpg" alt=""
-                                                                                title=""></img>
-                                                                            <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
-                                                                                    aria-hidden="true"></i></a>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake5.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake1.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-3">
+                                                                        <div class="CatProductList">
+                                                                            <div class="CatPrdtImg">
+                                                                                <img src="images/cake5.jpg" alt=""
+                                                                                    title=""></img>
+                                                                                <a data-toggle="modal"
+                                                                                    data-target="#exampleModalCenter"><i
+                                                                                        class="fa fa-plus"
+                                                                                        aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                            <p>RS 799</p>
+                                                                            <span>classic cakes with Pinaple and
+                                                                                Butterscotch</span>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-sm-12 col-md-4  PadNone">
+                                                        <!-- <div class="col-sm-12 col-md-4  PadNone">
                                                         <div class="emptyCart">
                                                             <h4>Cart Empty</h4>
                                                             <img src="images/catimageS.png"></img>
                                                         </div>
+                                                    </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -578,88 +1118,90 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- <div class="CaatSidePopup" id="AddPrdtSidePopip">
+                            <!-- <div class="CaatSidePopup" id="AddPrdtSidePopip">
                             <h1>sample side popup</h1>
                         </div> -->
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Cat produt popup modal -->
-        <!-- Button trigger modal -->
+            <!-- Cat produt popup modal -->
+            <!-- Button trigger modal -->
 
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content CatModal">
-                    <div class="modal-header productmodelhead">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-23">
-                                <div class="cloSe">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="modal-body CatModalBody">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12">
-                                <div class="CAtModalImg">
-                                    <img src="images/cake1.jpg"></img>
-                                    <h2 class="catheading">classic Pineapple flavour cakes (1KG)</h2>
-                                    <p>RS 899</p>
-                                    <span>Sold by ManishMart</span>
-                                    <!-- <p class="setmargin">Preferences</p> -->
-                                    <div class="modelextracontent">
-                                        <p>Extra instructions</p>
-                                        <textarea  id="" cols="50" rows="4" placeholder="Add any special requests"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="CustomFOt">
-                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button> -->
-                        <div class="ModalFot">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content CatModal">
+                        <div class="modal-header productmodelhead">
                             <div class="row">
-                                <div class="col-sm-4 col-md-4"></div>
-                                <div class="col-sm-4 col-md-4">
-                                    <div class="count">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                        <input type="text" placeholder="1X"></input>
-                                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                <div class="col-sm-12 col-md-23">
+                                    <div class="cloSe">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-md-4">
-                                    <div class="AdCardButon">
-                                        <button type="button" class="btn">Add to Cart</button>
-                                    </div>
-                                </div>
+                            </div>
 
+                        </div>
+                        <div class="modal-body CatModalBody">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="CAtModalImg">
+                                        <img src="images/cake1.jpg"></img>
+                                        <h2 class="catheading">classic Pineapple flavour cakes (1KG)</h2>
+                                        <p>RS 899</p>
+                                        <span>Sold by ManishMart</span>
+                                        <!-- <p class="setmargin">Preferences</p> -->
+                                        <div class="modelextracontent">
+                                            <p>Extra instructions</p>
+                                            <textarea id="" cols="50" rows="4"
+                                                placeholder="Add any special requests"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CustomFOt">
+                            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button> -->
+                            <div class="ModalFot">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-4"></div>
+                                    <div class="col-sm-4 col-md-4">
+                                        <div class="count">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            <input type="text" placeholder="1X"></input>
+                                            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4">
+                                        <div class="AdCardButon">
+                                            <button type="button" class="btn" onclick="CartPopup()" data-dismiss="modal"
+                                                aria-label="Close">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- end of cat product popup modal -->
+            <!-- end of cat product popup modal -->
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
@@ -671,6 +1213,25 @@
             x.style.display = "block";
         } else {
             x.style.display = "none";
+        }
+    }
+    function CartPopup() {
+
+        var y = document.getElementById("CartLisT");
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+    function menuPopup() {
+        var p = document.getElementById("MenuPop");
+
+        if (p.style.display === "none") {
+            p.style.display = "block";
+        } else {
+            p.style.display = "none";
         }
     }
 </script>
