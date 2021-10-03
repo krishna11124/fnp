@@ -6482,13 +6482,13 @@ button.close{
 }
 
 .ProductSearchcheck{
-    width: 400px;
+    width: 500px;
     /* z-index: 1100; */
     display: flex;
     /* padding-left: 372px; */
-    left: 387px;
+    left: 390px;
     position: relative;
-    bottom: 12px;
+    bottom: 30px;
     /* background-color: red; */
 }
 .checkveg{
@@ -6556,7 +6556,7 @@ button.close{
     color: white;
 }
 
-.CatProductList > p{
+.CatProductList >a>p{
     text-align: left;
     font-weight: 600;
     margin: 10px 0 0px 0;
@@ -6625,6 +6625,8 @@ button.close{
 .CatModal{
     border-radius: 20px !important;
     margin: 50px 0px;
+    width: 100%;
+    height: auto;
 }
 .catheading{
     color: black;
@@ -6642,8 +6644,8 @@ button.close{
     font-weight: 600;
 }
 .modelextracontent textarea{
-        width: auto;
-        padding: 5px 10px;
+        width: 100%;
+        padding: 5px 5px;
 }
 /* .productmodelhead{
     margin-top: 25px;
@@ -6652,7 +6654,7 @@ button.close{
 .CAtModalImg > img{
     width: 100%;
     object-fit: contain;
-    height: 180px;
+    height: 200px;
 }
 .CAtModalImg > p{
     text-align: left;
@@ -6667,7 +6669,6 @@ button.close{
     color: gray;
 }
 .CatModalBody{
-
     margin-top: 0 !important;
 }
 .CustomGridS > .col-md-3{
@@ -6709,11 +6710,11 @@ button.close{
     cursor: pointer;
 }
 .AdCardButon > button{
-    height: 35px;
+    height: 38px;
     width: 100%;
     background: #e81c2a;
     border-radius: 50px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: white;
     transition: 250ms ease-in-out;
@@ -6888,7 +6889,7 @@ button.close{
 .preview img{
     padding: 10px 0px;
     width: 95%;
-    height: 100%;
+    height: 75vh;
     border-radius: 20px;
 }
 
@@ -7279,7 +7280,9 @@ button.close{
         padding: 20px;
         margin-left: 0px;
     }
-   
+   #lastimg{
+       display: none;
+   }
     .preview, .preview >img{
         width: 90%;
         height: 39vh;
@@ -7387,7 +7390,7 @@ button.close{
 .CartViewListP_Container{
     background: white;
     height: 100vh;
-    width: 300px;
+    width: 340px;
     position: fixed;
     z-index: 9999;
     right: 0;
@@ -7429,7 +7432,7 @@ button.close{
 }
 .CartLit > span{
     color: black;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 .Remov{
@@ -7447,7 +7450,7 @@ button.close{
 }
 .CRTItm{
     border-bottom: 1px solid lightgray;
-    padding: 15px 15px;
+    padding: 15px 0px;
 }
 .CRTClBTN{
     margin-top: 20px;
@@ -7460,6 +7463,7 @@ button.close{
 .MenuOption_Container{
     background: white;
     width: 315px;
+    height: auto;
     position: absolute;
     top: -235px;
     left: 60px;
@@ -7468,7 +7472,6 @@ button.close{
 }
 .FuLMenu_container{
     display: flex;
-
     align-items: center;
     justify-content: space-between;
     padding: 10px 13px;
@@ -7504,7 +7507,158 @@ button.close{
     font-size: 14px;
 }
 .TITLEMenu > span{
-    font-weight: 700;
+    font-weight: bold;
     font-size: 14px;
     color: black;
+}
+
+
+CRTClose > button {
+    font-size: 30px;
+}
+.CRTClose > button > span {
+    color: black;
+}
+/* .catTypeProdt{
+    overflow-y: scroll;
+    height: 500px;
+} */
+
+
+/* scrolling css  */
+
+
+html:not([data-scroll='0']) .catDishDetails  {
+    position: fixed;
+    top: 0;
+    background-color: #171A29;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, .5);
+    height: 155px;
+    z-index: 999;
+    margin-top: 3rem;
+    left: 0;
+}
+html:not([data-scroll='0']) .catBigImag_container> img{
+    height: 127px;
+}
+html:not([data-scroll='0']) .catProdtName_container > p{
+    margin-bottom: 0 !important;
+}
+html:not([data-scroll='0']) .catProdtName_container > span{
+    display: none;
+}
+html:not([data-scroll='0']) .catProdtName_container > br{
+    display: none;
+}
+html:not([data-scroll='0']) .catProdtName_container > a{
+    color: gray;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+html:not([data-scroll='0']) .catProdtName_container > a >i{
+    margin-right: 5px;
+}
+html:not([data-scroll='0']) .catProdtName_container > a:hover{
+    color: gray;
+}
+html:not([data-scroll='0']) .CatLocatioN{
+    display: none;
+}
+html:not([data-scroll='0']) .DeliveryTime {
+    display: none;
+}
+html:not([data-scroll='0']) .ProductSearchcheck{
+    bottom: 76px;
+    left: 253px;
+}
+html:not([data-scroll='0']) .CatGrDCutm > .col-md-4{
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+html:not([data-scroll='0']) .CatGrDCutm > .col-md-8{
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+html:not([data-scroll='0']) .catOffEr{
+   width: 68%;
+}
+header {
+    transition: background-color 0.25s;
+}
+main {
+    padding: 0 1em;
+}
+
+
+
+.CatFavlink{
+    text-decoration: none;
+    color: black;
+}
+.CatFavlink:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+.modal-dialog-centered{
+    min-width: 600px !important;
+}
+
+.CrtPRiceQTY > input{
+    width: 30px;
+    border: none;
+    text-align: center
+}
+
+.CrtPRiceQTY{
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    padding: 2px 4px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+.CrtPRiceQTY i{
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+.CrtPRiceQTY i:hover{
+    color: black;
+}
+.SUBTOTL{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.PriTc > h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px !important;
+}
+.PriTc > span{
+    font-size: 12px;
+    color: gray;
+    font-weight: 500;
+}
+.SUBTOTL  > span{
+    font-size: 16px;
+    font-weight: 600;
+ }
+
+
+
+
+ .linkSinglepro{
+     text-decoration: none;
+     color: #000;
+ }
+ .linkSinglepro:hover{
+     color: #000;
+    text-decoration: none;
 }
