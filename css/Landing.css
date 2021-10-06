@@ -8,7 +8,7 @@
 .landing-container{
     width: 100%;
     height: 100vh;
-    background: url(images/landingback5.jpg);
+    background: url(/images/landingback5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
