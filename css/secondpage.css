@@ -73,10 +73,23 @@ ul li a img{
     display: flex;
     align-items: center;
 }
+.center-div{
+    display: none;
+}
 .center-div img{
+    width: 180px;
+    margin-right: 200px;
+}
+.center-div2 img{
     width: 120px;
     margin-right: 270px;
 }
+
+
+.content-show{
+    display: none;
+}
+
 .content{
     background: #fff;
     width: 230px;
@@ -102,7 +115,9 @@ ul li a img{
     font-size: 14px;
     font-weight: 600;
 }
-
+#myshopinghide{
+    display: none;
+}
 .shoping{
     width: 65px;
     height: 32px;
@@ -128,7 +143,6 @@ ul li a img{
     width: 100%;
     height: 20vh;
     background-color: #eaeded;
-   width: 100%;
    padding: 0px 10%;
 }
 
@@ -297,7 +311,7 @@ ul li a img{
 
 .tabs{
     width: 100%;
-    padding: 0px 5px;
+    padding: 0px 0px;
     /* background: pink; */
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -680,6 +694,410 @@ cursor: pointer;
 
 
 
+/* Responsive this vendor Page code  */
+@media (max-width: 1100px) {
+.button-row{
+    width: 100%;
+    height: auto;
+   /* background-color: #1e90ff; */
+   padding: 0px 15px;
+   display: block;
+}
+.butoncontainer{
+    width: 100%;
+    /* background-color: coral; */
+ display: block;
+    padding: 0px 0px;
+    margin-left: 0px;
+    margin-bottom: -5px;
+}
+.MyOffers >select {
+    border: 2px solid #1e90ff;
+    color: #1e90ff;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.filteimg img{
+display: none;
+}
+.Filte > select{
+    border: 2px solid	#1e90ff;
+    color: #1e90ff;
+    padding: 3px 16px;
+    width: 135px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-bottom: 0px;
+ }
+ .lastslideritem{
+     display: none;
+ }
+ #vendearch {
+    margin-bottom: .0rem!important;
+}
+
+
+/* nwavigation bar desizn responsive  */
+.center-div2{
+    display: none;
+}
+.bars img{
+    display: none;
+}
+.searchbarhide{
+    display: none;
+}
+.rightresponsivediv{
+    width: 120px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.myshoping{
+    width: 100px;
+    height: 35px;
+    margin-right: 0px;
+    background-color:  rgb(235, 23, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.myshoping img{
+  width: 25px;
+}
+.myshoping span{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fff;
+
+} 
+#myshopinghide{
+    display: flex;
+}
+.shoping{
+    display: none;
+}
+.selectioncont{
+    width: 100%;
+    height: 13vh;
+    background-color: #eaeded;
+  }
+
+}
+
+
+
+
+
+/* responsive for slider  */
+@media (max-width: 900px){
+
+    /* for slider  */
+    .row-cat{
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        /* background-color: cyan; */
+        align-items: center;
+       justify-content: space-around;
+    }
+    
+    .cakeitem >img{
+        width: 3rem;
+        margin-left:0px;
+        /* background-color: red; */
+    }
+    .Category-Products{
+        width: 100%;
+        height: 25vh;
+        background-color: #eaeded;
+       padding: 0px 0%;
+    }
+    .silderitemlabel{
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 10px;
+        text-decoration: none;
+        /* background-color: teal; */
+    }
+    #pre{
+      display: none;
+    }
+    /* for footer  */
+    .footerlist {
+        width: 100%;
+        display: block;
+        list-style: square;
+        color: white;
+        padding: 5px 5px;
+        margin-top: 25px;
+    }
+    .selection{
+        width: 100%;
+        height: 80px;
+        background-color: #eaeded;
+        padding: 0px 0px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* doordash card section responsive  */
+    .Doordash-Card{
+        width: 100%;
+        height: auto;
+        background-color: #eaeded;
+        /* background-color: darkblue; */
+    }
+    
+    .title{
+        width: 100%;
+        height: 30px;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+    .title h2{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px;
+    }
+    
+    .title-btn{
+        background-color: tomato;
+        width: 80px;
+        height: 30px;
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+    .title-btn:focus{
+        outline: none;
+    }
+    .Doordash-Card, .card-deck{
+        padding:  10px 5px;
+    }
+    .tabanchor {
+        display: block;
+        padding: 0rem 0rem;
+
+    }
+
+    
+/* nwavigation bar desizn responsive  */
+.mynavdesizn{
+    width: 5rem;
+    z-index: 500;
+    background-color: black;
+  margin-top: 2px;
+  padding: 2px 5px;
+}
+.center-div{
+    width: 50px;
+    display: flex;
+}
+.center-div2{
+    display: none;
+}
+.bars img{
+    display: none;
+}
+    .menusub{
+        margin-right: 0px;
+    }
+    .menusub>img{
+        width: 30px;
+    }
+.mynavs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    padding: 0px 12px;
+}
+.vendorli{
+    margin-left: 0px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    /* background-color: tomato; */
+}
+.vendorli:hover{
+    border: 2px solid red;
+}
+.left-btn{
+    background-color:transparent;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    margin-left: 0px;
+    outline: none;
+    border-radius: 0px;
+    border: none;
+    font-size: 20px;
+}
+
+.mynavs li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+.LocationSelect > select{
+    width: 125px;
+    text-align: center;
+    background: black;
+    color: white;
+    border: none;
+}
+.LocationSelect > select:focus{
+    outline: 0;
+}
+
+/* vendor cards  */
+.venordcardflex{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.venordcardflex >.card-img-top{
+    width: 150px;
+    height: 150px;
+}
+.card-content >.card-body {
+    line-height: 0px;
+    padding: 0px 13px;
+    width: 100%;
+    height: 150px;
+}
+.innecontentnone{
+    display: none;
+}
+.dis {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   /* for footer  */
+   .footerlist {
+    width: 100%;
+    display: block;
+    list-style: square;
+    color: white;
+    padding: 5px 5px;
+    margin-top: 25px;
+}
+.vendorpage-footer{
+    width: 100%;
+    height: auto;
+    background: #4d575f;
+}
+.vendorfooter-Content {
+    width: 100%;
+    height: auto;
+}
+}
+
+
+/* mobile resio   */
+/* vendor cards  */
+@media (max-width: 400px){
+    .venordcardflex{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    .venordcardflex >.card-img-top{
+        width: 150px;
+        height: 150px;
+    }
+    .card-content >.card-body {
+        line-height: 0px;
+        padding: 0px 5px;
+        width: 100%;
+        height: 150px;
+    }
+    .innecontentnone{
+        display: none;
+    }
+    .dis {
+        width: 100%;
+        height: 20px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .minuts >span {
+        font-size: 9px;
+        font-weight: bold;
+        color: gray;
+    }
+    .rating-star {
+        width: 50px;
+        height: 25px;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        padding-left: 7px;
+        border-radius: 20px;
+    }
+
+    .rating-star >span{
+        font-size: 10px;
+    }
+    .rating-star >img{
+        width: 11px;
+    }
+    .extracontent >.innercontent >label{
+        font-size: 10px;
+    }
+
+     /* for footer  */
+     .footerlist {
+        width: 100%;
+        display: block;
+        list-style: square;
+        color: white;
+        padding: 5px 5px;
+        margin-top: 25px;
+    }
+    .vendorpage-footer{
+        width: 100%;
+        height: auto;
+        background: #4d575f;
+    }
+    .vendorfooter-Content {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+
+
 /* style for cake-category  */
 .cakebanner{
     width: 100%;
@@ -789,3 +1207,7 @@ padding-left: 80px;
     color: black;
     font-weight: 200;
 }
+
+
+
+

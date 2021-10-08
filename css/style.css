@@ -7663,7 +7663,29 @@ main {
     text-decoration: none;
 }
 
+/* Rohit Responsive Code  */
 
+@media (max-width:559px){
+    .myfooterrow{
+        flex-flow: wrap;
+    }
+    .HomeSearchBar,.Search_LoctionConatiner, .hideInMobile{
+        display: none;
+    }
+    .item-cont img{
+        width: 104px;
+        height: 104px;
+    }
+    .trending_title h2{
+        font-size: 20px;
+    }
+    .content-text{
+        padding: 5px 10px;
+    }
+    .trending_Container {
+        padding: 10px;
+    }
+}
 
 /* style for cake-category  */
 .cakebanner{
