@@ -7236,7 +7236,7 @@ button.close{
 .banner{
     width: 100%;
     height: 32vh;
-    background: url(/images/banner.jpg);
+    background: url(../images/banner.jpg);
     background-size: cover;
     display: flex;
     align-items: center;

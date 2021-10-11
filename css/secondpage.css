@@ -73,6 +73,10 @@ ul li a img{
     display: flex;
     align-items: center;
 }
+.center-divlogo img{
+    width: 180px;
+    margin-right: 200px;
+}
 .center-div{
     display: none;
 }

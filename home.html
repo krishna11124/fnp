@@ -34,7 +34,42 @@
     <!-- <link rel="stylesheet" href="login.css"> -->
     <!-- lightbox -->
     <link href="css/prettyPhoto.css" rel="stylesheet">
+
 </head>
+    <script>
+        function myFunction(Cakename){
+            console.log("Cakename",Cakename);
+            if(Cakename=="Designer Cakes"){
+                localStorage.setItem("Productname","Designer Cakes");
+                localStorage.setItem("Cakedetail","There is Designer Cakes");
+            }else if(Cakename=="Photo Cakes"){
+                localStorage.setItem("Productname","Photo Cake");
+                localStorage.setItem("Cakedetail","There is Photo Cake");
+            }else if(Cakename=="Cup Cakes"){
+                localStorage.setItem("Productname","Cup Cakes");
+                localStorage.setItem("Cakedetail","There is Cup Cakes");
+            }else if(Cakename=="Cartoon Cakes"){
+                localStorage.setItem("Productname","Cartoon Cakes");
+                localStorage.setItem("Cakedetail","There is Cartoon Cakes");
+            }else if(Cakename=="Vegan Cakes"){
+                localStorage.setItem("Productname","Vegan Cakese");
+                localStorage.setItem("Cakedetail","There is Vegan Cakese");
+            }else if(Cakename=="Half Cakes"){
+                localStorage.setItem("Productname","Half Cakes");
+                localStorage.setItem("Cakedetail","There is Half Cakes");
+            }else if(Cakename=="Pull Me Up Cake"){
+                localStorage.setItem("Productname","Pull Me Up Cake");
+                localStorage.setItem("Cakedetail","There is Pull Me Up Cake");
+            }else if(Cakename=="Pinata Cakes"){
+                localStorage.setItem("Productname","Pinata Cakes");
+                localStorage.setItem("Cakedetail","There is Pinata Cakes");
+            }
+      
+       
+        }
+        </script>
+
+
 
 <body>
 
@@ -206,16 +241,16 @@
                                         <div class="mega-sub">
                                             <div class="mega-sub-title">By type</div>
                                             <ul>
-                                                <li><a href="">All Cakes</a></li>
+                                                <li ><a href="cakemartboot.html">All Cakes</a></li>
                                                 <li><a href="cakemartboot.html">Dellicious Cakes</a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Designer Cakes</a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Photo Cakes </a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Cup Cakes</a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Cartoon Cakes</a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Vegan Cakes </a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Half Cakes</a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Pull Me Up Cake</a></li>
-                                                <li><a href="Cakes-Category/photocake.html">Pinata Cakes</a></li>
+                                                <li onclick="myFunction('Designer Cakes')"><a href="Cakes-Category/photocake.html" >Designer Cakes</a></li>
+                                                <li  onclick="myFunction('Photo Cakes')"><a href="Cakes-Category/photocake.html">Photo Cakes </a></li>
+                                                <li  onclick="myFunction('Cup Cakes')"><a href="Cakes-Category/photocake.html">Cup Cakes</a></li>
+                                                <li  onclick="myFunction('Cartoon Cakes')"><a href="Cakes-Category/photocake.html">Cartoon Cakes</a></li>
+                                                <li onclick="myFunction('Vegan Cakes')"><a href="Cakes-Category/photocake.html">Vegan Cakes </a></li>
+                                                <li onclick="myFunction('Half Cakes')"><a href="Cakes-Category/photocake.html">Half Cakes</a></li>
+                                                <li onclick="myFunction('Pull Me Up Cake')"><a href="Cakes-Category/photocake.html">Pull Me Up Cake</a></li>
+                                                <li onclick="myFunction('Pinata Cakes')"><a href="Cakes-Category/photocake.html">Pinata Cakes</a></li>
                                             </ul>
                                         </div>
                                         <div class="mega-sub">
