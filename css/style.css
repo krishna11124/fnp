@@ -7746,3 +7746,108 @@ padding-left: 80px;
     font-size: 14px;
     border-bottom: 1px solid #fff;
 }
+
+
+/* Rohit Sir Css  */
+/* MYcss  */
+.location_continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: white;
+}
+.location_continer > input{
+    border: none;
+    height: 50px;
+    flex: 1;
+    padding-left: 10px;
+    font-size:18px;
+}
+.location_continer > i{
+    color: black;
+    margin-right: 25px;
+    font-size: 25px;
+}
+.LOCtion{
+    padding: 50% 8% 0 8%;
+}
+.show{
+    display: none !important;
+}
+.hide{
+    display: flex !important;
+}
+.MObCart{
+    float: right;
+    padding-top: 15px;
+}
+.MObCart > i{
+    font-size: 26px;
+    /* padding-right: 10px; */
+    color: white;
+}
+.MObCart > i:nth-child(2){
+    padding-left: 20px;
+    padding-right: 5px;
+}
+ /* mobile responsive code  */
+ @media(max-width:799px){
+     .hide{
+         display: none !important;
+     }
+     .show{
+         display: flex !important;
+     }
+     .homebutton a{
+         width: 300px !important;
+     }
+     .anchor a{
+         border-radius: 6px;
+         padding: 10px
+     }
+     .navbar-toggle{
+         float: left;
+     }
+     #home-slider .item img{
+         height: 36vh;
+     }
+     .Send_GIftContainer {
+        margin: 15px 20px;
+    }
+    .item-cont img{
+        width: 60px;
+        height: 60px;
+    }
+    .cont1 h5{
+        font-size: 12px !important;
+    }
+    .Send_GIftContainer{
+        margin: 25px 20px 15px 20px; 
+    }
+    .pd_LR{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .item-cont2 img{
+        width: 30px;
+        height: auto;
+    }
+    .cont2{
+        width: 40px;
+    }
+    .arrow > a > img{
+        width: 11px;
+        margin-top: -40px;
+    }
+    .cake-container2{
+        padding: 0 20px;
+    }
+    .item-cont2{
+        width: 100%;
+    }
+    .cont2 h5{
+        font-size: 10px;
+    }
+ }
