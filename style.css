@@ -5,13 +5,16 @@ html,body{
     margin:0;
     padding:0;
     height:auto;
-    font-family: 'Raleway', sans-serif;
+    
     font-weight: 400;
     color:#2b2a2f;
     /* background: linear-gradient(
         120deg
         , white, #146eb4); */
         background-color: #eaeded;
+}
+body{
+    font-family: 'Roboto', sans-serif !important;
 }
 a{
     color:#66cef6;
@@ -732,7 +735,7 @@ ul.top-control li em.bgSpriteSignIn {
 #cat-nav ul li a{
     color:white;
     font-size:13px;
-    font-weight:700;
+    font-weight:600;
     padding:15px 17px;
     display:block;
     position:relative;
@@ -4864,7 +4867,7 @@ padding:0;
     display: flex;
 }
 .Side-mennu label:hover{
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     border-radius: 1px;
 } 
 .tripledotspan{
@@ -5015,7 +5018,7 @@ padding:0;
 }
 .imagegallary_Container p{
     font-size:14px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .imagegallary_Container img{ 
@@ -5321,7 +5324,7 @@ padding:0;
 .owl-buttons{
     width: 100%;
     position:absolute;
-    top: 50%;
+    top: 40%;
 }
 .owl-prev{
     float:left !important;
@@ -6161,19 +6164,19 @@ button.close{
 .catDishDetails{
     background-color: #171A29;
     width: 100%;
-    margin-top: 5px;
-    height: 230px;
+    margin-top: 10px;
+    height: 250px;
     top: 49px;
     position: sticky;
     z-index: 999;
 }
 .catBigImag_container{
-    padding: 10px 10px 10px 20px;
+    padding: 15px 10px 10px 20px;
 }
 .catBigImag_container > img{
     width: 100%;
     object-fit: contain;
-    height: 200px;
+    height: 220px;
 }
 .TOpNav{
     height: 70px;
@@ -6200,13 +6203,17 @@ button.close{
 .catProdtName_container a > img{
     margin-left: 10px;
 }
-
+.MakeBackgroundwhite{
+    background: white;
+    margin-bottom: 10px;
+}
 .DeliveryTime{
     margin: 20px 0;
 }
 .DeliveryTime > ul{
     display: flex;
     max-width:350px; 
+    padding-left: 0;
 }
 .DeliveryTime > ul > li{
     color: white;
@@ -6287,7 +6294,7 @@ button.close{
 }
 .catProdtListContainer{
     overflow-y: scroll;
-    height: 880px;
+    height: 720px;
 }
 .catProdtListContainer::-webkit-scrollbar{
     display: none;
@@ -6307,28 +6314,30 @@ button.close{
     width: 100%;
     object-fit: contain;
     height: 300px;
+    padding-left: 20PX;
 }
 
 .catLeftCheck{
     border: 1px solid lightgray;
-    margin: 5px 0px;
+    margin: 10px 0px;
     background: white;
-    padding: 13px 30px 20px 30px;
+    padding: 13px 30px 20px 20px;
     border-radius: 8px;
     /* background-color: coral; */
-    box-shadow: 3px 3px 5px 5px #aaaaaa;
-    width: 90%;
+    /* box-shadow: 2px 2px 2px 2px #aaaaaa; */
+    /* width: 85%; */
 }
 .catLeftCheck > ul{
     display: block !important;
     margin-bottom: 0 !important;
+    padding-left: 0;
 }
 .catLeftCheck > ul > li > span{
     /* display: flex;
     align-content: center;
     justify-content: flex-start; */
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .catLeftCheck > ul > li > input{
     margin-right:10px;
@@ -6336,7 +6345,7 @@ button.close{
     width: 15px;
 }
 .catLeftCheck > h2{ 
-    font-size: 22px !important;
+    font-size: 20px !important;
 }
 
 .Signatur{
@@ -6347,6 +6356,7 @@ button.close{
     font-weight: 600;
     text-align: left !important;
     margin-bottom: 0px;
+    letter-spacing: 1px;
 }
 .Signatur > span{
     font-size: 15px;
@@ -6372,14 +6382,22 @@ button.close{
 }
 
 .CatLocatioN{
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
 }
-
-.CatLocatioN > select{
-    background: #171a29;
+.CatLocatioN i {
+    margin-left: 8px;
+}
+.CatLocatioN > span{
+    /* background: #171a29; */
     border: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
+    color: white;
+}
+.CatLocatioN > i{
     color: white;
 }
 .CatLocatioN > select:focus{
@@ -6466,9 +6484,10 @@ button.close{
     width: 100%;
     z-index: 1100;
     display: flex;
-    padding-left: 480px;
+    /* padding-left: 372px; */
+    left: 387px;
     position: relative;
-    bottom: 42px;
+    bottom: 12px;
     /* background-color: red; */
 }
 .checkveg{
@@ -6514,3 +6533,188 @@ button.close{
     font-weight: 600;
 }
 
+.CatPrdtImg > img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8PX;
+}
+.CatPrdtImg > a  {
+    background: white;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    /* bottom: 0; */
+    top: 129px;
+    right: 28px;
+}
+
+.CatPrdtImg a:hover{
+    background: lightgray;
+    color: white;
+}
+
+.CatProductList > p{
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0 0px 0;
+    font-size: 17px;
+}
+.CatProductList > span{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+.CatProductList{
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+.CatViewMore > p{
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+.CatViewMore{
+    margin: 20px 0;
+    width: 90%;
+}
+.CaatTabMenu{
+    margin-top: 40px;
+    z-index:9999;
+}
+
+.CaatSidePopup{
+    height: 100vh;
+    width: 280px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid lightgray;
+    z-index: 9999;
+    background: white;
+}
+
+.CaatSearchCard{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom:1px solid lightgray;
+    margin-bottom: 5px;
+}
+.CaatSearchCard > input {
+    flex: 1;
+    border: none;
+    margin-left: 5px
+}
+.CaatSearchCard > i {
+    color:lightgray;
+}
+
+.Productleftlist > li > p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #107AB0;
+}
+.CatModal{
+    border-radius: 20px !important;
+}
+.CAtModalImg > img{
+    width: 100%;
+    object-fit: contain;
+    height: 200px;
+}
+.CAtModalImg > p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 2px;
+    margin-bottom: 2px !important;
+}
+.CAtModalImg > span{
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+}
+.CatModalBody{
+    margin-top: 0 !important;
+}
+.CustomGridS > .col-md-3{
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.CustomGridS > .col-md-9{
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+.cATpADINGlEFT{
+    padding-left: 0 !important;
+}
+.CustomFOt{
+    border-top: 1px solid lightgray;
+    padding: 13px 20px;
+}
+.count{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-top: 10px; */
+}
+.count > input{
+    /* flex: .5; */
+    width: 60%;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    background: #FBFBFB;
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 34px;
+}
+.count > i{
+    font-size: 22px;
+    cursor: pointer;
+}
+.AdCardButon > button{
+    height: 35px;
+    width: 100%;
+    background: #e81c2a;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    transition: 250ms ease-in-out;
+}
+.AdCardButon > button:hover{
+    background: white;
+    color: #e81c2a;
+    border: 1px solid #e81c2a;
+}
+.cloSe > button > span{
+    font-size: 30px;
+}
+.cloSe > button:focus{
+    outline: 0;
+}
+.AddresCatSection{
+    height: 114px;
+    width: 350px;
+    border-top: 2px solid #e81c2a;
+    background: white;
+    z-index:9999;
+    position: absolute;
+}
+.addContent > h4{
+    text-align: left;
+}
+.addContent > p{
+    text-align: left;
+    padding-left: 0 !important;
+}
