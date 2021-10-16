@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="secondpage.css">
+    <link rel="stylesheet" href="css/secondpage.css">
     <link href='font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
  <!-- google font  -->
@@ -18,23 +18,31 @@
 <body>
 
     <header>
-    <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="center-div">
+        <img src="images/cakemart.jpg" alt="">
+    </div>
         <div class="bars">
             <a href="#"><img src="images/vendormenu.png" alt=""></a>
          </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+         <div class="rightresponsivediv">
+           <div class="shoping myshoping" id="myshopinghide">
+             <img src="images/shopping-cart (1).png" alt="">
+             <span>0</span>
+     </div>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon menusub"><img src="images/vendormenu.png" alt=""></span>
+            </button>
+    </div>
+        <div class="collapse navbar-collapse mynavdesizn" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mynavs">
+            <li class="nav-item active vendorli">
                 <a><Button class="left-btn">Delivery</Button></a>
             </li>
-            <li>
-                <a href="#">Pick Up</a>
+            <li class="vendorli">
+                <a href="#" class="pickup">Pick Up</a>
               </li>
-            <li>
+            <li class="vendorli">
               <div class="LocationSelect">
                 <select>
                   <option>ASAP</option>
@@ -46,7 +54,7 @@
                 </select>
               </div>
               </li>
-              <li>
+              <li class="vendorli">
                 <!-- <a href="#">To  Mumbai<img src="images/down-chevron (1).png" alt=""></a> -->
                 <div class="LocationSelect">
                   <select name="cars" id="cars">
@@ -60,11 +68,11 @@
                 </div>
               </li>
             </ul>
-            <div class="center-div">
+            <div class="center-div2">
               <img src="images/cakemart.jpg" alt="">
           </div>
           <form class="form-inline my-2 my-lg-0">
-            <div class="content">
+            <div class="content searchbarhide">
                 <img src="images/loupe.png" />
                 <input type="text" class="field" placeholder="Search for" />
               </div>
@@ -75,6 +83,8 @@
         </div>
         </div>
       </nav>
+
+      
         </header>
     
       </div> <!-- Nav -->
@@ -82,86 +92,96 @@
 
       <!-- this section is for vendor slider  -->
       
-      <section class="Category-Products">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <section class="Category-Products">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="onemore">
             <div class="row-cat">
+              <div class="cakeitem"><img src="images/piece-of-cake.png">
+                <div class="silderitemlabel">Dlicious Cake</div></div>
               <div class="cakeitem"><img src="images/cake-slice (1).png" alt="">
-             <div class="silderitemlabel">item 1</div>
-            </div>
-              <div class="cakeitem"><img src="images/pinkcake.png" alt="">
-                <div class="silderitemlabel">item 2</div>
+                <div class="silderitemlabel">Cake-Slice</div>
               </div>
               <div class="cakeitem"><img src="images/drink.png" alt="">
-                <div class="silderitemlabel">item 3</div>
+                <div class="silderitemlabel">Drinks</div>
               </div>
               <div class="cakeitem"><img src="images/flowers.png" alt="">
-                <div class="silderitemlabel">item 4</div>
+                <div class="silderitemlabel">Flowers</div>
               </div>
               <div class="cakeitem"><img src="images/chocolate.png" alt="">
-                <div class="silderitemlabel">item 5</div>
+                <div class="silderitemlabel">Chocolates</div>
               </div>
-              <div class="cakeitem"><img src="images/piece-of-cake.png"><div class="silderitemlabel">item 6</div></div>
-              <div class="cakeitem"><img src="images/piece-of-cake.png"><div class="silderitemlabel">item 7</div></div>
+              <div class="cakeitem"><img src="images/candy.png" alt="">
+                <div class="silderitemlabel">Candy</div>
+              </div>
+           
+              <div class="cakeitem lastslideritem"><img src="images/chocolatecake.png">
+                <div class="silderitemlabel">Chocolate-Cake</div>
+              </div>
           </div>
           </div>
           </div>
           <div class="carousel-item">
             <div class="onemore">
               <div class="row-cat">
+                <div class="cakeitem"><img src="images/piece-of-cake.png">
+                  <div class="silderitemlabel">Dlicious Cake</div></div>
                 <div class="cakeitem"><img src="images/cake-slice (1).png" alt="">
-               <div class="silderitemlabel">item 1</div>
-              </div>
-                <div class="cakeitem"><img src="images/pinkcake.png" alt="">
-                  <div class="silderitemlabel">item 2</div>
+                  <div class="silderitemlabel">Cake-Slice</div>
                 </div>
                 <div class="cakeitem"><img src="images/drink.png" alt="">
-                  <div class="silderitemlabel">item 3</div>
+                  <div class="silderitemlabel">Drinks</div>
                 </div>
                 <div class="cakeitem"><img src="images/flowers.png" alt="">
-                  <div class="silderitemlabel">item 4</div>
+                  <div class="silderitemlabel">Flowers</div>
                 </div>
                 <div class="cakeitem"><img src="images/chocolate.png" alt="">
-                  <div class="silderitemlabel">item 5</div>
+                  <div class="silderitemlabel">Chocolates</div>
                 </div>
-                <div class="cakeitem"><img src="images/piece-of-cake.png"><div class="silderitemlabel">item 6</div></div>
-                <div class="cakeitem"><img src="images/piece-of-cake.png"><div class="silderitemlabel">item 7</div></div>
+                <div class="cakeitem"><img src="images/candy.png" alt="">
+                  <div class="silderitemlabel">Candy</div>
+                </div>
+                <div class="cakeitem lastslideritem"><img src="images/chocolatecake.png">
+                  <div class="silderitemlabel">Chocolate-Cake</div>
+                </div>
             </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="onemore">
-              <div class="row-cat">
-                <div class="cakeitem"><img src="images/cake-slice (1).png" alt="">
-               <div class="silderitemlabel">item 1</div>
+             <div class="row-cat">
+              <div class="cakeitem"><img src="images/piece-of-cake.png">
+                <div class="silderitemlabel">Dlicious Cake</div></div>
+              <div class="cakeitem"><img src="images/cake-slice (1).png" alt="">
+                <div class="silderitemlabel">Cake-Slice</div>
               </div>
-                <div class="cakeitem"><img src="images/pinkcake.png" alt="">
-                  <div class="silderitemlabel">item 2</div>
-                </div>
-                <div class="cakeitem"><img src="images/drink.png" alt="">
-                  <div class="silderitemlabel">item 3</div>
-                </div>
-                <div class="cakeitem"><img src="images/flowers.png" alt="">
-                  <div class="silderitemlabel">item 4</div>
-                </div>
-                <div class="cakeitem"><img src="images/chocolate.png" alt="">
-                  <div class="silderitemlabel">item 5</div>
-                </div>
-                <div class="cakeitem"><img src="images/piece-of-cake.png"><div class="silderitemlabel">item 6</div></div>
-                <div class="cakeitem"><img src="images/piece-of-cake.png"><div class="silderitemlabel">item 7</div></div>
-            </div>
+              <div class="cakeitem"><img src="images/drink.png" alt="">
+                <div class="silderitemlabel">Drinks</div>
+              </div>
+              <div class="cakeitem"><img src="images/flowers.png" alt="">
+                <div class="silderitemlabel">Flowers</div>
+              </div>
+              <div class="cakeitem"><img src="images/chocolate.png" alt="">
+                <div class="silderitemlabel">Chocolates</div>
+              </div>
+              <div class="cakeitem"><img src="images/candy.png" alt="">
+                <div class="silderitemlabel">Candy</div>
+              </div>
+              <div class="cakeitem lastslideritem"><img src="images/chocolatecake.png">
+                <div class="silderitemlabel">Chocolate-Cake</div>
+              </div>
+          </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" id="pre" href="#carouselExampleControls" role="button" data-slide="prev">
           <div class="prewbutton">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
           </div>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" id="pre" href="#carouselExampleControls" role="button" data-slide="next">
           <div class="nextbutton">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
@@ -207,19 +227,31 @@
         </div>
 
               <button class="mybuttons">Under 30 min</button>
-              <button class="mybuttons">Offers</button>
               <div class="myfilte">
-                <div class="filteimg"><img src="images/filter.png" alt=""></div>
+                <div class="MyOffers">
+                  <select name="cars mycars" id="cars">
+                    <option value="volvo" class="firstoption">Offers</option>
+                    <option value="saab">Offers 1</option>
+                    <option value="mercedes">Offers 2</option>
+                    <option value="audi">Offers 3</option>
+                    <option value="audi">Offers 4</option>
+                    <option value="audi">Offers 5</option>
+          </select>
+        </div>
+      </div>
+              
+              <div class="myfilte">
                 <div class="Filte">
+                  <div class="filteimg"><img src="images/filter2.png" alt=""></div>
                   <select name="cars" id="cars">
-            <option value="volvo">Filter</option>
             <option value="saab">Veg</option>
             <option value="opel">Non-Veg</option>
+          
           </select>
         </div>
       </div>
     </div>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0" id="vendearch">
       <div class="content" id="mysearch">
           <img src="images/loupe.png" />
           <input type="text" class="field" placeholder="Search for Restaurants">
@@ -235,10 +267,10 @@
           <div class="tabs-button">
         <ul class="nav nav-tabs">
           <li class="nav-item ref">
-            <a class="nav-link" href="#">Refernce</a>
+            <a class="nav-link tabanchor" href="#">Refernce</a>
           </li>
           <li class="nav-item ref">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link tabanchor" href="#">Link</a>
           </li>
         </ul>
       </div>
@@ -260,7 +292,8 @@
       </div>
       <div class="card-deck">
         <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
+               
               <img src="images/landingback.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -283,17 +316,22 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                 <a href="product.html">Order Now</a>
                 </div>
               </div>
-              </div>
+            </div>
+        
             </div>
             </div>
 
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback2.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -316,6 +354,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -325,7 +367,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -348,6 +390,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -357,7 +403,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -380,6 +426,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -399,7 +449,7 @@
           <div class="card-deck">
            
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/mycake.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -422,6 +472,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -431,7 +485,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/gift1.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -455,7 +509,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-          
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="#">Order Now</a>
@@ -465,7 +522,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/gift3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -489,7 +546,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-           
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -500,7 +560,7 @@
             </div>
 
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -524,7 +584,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-            
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="#">Order Now</a>
@@ -543,7 +606,7 @@
           <div class="card-deck">
          
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -567,7 +630,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-           
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -577,7 +643,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback2.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -601,7 +667,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-            
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="#">Order Now</a>
@@ -611,7 +680,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -635,7 +704,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-             
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -646,7 +718,7 @@
             </div>
 
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -670,7 +742,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-           
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="#">Order Now</a>
@@ -689,7 +764,7 @@
            </div>
           <div class="card-deck">
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -713,7 +788,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-           
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="product.html">Order Now</a>
@@ -723,7 +801,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback2.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -747,7 +825,10 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
-            
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="#">Order Now</a>
@@ -757,7 +838,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -781,6 +862,11 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
+
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="#">Order Now</a>
@@ -791,7 +877,7 @@
             </div>
 
             <div class="card">
-              <div class="vendor-card">
+              <div class="vendor-card venordcardflex">
               <img src="images/landingback3.jpg" class="card-img-top" alt="...">
               <div class="card-content">
               <div class="card-body">
@@ -815,6 +901,11 @@
                  <img src="images/discount.png" alt="">
                  <label for="innercontent">30% off use cakemart order</label>
                </div>
+
+               <div class="innercontent innecontentnone">
+                <img src="images/discount.png" alt="">
+                <label for="innercontent">30% off use cakemart coupons</label>
+              </div>
                 </div>
                 <div class="dis">
                   <a href="#">Order Now</a>
@@ -852,7 +943,7 @@
             </div>
             <div class="ourcopyrightsmain">
             <div class="Our-Copyrights">
-              All Rights Reserved to <a href="index2.html">CakeMart.com</a>
+              All Rights Reserved to <a href="index.html">CakeMart.com</a>
             </div>
             </div>
     </footer>

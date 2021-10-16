@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cakemart</title>
+    <!--Testkjk s-->
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <link href='font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- sidemenu -->
+    <!-- <link rel="stylesheet" href="sidemenu.css"> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Slider -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+
+    <!-- login  -->
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <!-- lightbox -->
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+</head>
+    <script>
+        function myFunction(Cakename){
+            console.log("Cakename",Cakename);
+            if(Cakename=="Designer Cakes"){
+                localStorage.setItem("Productname","Designer Cakes");
+                localStorage.setItem("Cakedetail","There is Designer Cakes");
+            }else if(Cakename=="Photo Cakes"){
+                localStorage.setItem("Productname","Photo Cake");
+                localStorage.setItem("Cakedetail","There is Photo Cake");
+            }else if(Cakename=="Cup Cakes"){
+                localStorage.setItem("Productname","Cup Cakes");
+                localStorage.setItem("Cakedetail","There is Cup Cakes");
+            }else if(Cakename=="Cartoon Cakes"){
+                localStorage.setItem("Productname","Cartoon Cakes");
+                localStorage.setItem("Cakedetail","There is Cartoon Cakes");
+            }else if(Cakename=="Vegan Cakes"){
+                localStorage.setItem("Productname","Vegan Cakese");
+                localStorage.setItem("Cakedetail","There is Vegan Cakese");
+            }else if(Cakename=="Half Cakes"){
+                localStorage.setItem("Productname","Half Cakes");
+                localStorage.setItem("Cakedetail","There is Half Cakes");
+            }else if(Cakename=="Pull Me Up Cake"){
+                localStorage.setItem("Productname","Pull Me Up Cake");
+                localStorage.setItem("Cakedetail","There is Pull Me Up Cake");
+            }else if(Cakename=="Pinata Cakes"){
+                localStorage.setItem("Productname","Pinata Cakes");
+                localStorage.setItem("Cakedetail","There is Pinata Cakes");
+            }
+      
+       
+        }
+        </script>
+
+
+
+<body>
+
+    <!-- side-bar on home screen -->
+    <div class="wrapper">
+        <input type="checkbox" id="btn" hidden>
+        <nav id="sidebar">
+            </label>
+            <!-- </div> -->
+            <div class="SideHeader">
+                <a href="#"> <img src="images/j.png" alt=""> Hello, Sign-in</img></a>
+                <label for="btn" class="menu-btn SIdeMednuIcons">
+                    <i class="fas fa-bars"></i>
+                    <!-- <i class="fas fa-times"></i> -->
+                </label>
+            </div>
+            <ul class="list-items">
+                <li><a href="#" class="active">Tranding</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Services</a></li>
+                <li class="end"><a href="#">Settings</a></li>
+
+                <li><a href="#" class="active">Digital Content And Devices</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Contact us</a></li>
+
+                <li><a href="#" class="active">Shop By Department</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Languages</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="believe-nav">
+        <!-- Nav -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2">
+                    <div class="WebLogo">
+                        <a class="navbar-brand" href="index2.html"><img src="images/cakemart.jpg" width="125px"
+                                alt=""></a>
+                    </div>
+                    <a class="MObCart show1">
+                        <i class="fas fa-user-circle"></i>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="HomeSearchBar">
+                        <div class="search_Container">
+                            <select>
+                                <option>All</option>
+                                <option>Cakes</option>
+                                <option>Chocolates</option>
+                                <option>Sweets</option>
+                                <option>Candy</option>
+                                <option>Snacks</option>
+                                <option>Flowers</option>
+                                <option>Events</option>
+                                <option>Ice Cream</option>
+                                <option>Namkeens</option>
+                                <option>Combo</option>
+                            </select>
+                            <input type="text" placeholder="Search Items" autocomplete="on"></input>
+                            <!-- <a href="#" class="input-group-addon btn-side-serach" id="basic-addon2"><i class="fa fa-search"></i></a> -->
+                            <button class="btn"><i class="fa fa-search"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="Search_LoctionConatiner">
+                        <div class="Search_contnr">
+                            <img src="images/pin.png" alt="" title="Search" />
+                            <input type="text" placeholder="Enter Location"></input>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><img src="images/cursor (1).png" alt="bag" width="22"></a>
+                                <label for="location">Track Order</label>
+                            </li>
+                            <li><a href="#"><img src="images/shopping-cart (1).png" alt="bag"
+                                        width="22"><span>0</span></a>
+                                <label for="location">Cart</label>
+                            </li>
+                            <li><a href="#"><img src="images/user (2).png" alt="bag" width="22"></a>
+                                <label for="location">Sign-in</label>
+                            </li>
+                            <li><a href="#"></a>
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown menu-large Nomargin">
+                                        <div class="MoreIcons_Text">
+                                            <img src="images/menu-white.png" alt="bag" width="22"></img>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                aria-expanded="false">More</a>
+                                        </div>
+                                        <ul class="dropdown-menu " id="more" role="menu">
+                                            <li>
+                                                <div class="">
+
+                                                    <ul class="More_List">
+                                                        <li class="fixheight"><img src="images/user-black.png"><a href="#" class="btn" data-toggle="modal"
+                                                                data-target="#exampleModalCenter">Signup</a></li>
+                                                        <li class="fixheight"><img src="images/enter.png"><a href="#" class="btn" data-toggle="modal"
+                                                                data-target="#exampleModalLong">Login</a></li>
+                                                        <li><img src="images/order.png"><a href="#">My Order</a></li>
+                                                        <li><img src="images/pin.png"><a href="#">Track Order</a></li>
+                                                        <li><img src="images/address.png"><a href="#">Address Book</a></li>
+                                                        <li><img src="images/gift-card.png"><a href="#">Gift Voucher</a></li>
+                                                        <li><img src="images/helping-hand.png"><a href="#">Help</a></li>    
+                                                        <li><img src="images/male-telemarketer.png"><a href="#">Support</a></li>   
+                                                    </ul>
+                                                    <!-- </div> -->
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="contact.html">BABY & KIDS </a></li> -->
+                                    <!-- <li><a href="contact.html">Cakes </a></li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Nav -->
+
+
+    <div id="cat-nav">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#cat-nav-mega">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="set-width">
+                <div class="collapse navbar-collapse" id="cat-nav-mega">
+                    <ul class="nav navbar-nav">
+                        <li class="Side-mennu"> <label for="btn" class="menu-btn">
+                                <i class="fas fa-bars"></i><span class="tripledotspan">All</span>
+                            </label></li>
+
+                            <li class="dropdown menu-large">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">CAKES <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By type</div>
+                                            <ul>
+                                                <li ><a href="cakemartboot.html">All Cakes</a></li>
+                                                <li><a href="cakemartboot.html">Dellicious Cakes</a></li>
+                                                <li onclick="myFunction('Designer Cakes')"><a href="Cakes-Category/photocake.html" >Designer Cakes</a></li>
+                                                <li  onclick="myFunction('Photo Cakes')"><a href="Cakes-Category/photocake.html">Photo Cakes </a></li>
+                                                <li  onclick="myFunction('Cup Cakes')"><a href="Cakes-Category/photocake.html">Cup Cakes</a></li>
+                                                <li  onclick="myFunction('Cartoon Cakes')"><a href="Cakes-Category/photocake.html">Cartoon Cakes</a></li>
+                                                <li onclick="myFunction('Vegan Cakes')"><a href="Cakes-Category/photocake.html">Vegan Cakes </a></li>
+                                                <li onclick="myFunction('Half Cakes')"><a href="Cakes-Category/photocake.html">Half Cakes</a></li>
+                                                <li onclick="myFunction('Pull Me Up Cake')"><a href="Cakes-Category/photocake.html">Pull Me Up Cake</a></li>
+                                                <li onclick="myFunction('Pinata Cakes')"><a href="Cakes-Category/photocake.html">Pinata Cakes</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Flavour</div>
+                                            <ul>
+                                                <li><a href="">Black Forest</a></li>
+                                                <li><a href="">Butterscotch</a></li>
+                                                <li><a href="">Chocolate Cakes</a></li>
+                                                <li><a href="">Fruit Cakes</a></li>
+                                                <li><a href="">Mango Cakes</a></li>
+                                                <li><a href="">Pineapple</a></li>
+                                                <li><a href="">Red Velvet</a></li>
+                                                <li><a href="">Strawberry </a></li>
+                                                <li><a href="">KitKat Cakes</a></li>
+                                                <li><a href="">Vanilla</a></li>
+                                                <li><a href="">Ferrero Rocher</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Occasions</div>
+                                            <ul>
+                                                <li><a href="#">Birthday</a></li>
+                                                <li><a href="#">1st Birthday</a></li>
+                                                <li><a href="">Anniversary</a></li>
+                                                <li><a href="">1st Anniversary</a></li>
+                                                <li><a href="">25th Anniversary</a></li>
+                                                <li><a href="">Wedding</a></li>
+                                                <li><a href="">Congratulations</a></li>
+                                                <li><a href="">I am Sorry</a></li>
+                                                <li><a href="">Cakes For Kids</a></li>
+                                                <li><a href="">New Year celebration</a></li>
+                                            </ul>
+                                        </div>
+
+
+                                        <!-- creat list cakes  -->
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Recipient</div>
+                                            <ul>
+                                                <li><a href="#">Him </a></li>
+                                                <li><a href="#">Her</a></li>
+                                                <li><a href="">Kids </a></li>
+                                                <li><a href="">Father</a></li>
+                                                <li><a href="">Mother</a></li>
+                                                <li><a href="">Brother</a></li>
+                                                <li><a href="">Sister</a></li>
+                                                <li><a href="">GirlFriend </a></li>
+                                                <li><a href="">Husband</a></li>
+                                                <li><a href="">Wife</a></li>
+                                                <li><a href="">BoyFriend</a></li>
+                                                <li><a href="">Friend</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Combos</div>
+                                            <ul>
+                                                <li><a href="">Cake Combos</a></li>
+                                                <li><a href="">Cake With Flowers</a></li>
+                                                <li><a href="">Cake With Chocolates</a></li>
+                                                <li><a href="">Cake With Plants</a></li>
+                                                <li><a href="">Cakes with Personalised Gifts</a></li>
+                                                <li><a href="">Friend</a></li>
+                                            </ul>
+                                        </div>
+
+
+                                        <!-- Second drop items change -->
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menu-large">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">FLOWERS <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Price</div>
+                                            <ul>
+                                                <li><a href="">Under 600</a></li>
+                                                <li><a href="">600 To 999</a></li>
+                                                <li><a href="">1000 to 1999</a></li>
+                                                <li><a href="">Adove 2000</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Occasion</div>
+                                            <ul>
+                                                <li><a href="">Anniversary</a></li>
+                                                <li><a href="">Birthday</a></li>
+                                                <li><a href="">Appericiation</a></li>
+                                                <li><a href="">Cheer Up</a></li>
+                                                <li><a href="">Congratulations</a></li>
+                                                <li><a href="">Get Well Soon</a></li>
+                                                <li><a href="">I am Sorry</a></li>
+                                                <li><a href="">Love & Affection</a></li>
+                                                <li><a href="">Thank You</a></li>
+
+                                            </ul>
+                                        </div>
+
+                                        <!-- List for By Types -->
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Type</div>
+                                            <ul>
+                                                <li><a href="#">All Flowers</a></li>
+                                                <li><a href="#">Roses</a></li>
+                                                <li><a href="#">Carnation</a></li>
+                                                <li><a href="#">Gerberas</a></li>
+                                                <li><a href="#">Liles</a></li>
+                                                <li><a href="#">Orchids</a></li>
+                                                <li><a href="#">Mixed Flowers</a></li>
+                                                <li><a href="#">Artifical Flowers</a></li>
+                                                <li><a href="#">Thank You</a></li>
+                                            </ul>
+                                        </div>
+
+
+
+                                        <!-- creat by color list  -->
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Color</div>
+                                            <ul>
+                                                <li><a href="#">Pink</a></li>
+                                                <li><a href="#">Red</a></li>
+                                                <li><a href="#">White</a></li>
+                                                <li><a href="#">Yellow</a></li>
+                                                <li><a href="#">Purple</a></li>
+                                                <li><a href="#">Orange</a></li>
+                                                <li><a href="#">Mixed Flowers</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- creat by color list  -->
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">Special Flowers</div>
+                                            <ul>
+                                                <li><a href="#">Exotic Flowers</a></li>
+                                                <li><a href="#">Glass Vase</a></li>
+                                                <li><a href="#">Flowers Boxes</a></li>
+                                                <li><a href="#">Massage Flower Box</a></li>
+                                                <li><a href="#">Precious Flowers</a></li>
+                                                <li><a href="#">Flower Basket</a></li>
+                                                <li><a href="#">Precious Flowers</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="contact.html">BABY & KIDS </a></li> -->
+                    </ul>
+
+                    <!-- new nav  -->
+
+
+                    <!-- Paste new nav  -->
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">CHOCOLATES <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">All Chocolates</a></li>
+                                                <li><a href="#">Best Seller</a></li>
+                                                <li><a href="#">Chocolates Bouquests</a></li>
+                                                <li><a href="#">Homemade Chocolates</a></li>
+                                                <li><a href="#">Personalised Chocolates</a></li>
+                                                <li><a href="#">Expiosion Boxes</a></li>
+                                                <li><a href="#">Suger Free Chocolates</a></li>
+                                                <li><a href="#">Candy</a></li>
+                                                <li><a href="#">New Arrivals Chocolates</a></li>
+                                                <li><a href="#">Same Day Delivery</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Flavour</div>
+                                            <ul>
+                                                <li><a href="">Dark Chocolate</a></li>
+                                                <li><a href="#">Milk Chocolate</a></li>
+                                                <li><a href="#">Nuts Chocolate</a></li>
+                                                <li><a href="#">White Chocolate</a></li>
+                                                <li><a href="#">Fruit Chocolate</a></li>
+                                                <li><a href="#">Wafer Chocolate</a></li>
+                                                <li><a href="#">Mint Chocolate</a></li>
+                                                <li><a href="#">Strawberry Wafer</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Brands</div>
+                                            <ul>
+                                                <li><a href="#">Cadbury</a></li>
+                                                <li><a href="#">Ferrero Rocher</a></li>
+                                                <li><a href="#">Nestle</a></li>
+                                                <li><a href="#">Important Chocolates-Cococart</a></li>
+                                                <li><a href="#">Choco Swiss</a></li>
+                                                <li><a href="#">Amul</a></li>
+                                                <li><a href="#">Snickers</a></li>
+                                                <li><a href="#">KitKat</a></li>
+                                                <li><a href="#">Rage</a></li>
+                                                <li><a href="#">Hershey's</a></li>
+                                                <li><a href="#">Luvit</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Combos</div>
+                                            <ul>
+                                                <li><a href="#">All Chocolate Combos</a></li>
+                                                <li><a href="#">Chocolates& Flowers</a></li>
+                                                <li><a href="#">Chocolates & Plants</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Occasions</div>
+                                            <ul>
+                                                <li><a href="#">Birthday</a></li>
+                                                <li><a href="#">Anniversary</a></li>
+                                                <li><a href="#">Love n romance</a></li>
+                                                <li><a href="">Appericiation</a></li>
+                                                <li><a href="">Cheer Up</a></li>
+                                                <li><a href="">Congratulations</a></li>
+                                                <li><a href="">Get Well Soon</a></li>
+                                                <li><a href="">I am Sorry</a></li>
+                                                <li><a href="">Love & Affection</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="contact.html">BABY & KIDS </a></li> -->
+                    </ul>
+
+                    <!-- new nav creat for Events  -->
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large" id="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">EVENTS <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" id="event" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">Diwali</a></li>
+                                                <li><a href="#">Holi</a></li>
+                                                <li><a href="#">Chocolate Day</a></li>
+                                                <li><a href="#">Valentione's Day</a></li>
+                                                <li><a href="#">Taddy Day</a></li>
+                                                <li><a href="#">Rose Day</a></li>
+                                                <li><a href="#">Kiss Day</a></li>
+                                                <li><a href="#">Promise Day</a></li>
+                                                <li><a href="#">Hug Day</a></li>
+                                                <li><a href="#">Propose Day</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="contact.html">Teddy </a></li>
+                            <li><a href="contact.html">Sweets </a></li>
+                              <li><a href="contact.html">Ice Cream </a></li> -->
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large" id="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">SWEETS <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" id="Sweets" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">Gulab jamun</a></li>
+                                                <li><a href="#">Jalebi</a></li>
+                                                <li><a href="#">Barfi</a></li>
+                                                <li><a href="#">Mysore Pak</a></li>
+                                                <li><a href="#">Rasmalai</a></li>
+                                                <li><a href="#">Kaju katli</a></li>
+                                                <li><a href="#">Ladoo</a></li>
+                                                <li><a href="#">Peda</a></li>
+                                                <li><a href="#">Ghewar</a></li>
+                                                <li><a href="#">Modak</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="contact.html">Teddy </a></li>
+                        <li><a href="contact.html">Sweets </a></li>
+                          <li><a href="contact.html">Ice Cream </a></li> -->
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large" id="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">ICE-CREAM <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" id="icecream" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">Raspberry Ice Cream.</a></li>
+                                                <li><a href="#">Coffee Ice Cream.</a></li>
+                                                <li><a href="#">Caramel Ice Cream.</a></li>
+                                                <li><a href="#">Sea Salt Ice Cream</a></li>
+                                                <li><a href="#">Bubble Gum Ice Cream.</a></li>
+                                                <li><a href="#">Cookies and Cream</a></li>
+                                                <li><a href="#">Mint Ice Cream with Chocolate Chip.</a></li>
+                                                <li><a href="#">Strawberry Ice Cream</a></li>
+                                                <li><a href="#">French Ice Creams</a></li>
+                                                <li><a href="#">Organic Ice Creams</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="contact.html">Teddy </a></li>
+                    <li><a href="contact.html">Sweets </a></li>
+                      <li><a href="contact.html">Ice Cream </a></li> -->
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large" id="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">CANDY <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" id="candy" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">Nerds Candy</a></li>
+                                                <li><a href="#">Milky Way Candy Bar </a></li>
+                                                <li><a href="#">Kiss me</a></li>
+                                                <li><a href="#">Saleno</a></li>
+                                                <li><a href="#">Orange Candy</a></li>
+                                                <li><a href="#">Kofico</a></li>
+                                                <li><a href="#">Mango bar</a></li>
+                                                <li><a href="#">Melody</a></li>
+                                                <li><a href="#">Geams</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large" id="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">SNACKS <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" id="snacks" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">Kur-Kure</a></li>
+                                                <li><a href="#">Taka-Tak</a></li>
+                                                <li><a href="#">Bingo Tede-mede</a></li>
+                                                <li><a href="#">Crax</a></li>
+                                                <li><a href="#">Chips</a></li>
+                                                <li><a href="#">Tameto Chips</a></li>
+                                                <li><a href="#">LIght Salted Chips</a></li>
+                                                <li><a href="#">Cheez flavour chips</a></li>
+                                                <li><a href="#">Spicy Chips</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large" id="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">NAMKEENS <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" id="namkeens" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">Bhujia</a></li>
+                                                <li><a href="#">Khatta Meetha</a></li>
+                                                <li><a href="#">Navrattan </a></li>
+                                                <li><a href="#">Moong Dal </a></li>
+                                                <li><a href="#">Aloo Bhujia</a></li>
+                                                <li><a href="#">Bhelpuri</a></li>
+                                                <li><a href="#">Diet Mixture</a></li>
+                                                <li><a href="#">Gupshup Peanuts</a></li>
+                                                <li><a href="#">Salted Peenut</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown menu-large" id="">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false">COMBO <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu megamenu" id="combo" role="menu">
+                                <li>
+                                    <div class="">
+                                        <div class="mega-sub">
+                                            <div class="mega-sub-title">By Types</div>
+                                            <ul>
+                                                <li><a href="#">Chocolates & Flowers</a></li>
+                                                <li><a href="#">Namkeens & Colddrinks</a></li>
+                                                <!-- <li><a href="#">Cakes & icecream</a></li> -->
+                                                <li><a href="#">Cake Combo </a></li>
+                                                <li><a href="#">Cake With Chocolates</a></li>
+
+                                                <li><a href="#">Cakes & Gift</a></li>
+                                                <li><a href="#">Snacks & Colddrinks</a></li>
+                                                <li><a href="#">Gift & Chocolates</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                <!--</div> -->
+            </nav>
+        </div>
+        </div>
+    </div>
+    </div> <!-- header -->
+    <!-- Slider -->
+    <div id="main-slider">
+
+        <div id="home-slider" class="owl-carousel owl-theme ">
+
+            <div class="item">
+                <img src="images/sliderimage.jpg" alt="slide-1" class="img-responsive">
+                <div class="slider-desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="slide-offers-left">
+                                    <div class="slide-offers-title"><span>Delicious Cakes</span><br />All Flavour</div>
+                                    <p>New & Fvhresh collection<br />arraival in believe store</p>
+                                    <a href="" class="btn btn-blue">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/plane2.jpg" alt="slide-2" class="img-responsive">
+                <div class="slider-desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="slide-offers-left">
+                                    <div class="slide-offers-title"><span>50% Price cut</span><br />for online order
+                                    </div>
+                                    <p>New & Fvhresh collection<br />arraival in believe store</p>
+                                    <a href="" class="btn btn-blue">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/sliderimg3.jpg" alt="slide-2" class="img-responsive">
+                <div class="slider-desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="slide-offers-left">
+                                    <div class="slide-offers-title"><span>50% Price cut</span><br />for online order
+                                    </div>
+                                    <p>New & Fvhresh collection<br />arraival in believe store</p>
+                                    <a href="" class="btn btn-blue">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/sliderimg4.jpg" alt="slide-2" class="img-responsive">
+                <div class="slider-desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="slide-offers-left">
+                                    <div class="slide-offers-title"><span>50% Price cut</span><br />for online order
+                                    </div>
+                                    <p>New & Fvhresh collection<br />arraival in believe store</p>
+                                    <a href="" class="btn btn-blue">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Slider -->
+
+    <!-- flower aura send gift section  -->
+    <section>
+        <div class="Send_GIftContainer">
+            <h2>Send Gift</h2>
+            <div class="cake-container">
+                <div class="item-cont">
+                    <div class="cont1">
+                        <img src="images/gift1.jpg" alt="">
+                        <h5>Cakes</h5>
+                    </div>
+                    <div class="cont1"><img src="images/gift3.jpg" alt="">
+                        <h5>Birthday</h5>
+                    </div>
+                    <div class="cont1"><img src="images/gift4.jpg" alt="">
+                        <h5>Flowers</h5>
+                    </div>
+                    <div class="cont1"><img src="images/gift5.jpg" alt="">
+                        <h5>Taddy</h5>
+                    </div>
+                    <div class="cont1"><img src="images/shake.jpg" alt="">
+                        <h5>Combo</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- rohit Shop By Bestseller Categoriescode here  -->
+    <div class="trending_Container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="trending_title">
+                        <h2>Shop By Bestseller Categories</h2>
+                        <button class="btn btn-primary">View All</button>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/birthday.jpg" alt="" title="" width="100%"></img>
+                        <p>Birthday</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/f2.jpg" alt="" title="" width="100%"></img>
+                        <p>Chocolates</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/f4.jpg" alt="" title="" width="100%"></img>
+                        <p>Roses</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/allflower.jpg" alt="" title="" width="100%"></img>
+                        <p>All flowers</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row shopCard">
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/f6.jpg" alt="" title="" width="100%"></img>
+                        <p>cakes</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/giftmall.jpg" alt="" title="" width="100%"></img>
+                        <p>Giftmall</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/anni.jpg" alt="" title="" width="100%"></img>
+                        <p>Anniversary</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/allflower.jpg" alt="" title="" width="100%"></img>
+                        <p>All flowers</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of Shop By Bestseller Categories rohit code  -->
+
+
+    <!-- rohit trending code here  -->
+    <div class="trending_Container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="trending_title">
+                        <h2>Tranding</h2>
+                        <button class="btn btn-primary">View All</button>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/birthday.jpg" alt="" title="" width="100%"></img>
+                        <p>Birthday</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/f2.jpg" alt="" title="" width="100%"></img>
+                        <p>Chocolates</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/f4.jpg" alt="" title="" width="100%"></img>
+                        <p>Roses</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 pd_LR">
+                    <div class="card_Container">
+                        <img src="images/allflower.jpg" alt="" title="" width="100%"></img>
+                        <p>All flowers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of rohit code  -->
+
+
+    <!-- image gallary section -->
+    <div class="imagegallary_Container">
+        <h2>Cakes Online</h2>
+        <div class="lightbox">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/all-cakes-1-19-apr-2021.jpg"
+                            alt="Lightbox image 1" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded LeftImage" />
+                        <h4 class="lightbox-heading">All Cakes</h4>
+                        <p>Celebration-Ready</p>
+                        <img src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/black-forest-19-apr-2021.jpg"
+                            alt="Lightbox image 2" class="w-100 shadow-1-strong rounded LeftImage" />
+                        <h4 class="lightbox-heading">Blackforest Cakes</h4>
+                        <p>Best of Two Worlds</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/chocolate-19-apr-2021.jpg"
+                            alt="Lightbox image 3" class="w-100 shadow-1-strong rounded RightImage" />
+                        <h4 class="lightbox-heading">Chocolate Cakes</h4>
+                        <p>Bittersweet Symphony</p>
+                        <img src="https://i7.fnp.com/assets/images/custom/new-desk-home/cakes/Pineapple-19-apr-2021.jpg"
+                            alt="Lightbox image 3" class="w-100 shadow-1-strong rounded RightImage" />
+                        <h4 class="lightbox-heading">Pineapple Cakes</h4>
+                        <p>Tangy Temptations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Content end  -->
+
+    <!-- Dummy Lorem Content  -->
+
+    <div class="content-div">
+        <div class="content-text">
+            <h3>Send Flowers Online with Ferns N Petals (FNP): India's Biggest Florist Chain</h3>
+            <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum.
+                Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae,
+                voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis
+                accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus
+                inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae
+                explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse
+                quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia
+                dolorem minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex
+                consequuntur quos iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis
+                quidem sed delectus quis excepturi quisquam! Deserunt excepturi quia nostrum eligendi, in amet!
+                Consequatur itaque inventore, mollitia nisi quas vero id nihil adipisci nesciunt libero. Est totam
+                adipisci ea itaque aspernatur veritatis, omnis dolorum excepturi ex esse qui at dignissimos placeat quos
+                doloribus fugiat quia voluptates provident quis nobis porro ipsa reprehenderit repellat veniam? Quaerat
+                facilis vero quisquam nobis officia consectetur, quasi architecto porro perferendis suscipit qui nulla
+                quod recusandae, pariatur dolorum sapiente eveniet mollitia velit magni praesentium laudantium aliquid
+                deleniti incidunt!</p>
+        </div>
+        <div class="content-text">
+            <h3>International Presence</h3>
+            <p class="mypara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum.
+                Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae,
+                voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis
+                accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus
+                inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae
+                explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse
+                quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia
+                dolorem </p>
+            <p class="mypara">
+                minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex consequuntur quos
+                iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis quidem sed delectus
+                quis excepturi quisquam! Deserunt excepturi quia nostrum eligendi, in amet! Consequatur itaque
+                inventore, mollitia nisi quas vero id nihil adipisci nesciunt libero. Est totam adipisci ea itaque
+                aspernatur veritatis, omnis dolorum excepturi ex esse qui at dignissimos placeat quos doloribus fugiat
+                quia voluptates provident quis nobis porro ipsa reprehenderit repellat veniam? Quaerat facilis vero
+                quisquam nobis officia consectetur, quasi architecto porro perferendis suscipit qui nulla quod
+                recusandae, pariatur dolorum sapiente eveniet mollitia velit magni praesentium laudantium aliquid
+                deleniti incidunt!</p>
+        </div>
+
+        <div class="content-text">
+            <h3>Same Day Flower Delivery - in 2 Hours or even less!</h3>
+            <p class="mypara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum.
+                Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae,
+                voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis
+                accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus
+                inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae
+                explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse
+                quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia
+                dolorem
+                minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex consequuntur quos
+                iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis quidem sed Quaerat
+                facilis vero quisquam nobis officia consectetur, quasi architecto porro perferendis suscipit qui nulla
+                quod recusandae, pariatur dolorum sapiente eveniet mollitia velit magni praesentium laudantium aliquid
+                deleniti incidunt!</p>
+        </div>
+        <div class="content-text">
+            <h3>Create Colorful Memories with Our Spectacular Birthday Cakes and Gifts</h3>
+            <p class="mypara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat numquam eum.
+                Numquam iste qui nihil maxime modi quisquam, asperiores porro obcaecati voluptatem nisi recusandae,
+                voluptates assumenda, fugit suscipit harum! Consequuntur aperiam numquam esse non facere, ad corporis
+                accusantium at aliquid odit dolorem voluptates hic, a voluptatum ipsa laboriosam culpa accusamus
+                inventore quidem illum consectetur officia, pariatur fuga. Minima ipsum nesciunt iure sequi? Beatae
+                explicabo possimus tenetur repellendus ex natus quisquam et unde aliquid libero fugiat voluptatibus esse
+                quaerat id voluptate totam incidunt qui officia consequuntur magnam ratione, ea sequi ab nam! Mollitia
+                dolorem
+                minus fugit illum perferendis! Dignissimos ab corrupti ipsa corporis itaque, vero ex consequuntur quos
+                iusto commodi dolores earum cum odit provident repudiandae temporibus perferendis quidem sed </p>
+        </div>
+    </div>
+    <!-- Dummy Lorem Content Section End  -->
+
+    <!-- <section> for fotter send gift</section> -->
+    <section class="cake-footer">
+        <div class="cakeheading2">
+            <h2>How it works</h2>
+        </div>
+        <div class="cake-container2">
+            <div class="item-cont2">
+                <div class="cont2">
+                    <a href=""> <img src="images/map2.png" alt="">
+                        <a href="">
+                            <h5>Select Your Location</h5>
+                        </a>
+                </div>
+                <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
+                <div class="cont2">
+                    <a href=""><img src="images/bakery-shop2.png" alt="">
+                        <h5>Find best Bakery</h5>
+                    </a>
+                </div>
+                <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
+                <div class="cont2">
+                    <a href=""><img src="images/wedding-cake.png" alt="">
+                        <h5>Select your Cake</h5>
+                    </a>
+                </div>
+                <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
+                <div class="cont2">
+                    <a href=""><img src="images/dollar-symbol.png" alt="">
+                        <h5>Select Payment & Pay</h5>
+                    </a>
+                </div>
+                <div class="arrow"><a href=""><img src="images/fast-forward-double-right-arrows.png" alt=""></a></div>
+                <div class="cont2">
+                    <a href=""><img src="images/delivery.png" alt="">
+                        <h5>Delivery</h5>
+                    </a>
+                </div>
+                <!-- <div class="arrow"><img src="images/right-arrow-next.png" alt=""></div> -->
+            </div>
+        </div>
+    </section>
+    <!--footer icon section end-->
+
+
+    <div id="footer">
+        <!-- Footer -->
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="myfooterrow">
+                    <div class="col-md-3">
+                        <div class="text-widget">
+                            <div class="wid-title">Welcome to Cakemart</div>
+                            <div class="leftsidedata">
+                                <div class="leftside-heading">Localities In Mumbai</div>
+                                    <p class="left-data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae rem excepturi, </p>
+                                    <p class="left-data"><img src="images/pin (1).png">  1786 Stonecoal Road</p>
+                                    <p class="left-data"><img src="images/call.png">  +0123-865-954</p>
+                                    <p class="left-data"><img src="images/email (1).png">  email@gmail.com</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="quick-links">
+                            <div class="wid-title">Categories</div>
+                            <ul>
+                                <li><a href="index2.html">Cakes</a></li>
+                                <li><a href="#">Chocolates</a></li>
+                                <li><a href="blog.html">Flowers</a></li>
+                                <li><a href="contact.html">icecream</a></li>
+                                <li><a href="#">Candy</a></li>
+                                <!-- <li><a href="#">Sweets</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="quick-links">
+                            <div class="wid-title">Information</div>
+                            <ul>
+                                <li><a href="index2.html">About US</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="contact.html">Privacy Policy</a></li>
+                                <li><a href="#">Orders & returns</a></li>
+                                <li><a href="blog.html">trems & Condition</a></li>
+                                <!-- <li><a href="#">Sweets</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="quick-links">
+                            <div class="wid-title">City</div>
+                            <ul>
+                                <li><a href="index2.html">Banglore</a></li>
+                                <li><a href="#">Noida</a></li>
+                                <li><a href="contact.html">Delhi</a></li>
+                                <li><a href="#">Gurugram</a></li>
+                                <li><a href="#">Mumbai</a></li>
+                                <!-- <li><a href="#">Sweets</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="social-heading">Connect with Us</div>
+                              <div class="social-media">
+                                  <div class="socialicon1">
+                                      <a href="#"><img src="images/facebook (1).png" alt=""></a></div>
+                                  <div class="socialicon2">
+                                      <a href="#"><img src="images/twitter.png" alt=""></a></div>
+                                  <div class="socialicon3">
+                                      <a href="#"><img src="images/pinterest.png" alt=""></a></div>
+                                  <div class="socialicon4">
+                                      <a href="#"><img src="images/instagram.png" alt=""></a></div>
+                              </div>
+                          </div> -->
+                    <div class="col-md-3 Servicesdiv">
+                        <div class="subscribe">
+                            <div class="quick-links">
+                                    <div class="wid-title">Service</div>
+                                    
+                                    <ul>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">View Cart</a></li>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="#">Track My Order</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <!-- <li><a href="#">Select PayMent</a></li> -->
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div for brands slider -->
+        <div class="brands">
+            <div class="container-fluid fotCont">
+                <div class="brands-inner">
+                    <!-- <div class="brand-title">
+                                    <span>Brands</span>
+                                </div> -->
+
+                    <div id="slider-home">
+                        <!-- Slider -->
+                        <div id="brand-carousel" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/brand-2.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-3.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-4.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-1.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-5.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-2.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-3.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-4.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-1.png" alt="slide-1" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="images/brand-5.png" alt="slide-1" class="img-responsive">
+                            </div>
+                        </div>
+                    </div> <!-- Slider -->
+
+                </div>
+            </div>
+        </div>
+    </div><!-- Footer -->
+    </div> <!-- wrapper -->
+
+
+
+    <!-- Model for sigup  -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-contentSingup">
+                <div class="SinupContainer">
+                    <div class="row">
+                        <div class="col-sm-12 md-12">
+                            <div class="titleSinup">
+                                <div class="row">
+                                    <div class="col-sm-10 col-md-11">
+                                        <div class="sinUp">
+                                            <img src="images/cakemart.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 col-md-1">
+                                        <div class="CLopPOP">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="UserName">
+                                <input type="text" placeholder="Full Name"></input>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="UserName">
+                                <input type="text" placeholder="Email Address"></input>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="UserName">
+                                <input type="text" placeholder="Mobile Number"></input>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="Mobile_loginBtn Mobile_SinupBtn">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="AlrdyLogin">
+                                <span>Already Have an Account?<a data-toggle="modal"
+                                    data-target="#exampleModalLong">Sign in</a></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="orSEp sinupOr">
+                                <hr>
+                                </hr>
+                                <span>or</span>
+                                <hr>
+                                </hr>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="socialContainer socialSInup">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="SocialMediaLOgin">
+                                            <a href="#"><img src="images/facebook (1).png"></img>    fecebook</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="SocialMediaLOgin">
+                                            <a href="#"><img src="images/popgoogleicon.png"></img>   google</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                            <div class="loginContent">
+                                By Continuing. You are agree to our 
+                                <a href="">term of Service</a><br>
+                               <a href="">Privacy Policy</a> 
+                              <a href="">Content Policy.</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Sigup -->
+
+    <!-- login modal  -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content123">
+                <div class="loGin_container">
+                    <div class="row">
+                        <div class="col-sm-12 md-12">
+                            <div class="moDlLogo">
+                                <img src="images/cakemart.jpg" title="" alt="" height="50px"></img>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="Mobile_login">
+                                <img src="images/india.png"></img>
+                                <input type="text" placeholder="+ 91"></input>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="Mobile_loginBtn">
+                                <button class="btn">Send OTP</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="AlrdyLogin">
+                                <span>Creat a new account<a data-toggle="modal"
+                                    data-target="#exampleModalCenter">Register</a></span>
+                                </div>
+                            </div>
+                        <div class="col-sm-12 md-12">
+                            <div class="orSEp">
+                                <hr>
+                                </hr>
+                                <span>or</span>
+                                <hr>
+                                </hr>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="EmailContinue">
+                                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                                    <img src="images/envelope.png" alt="">
+                                    Continue with Email
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="socialContainer">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="SocialMediaLOgin">
+                                            <a href="#"><img src="images/facebook (1).png"></img>    fecebook</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="SocialMediaLOgin">
+                                            <a href="#"><img src="images/popgoogleicon.png">     Google</img></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 
+                        <div class="loginContent">
+                            By Continuing. You are agree to our 
+                            <a href="">term of Service</a><br>
+                           <a href="">Privacy Policy</a> 
+                          <a href="">Content Policy.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of login modal -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/library.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.selectbox-0.2.js"></script>
+    <script src="js/theme-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CakeMart- Sigle Product Page</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/secondpage.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="bars">
+        <a href="#"><img src="images/vendormenu.png" alt=""></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a><Button class="left-btn">Delivery</Button></a>
+          </li>
+          <li>
+            <a href="#">Pick Up</a>
+          </li>
+          <li>
+            <div class="LocationSelect">
+              <select>
+                <option>ASAP</option>
+                <option>Sample1</option>
+                <option>Sample2</option>
+                <option>Sample3</option>
+                <option>Sample4</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <!-- <a href="#">To  Mumbai<img src="images/down-chevron (1).png" alt=""></a> -->
+            <div class="LocationSelect">
+              <select name="cars" id="cars">
+                <option value="volvo">Location</option>
+                <option value="saab">Mumbai</option>
+                <option value="opel">Delhi</option>
+                <option value="opel">Ghaziabad</option>
+                <option value="opel">Pune</option>
+                <option value="opel">Delhi</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+        <div class="center-div">
+          <img src="images/cakemart.jpg" alt="">
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="content">
+            <img src="images/loupe.png" />
+            <input type="text" class="field" placeholder="Search for" />
+          </div>
+        </form>
+        <div class="shoping">
+          <img src="images/shopping-cart (1).png" alt="">
+          <span>0</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  </div> <!-- Nav -->
+
+  <div class="leftmininav">
+    <div class="inner-listing  productmininav">
+      <ul class="minlisting">
+        <li class="list"><a href="#">Home &nbsp/</a></li>
+        <li class="list"><a href="#">Bangalore &nbsp/</a></li>
+        <li class="list"><a href="#">Mumbai &nbsp/</a></li>
+        <li class="list"><a href="#">Cakemart </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- single product content  -->
+  <div class="mainproduct-div">
+    <!-- this is left side Product-image  -->
+    <div class="slidersingleproduct">
+      <div class="product">
+        <img src="images/ck.jpg" alt="" onclick="clickme(this)">
+        <img src="images/ck2.jpg" alt="" onclick="clickme(this)">
+        <img src="images/ck3.jpg" alt="" onclick="clickme(this)">
+        <img src="images/c5.jpg" id="lastimg" alt="" onclick="clickme(this)">
+      </div>
+      <div class="preview">
+        <img src="images/ck.jpg" id="imagebox" alt="">
+      </div>
+    </div>
+
+
+    <!-- this is Right side product detail  -->
+    <div class="rightcontentdata">
+      <div class="rightproductinner">
+        <h3>Silky Smooth KitKat Cake</h3>
+        <div class="prorow">
+          <div class="productrate">
+            <img src="images/goldenstar.png" alt="">
+            4.3
+          </div>
+          <div class="review-link"><a href="#">82 Review</a></div>
+        </div>
+      </div>
+
+      <div class="contentprodect">
+        <p class="content-para">Product Contains</p>
+        <!-- <li>KitKat Cake</li> -->
+        <ul class="kitkat">
+          <li><a href="#">KitKat Cake</a></li>
+        </ul>
+        <h2>Rs 699</h2>
+        <div class="paymassagemore">
+          <div class="paymassage">Or Pay Only,Rs624 +75</div>
+          <div class="loginmassage"><a href="#">Login</a>
+            to redeem Reward points</div>
+        </div>
+
+        <div class="thirdcontentdiv">
+          <p class="content-para">Offers</p>
+          <div class="main-reward">
+            <ul class="kitkat">
+              <li><a href="#">Earn 70 Points upon gifting this.</a></li>
+            </ul>
+            <ul class="kitkat">
+              <li><a href="#">Earn 70 Points upon gifting this.</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="wheightbtnsec">
+          <div class="product-containe">Weight</div>
+          <button class="wheight">1 kg</button>
+          <button class="wheight">2 kg</button>
+          <button class="wheight">3 kg</button>
+          <button class="wheight">4 kg</button>
+          <button class="wheight">5 kg</button>
+        </div>
+        <div class="egglesscheack">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1">Make it eggless @ Rs 50 </label>
+        </div>
+
+        <form action="">
+          <div class="form-group massage">
+            <label for="usr">Message on cake</label>
+            <input type="text" class="form-control" id="usr" placeholder="Message on cake">
+            <small id="emailHelp" class="form-text text-muted smalldata">Maximum limit :- 20 characters</small>
+          </div>
+        </form>
+
+        <form class="form-inline my-2 my-lg-0">
+          <div class="product-location" id="mysearch2">
+            <img src="images/pin.png" />
+            <input type="text" class="field" placeholder="Enter and Select Delivery City">
+          </div>
+        </form>
+        <small id="emailHelp" class="form-text smalldata2">Available in limited cities*</small>
+
+        <!-- div for  delivery truck  -->
+        <div class="deliver-product">
+          <img src="images/icons8-delivery-50.png" alt=""><span>Get today! Order within</span></img>
+        </div>
+        <div class="addtocart">
+          <a href="#"> Add to Cart</a>
+        </div>
+
+        <!-- coulemn sec  -->
+        <div class="SinglePro-DeliveryTime">
+          <ul>
+            <li>
+              <div class="raTingSec2">
+                <p class="myrating2"><img
+                    src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-delivery-truck-sales-vitaliy-gorbachev-flat-vitaly-gorbachev.png" />
+                </p>
+                <p>On Time Free Delivery</p>
+              </div>
+            </li>
+            <li>
+              <div class="raTingSec2">
+                <p class="myrating2"><img src="https://img.icons8.com/color/48/000000/security-checked--v2.png" />
+                </p>
+                <p>100% Safe & Secure Payments</p>
+              </div>
+            </li>
+            <li>
+              <div class="raTingSec2">
+                <p class="myrating2"><img
+                    src="https://img.icons8.com/emoji/48/000000/smiling-face-with-smiling-eyes.png" />
+                </p>
+                <p>7 Million Smiles Delivered by CakeMart-</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Triple Cards-->
+        <section class="CArdBootstrapProDuct">
+          <h3>Silky Smooth KitKat Cake</h3>
+          <div class="CArdBootstrap">
+            <div class="col-sm-12 col-md-3 ">
+              <div class="CatProductList singlpageproductcard">
+                <div class="CatPrdtImg">
+                  <img src="images/cake1.jpg" alt="" title=""></img>
+
+                </div>
+                <span>Butterscotch</span>
+
+                <p>RS 799</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <div class="CatProductList singlpageproductcard">
+                <div class="CatPrdtImg">
+                  <img src="images/cake2.jpg" alt="" title=""></img>
+
+                </div>
+                <span>Pinaple Cake</span>
+                <p>RS 799</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <div class="CatProductList singlpageproductcard">
+                <div class="CatPrdtImg">
+                  <img src="images/cake3.jpg" alt="" title=""></img>
+
+                </div>
+                <span> Butterscotch</span>
+                <p>RS 799</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Section for product disscription  -->
+        <section class="Pro-Discription">
+          <h3>Description</h3>
+          <p>The look of the cake will make anyone drool over it. So to add a sweet spice to the occasion of your loved
+            ones, go with this creamy kitkat cake. The receiver will be mesmerised and fall in love at first sight with
+            this cake. Wait no more and order this kitkat delicacy and boost up the occasion.</p>
+          <p class="content-para">Caring Tips</p>
+          <ul class="discription-list">
+            <li>While receiving, do not squeeze the sides of the box. </li>
+            <li>While receiving, do not squeeze the sides of the box. </li>
+            <li>While receiving, do not squeeze the sides of the box. </li>
+            <li>While receiving, do not squeeze the sides of the box. </li>
+          </ul>
+          <p class="content-para">SKU Number</p>
+          <p>98257AIT</p>
+          <p class="content-para">Note</p>
+          <div class="Notinner">The icing, design of the cake may vary from the image depending upon local availability.
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+      <!-- cards content  -->
+      <section class="Doordash-Card PRoDoordaSh">
+        <div class="title protitle">
+         <h2>Most Ordered Near You</h2>
+         <button class="title-btn">View all</button>
+        </div>
+        <div class="card-deck">
+          <div class="card">
+                <div class="vendor-card">
+                  <a href="product.html">
+                <img src="images/landingback.jpg" class="card-img-top" alt="...">
+                <div class="card-content">
+                <div class="card-body">
+                  <h5 class="card-title TitCat"><a href="product.html">Strowberry Cake</a></h5>
+                  <p class="content-para">Desert,Bakery,Cakes,Items</p>
+                  <div class="rating">
+                    <div class="rating-star">
+                      <img src="images/star.png" alt="">
+                      <span>4.6</span>
+                    </div>
+                      <div class="minuts">
+                        <span>30 MINS</span>
+                      </div>
+                      <div class="minuts">
+                        <span>Rs.200 For Two</span>
+                      </div>
+                  </div>
+                  <div class="extracontent">
+                 <div class="innercontent">
+                   <img src="images/discount.png" alt="">
+                   <label for="innercontent">30% off use cakemart order</label>
+                 </div>
+                 <div class="innercontent">
+                  <img src="images/discount.png" alt="">
+                  <label for="innercontent">30% off use cakemart coupons</label>
+                </div>
+                  </div>
+                  <div class="dis">
+                  <a href="product.html">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+              </div>
+              </div>
+  
+              <div class="card">
+                <div class="vendor-card">
+                <img src="images/landingback2.jpg" class="card-img-top" alt="...">
+                <div class="card-content">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Cake</h5>
+                  <p class="content-para">Desert,Bakery,Cakes,Items</p>
+                  <div class="rating">
+                    <div class="rating-star">
+                      <img src="images/star.png" alt="">
+                      <span>4.6</span>
+                    </div>
+                      <div class="minuts">
+                        <span>30 MINS</span>
+                      </div>
+                      <div class="minuts">
+                        <span>Rs.200 For Two</span>
+                      </div>
+                  </div>
+                  <div class="extracontent">
+                 <div class="innercontent">
+                   <img src="images/discount.png" alt="">
+                   <label for="innercontent">30% off use cakemart order</label>
+                 </div>
+                 <div class="innercontent">
+                  <img src="images/discount.png" alt="">
+                  <label for="innercontent">30% off use cakemart coupons</label>
+                </div>
+                  </div>
+                  <div class="dis">
+                    <a href="product.html">Order Now</a>
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="vendor-card">
+                <img src="images/landingback3.jpg" class="card-img-top" alt="...">
+                <div class="card-content">
+                <div class="card-body">
+                  <h5 class="card-title">Strowberry Cake</h5>
+                  <p class="content-para">Desert,Bakery,Cakes,Items</p>
+                  <div class="rating">
+                    <div class="rating-star">
+                      <img src="images/star.png" alt="">
+                      <span>4.6</span>
+                    </div>
+                      <div class="minuts">
+                        <span>30 MINS</span>
+                      </div>
+                      <div class="minuts">
+                        <span>Rs.200 For Two</span>
+                      </div>
+                  </div>
+                  <div class="extracontent">
+                 <div class="innercontent">
+                   <img src="images/discount.png" alt="">
+                   <label for="innercontent">30% off use cakemart order</label>
+                 </div>
+                 <div class="innercontent">
+                  <img src="images/discount.png" alt="">
+                  <label for="innercontent">30% off use cakemart coupons</label>
+                </div>
+                  </div>
+                  <div class="dis">
+                    <a href="product.html">Order Now</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="vendor-card">
+                <img src="images/landingback3.jpg" class="card-img-top" alt="...">
+                <div class="card-content">
+                <div class="card-body">
+                  <h5 class="card-title">Strowberry Cake</h5>
+                  <p class="content-para">Desert,Bakery,Cakes,Items</p>
+                  <div class="rating">
+                    <div class="rating-star">
+                      <img src="images/star.png" alt="">
+                      <span>4.6</span>
+                    </div>
+                      <div class="minuts">
+                        <span>30 MINS</span>
+                      </div>
+                      <div class="minuts">
+                        <span>Rs.200 For Two</span>
+                      </div>
+                  </div>
+                  <div class="extracontent">
+                 <div class="innercontent">
+                   <img src="images/discount.png" alt="">
+                   <label for="innercontent">30% off use cakemart order</label>
+                 </div>
+                 <div class="innercontent">
+                  <img src="images/discount.png" alt="">
+                  <label for="innercontent">30% off use cakemart coupons</label>
+                </div>
+                  </div>
+                  <div class="dis">
+                    <a href="product.html">Order Now</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+              </div>
+                
+
+              <section class="probanner">
+                <div class="ban">
+             <div class="banner">
+                <div class="cakemart-name">
+                 We are ready for your cake order...
+                </div>
+              </div>
+            </div>
+            </section>
+
+        <hr>
+              <!-- Single Page Footer Content start  -->
+          <div id="footer">
+            <!-- Footer -->
+            <div class="footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <div class="myfooterrow">
+                        <div class="col-md-3">
+                            <div class="text-widget">
+                                <div class="wid-title">Welcome to Cakemart</div>
+                                <div class="leftsidedata">
+                                    <div class="leftside-heading">Localities In Mumbai</div>
+                                        <p class="left-data">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae rem excepturi, </p>
+                                        <p class="left-data"><img src="images/pin (1).png">  1786 Stonecoal Road</p>
+                                        <p class="left-data"><img src="images/call.png">  +0123-865-954</p>
+                                        <p class="left-data"><img src="images/email (1).png">  email@gmail.com</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="quick-linksPro">
+                                <div class="wid-title">Categories</div>
+                                <ul>
+                                    <li><a href="index2.html">Cakes</a></li>
+                                    <li><a href="#">Chocolates</a></li>
+                                    <li><a href="blog.html">Flowers</a></li>
+                                    <li><a href="contact.html">icecream</a></li>
+                                    <li><a href="#">Candy</a></li>
+                                    <li><a href="#">Sweets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="quick-linksPro">
+                                <div class="wid-title">Information</div>
+                                <ul>
+                                    <li><a href="index2.html">About US</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="contact.html">Privacy Policy</a></li>
+                                    <li><a href="#">Orders & returns</a></li>
+                                    <li><a href="blog.html">trems & Condition</a></li>
+                                     <li><a href="#">Sweets</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="quick-linksPro">
+                                <div class="wid-title">City</div>
+                                <ul>
+                                    <li><a href="index2.html">Banglore</a></li>
+                                    <li><a href="#">Noida</a></li>
+                                    <li><a href="contact.html">Delhi</a></li>
+                                    <li><a href="#">Gurugram</a></li>
+                                    <li><a href="#">Mumbai</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="social-heading">Connect with Us</div>
+                                  <div class="social-media">
+                                      <div class="socialicon1">
+                                          <a href="#"><img src="images/facebook (1).png" alt=""></a></div>
+                                      <div class="socialicon2">
+                                          <a href="#"><img src="images/twitter.png" alt=""></a></div>
+                                      <div class="socialicon3">
+                                          <a href="#"><img src="images/pinterest.png" alt=""></a></div>
+                                      <div class="socialicon4">
+                                          <a href="#"><img src="images/instagram.png" alt=""></a></div>
+                                  </div>
+                              </div> -->
+                        <div class="col-md-3 Servicesdiv">
+                            <div class="subscribe">
+                                <div class="quick-linksPro">
+                                        <div class="wid-title">Service</div>
+                                        <ul>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">View Cart</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                            <li><a href="#">Track My Order</a></li>
+                                            <li><a href="#">Help</a></li>
+                                         
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+           
+          
+        </div><!-- Footer -->
+        </div> <!-- wrapper -->
+
+  <script>
+    function clickme(smallImg) {
+
+      var fullImg = document.getElementById("imagebox");
+      fullImg.src = smallImg.src;
+
+    }
+
+  </script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
