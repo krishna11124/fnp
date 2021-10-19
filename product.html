@@ -33,68 +33,74 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="bars">
-                <a href="#"><img src="images/vendormenu.png" alt=""></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <Button class="left-btn">Delivery</Button>
-                    </li>
-                    <li>
-                        <a href="#">Pick Up</a>
-                    </li>
-                    <li>
-                        <div class="LocationSelect">
-                            <select>
-                                <option>ASAP</option>
-                                <option>Sample1</option>
-                                <option>Sample2</option>
-                                <option>Sample3</option>
-                                <option>Sample4</option>
-
-                            </select>
-                        </div>
-                    </li>
-                    <li>
-                        <!-- <a href="#">To  Mumbai<img src="images/down-chevron (1).png" alt=""></a> -->
-                        <div class="LocationSelect">
-                            <select name="cars" id="cars">
-                                <option value="volvo">Location</option>
-                                <option value="saab">Mumbai</option>
-                                <option value="opel">Delhi</option>
-                                <option value="opel">Ghaziabad</option>
-                                <option value="opel">Pune</option>
-                                <option value="opel">Delhi</option>
-                            </select>
-                        </div>
-                    </li>
-                </ul>
-                <div class="center-div">
-                    <a href="index2.html"><img src="images/cakemart.jpg" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="center-div">
+          <img src="images/cakemart.jpg" alt="">
+      </div>
+          <div class="bars">
+              <a href="#"><img src="images/vendormenu.png" alt=""></a>
+           </div>
+           <div class="rightresponsivediv">
+             <div class="shoping myshoping" id="myshopinghide">
+               <img src="images/shopping-cart (1).png" alt="">
+               <span>0</span>
+       </div>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon menusub"><img src="images/vendormenu.png" alt=""></span>
+              </button>
+      </div>
+          <div class="collapse navbar-collapse mynavdesizn" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mynavs">
+              <li class="nav-item active vendorli">
+                  <a><Button class="left-btn">Delivery</Button></a>
+              </li>
+              <li class="vendorli">
+                  <a href="#" class="pickup">Pick Up</a>
+                </li>
+              <li class="vendorli">
+                <div class="LocationSelect">
+                  <select>
+                    <option>ASAP</option>
+                    <option >Sample1</option>
+                    <option >Sample2</option>
+                    <option >Sample3</option>
+                    <option >Sample4</option>
+                    
+                  </select>
                 </div>
-                <form class="form-inline my-2 my-lg-0">
-                    <div class="content">
-                        <img src="images/loupe.png" />
-                        <input type="text" class="field" placeholder="Search for" />
-                    </div>
-                </form>
-                <div class="shoping" onclick="CartPopup()">
-                    <img src="images/shopping-cart (1).png" alt="">
-                    <span>0</span>
-                </div>
+                </li>
+                <li class="vendorli">
+                  <!-- <a href="#">To  Mumbai<img src="images/down-chevron (1).png" alt=""></a> -->
+                  <div class="LocationSelect">
+                    <select name="cars" id="cars">
+                      <option value="volvo">Location</option>
+                      <option value="saab">Mumbai</option>
+                      <option value="opel">Delhi</option>
+                      <option value="opel">Ghaziabad</option>
+                      <option value="opel">Pune</option>
+                      <option value="opel">Delhi</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+              <div class="center-div2">
+                <img src="images/cakemart.jpg" alt="">
             </div>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="content searchbarhide">
+                  <img src="images/loupe.png" />
+                  <input type="text" class="field" placeholder="Search for" />
+                </div>
+            </form>
+            <div class="shoping">
+              <img src="images/shopping-cart (1).png" alt="">
+              <span>0</span>
+          </div>
+          </div>
         </nav>
-
-
-        </div>
-    </header> <!-- Nav -->
+  
+        
+          </header> <!-- Nav -->
 
     <!-- One More Header  -->
     <Section class="Miniheader">
@@ -405,7 +411,7 @@
                                                         </div>
                                                         <div class="col-sm-12 col-md-6">
 
-                                                            <div class="catOffEr">
+                                                            <div class="catOffEr hideffer">
                                                                 <a><img src="images/shopping-bag.png"></img></i><span>40%
                                                                         off up to ₹80 | Use code
                                                                         TRYNEW</span></a><br>
@@ -421,7 +427,7 @@
 
                                                 </div>
                                                 <div class="col-md-12">
-                                                    <div class="ProductSearchcheck">
+                                                    <div class="ProductSearchcheck hideffer">
                                                         <form class="form-inline my-2 my-lg-0">
                                                             <div class="content-Super">
                                                                 <img src="images/loupe.png" />
@@ -736,9 +742,6 @@
                                                                                 <span>classic cakes with Pinaple and
                                                                                     Butterscotch</span></a>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                     <div class="col-sm-12 col-md-3">
                                                                         <div class="CatProductList">
@@ -769,9 +772,6 @@
                                                                                 <span>classic cakes with Pinaple and
                                                                                     Butterscotch</span></a>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row MakeBackgroundwhite">
@@ -804,9 +804,6 @@
                                                                                 <span>classic cakes with Pinaple and
                                                                                     Butterscotch</span></a>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                     <div class="col-sm-12 col-md-3">
                                                                         <div class="CatProductList">
@@ -837,9 +834,6 @@
                                                                                 <span>classic cakes with Pinaple and
                                                                                     Butterscotch</span></a>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                 </div>
                                                                 <!-- <div class="row MakeBackgroundwhite">
@@ -872,9 +866,6 @@
                                                                             <span>classic cakes with Pinaple and
                                                                                 Butterscotch</span>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                     <div class="col-sm-12 col-md-3">
                                                                         <div class="CatProductList">
@@ -980,9 +971,6 @@
                                                                                 <span>classic cakes with Pinaple and
                                                                                     Butterscotch</span></a>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                 </div>
                                                                 <!-- <div class="row MakeBackgroundwhite">
@@ -1107,23 +1095,6 @@
                                                                                 <span>classic cakes with Pinaple and
                                                                                     Butterscotch</span></a>
                                                                         </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-12 col-md-3">
-                                                                    <div class="CatProductList">
-                                                                        <div class="CatPrdtImg">
-                                                                            <img src="images/cake5.jpg" alt=""
-                                                                                title=""></img>
-                                                                            <a data-toggle="modal"
-                                                                            data-target="#exampleModalCenter"><i class="fa fa-plus"
-                                                                                    aria-hidden="true"></i></a>
-                                                                        </div>
-                                                                        <p>RS 799</p>
-                                                                        <span>classic cakes with Pinaple and
-                                                                            Butterscotch</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1145,16 +1116,13 @@
                             <h1>sample side popup</h1>
                         </div> -->
                         </div>
+
                     </div>
                 </div>
             </div>
             <!-- Cat produt popup modal -->
             <!-- Button trigger modal -->
 
-        <!-- end of cat product popup modal -->
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -1236,6 +1204,7 @@
 <script>
     function myFunction() {
         var x = document.getElementById("AddresPop");
+
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {

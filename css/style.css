@@ -1517,7 +1517,7 @@ text-align:left;
    
 }
 .cont1 h5{
-    color: #1b1b1b;
+    /* color: #1b1b1b; */
     font-weight: bold;
     font-size: 18px !important;
 }
@@ -7236,7 +7236,7 @@ button.close{
 .banner{
     width: 100%;
     height: 32vh;
-    background: url(../images/banner.jpg);
+    background: url(/images/banner.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -7669,8 +7669,8 @@ main {
     .myfooterrow{
         flex-flow: wrap;
     }
-    .HomeSearchBar,.Search_LoctionConatiner, .hideInMobile{
-        display: none;
+    .search_Container{
+        width: 100%;
     }
     .item-cont img{
         width: 104px;
@@ -7685,7 +7685,15 @@ main {
     .trending_Container {
         padding: 10px;
     }
+    .Search_contnr{
+        width: 100%;
+    }
+    .MobHed .col-sm-6{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
 }
+
 
 /* style for cake-category  */
 .cakebanner{
@@ -7747,8 +7755,6 @@ padding-left: 80px;
     border-bottom: 1px solid #fff;
 }
 
-
-/* Rohit Sir Css  */
 /* MYcss  */
 .location_continer{
     display: flex;
@@ -7773,10 +7779,10 @@ padding-left: 80px;
 .LOCtion{
     padding: 50% 8% 0 8%;
 }
-.show{
+.show1{
     display: none !important;
 }
-.hide{
+.hide1{
     display: flex !important;
 }
 .MObCart{
@@ -7792,12 +7798,16 @@ padding-left: 80px;
     padding-left: 20px;
     padding-right: 5px;
 }
+.resetpaddingcol{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
  /* mobile responsive code  */
  @media(max-width:799px){
-     .hide{
+     .hide1{
          display: none !important;
      }
-     .show{
+     .show1{
          display: flex !important;
      }
      .homebutton a{
@@ -7850,4 +7860,32 @@ padding-left: 80px;
     .cont2 h5{
         font-size: 10px;
     }
+    .CustomGridS > .col-md-3{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .CustomGridS > .col-md-9{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .catDishDetails{
+
+    }
+    .catProdtName_container > p{
+        font-size: 16px;
+    }
+    .catBigImag_container > img{
+        height: 35px !important;
+        width: unset !important;
+    }
+    html:not([data-scroll='0']) .catDishDetails{
+        height: 70px;
+    }
+    .hideffer{
+        display:none;
+    }
+    .navigation-Menu{
+        margin-top: 66px;
+    }
  }
+

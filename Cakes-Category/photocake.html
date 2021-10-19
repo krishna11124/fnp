@@ -39,65 +39,73 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="center-div">
+      <img src="../images/cakemart.jpg" alt="">
+  </div>
       <div class="bars">
-        <a href="#"><img src="../images/vendormenu.png" alt=""></a>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a><Button class="left-btn">Delivery</Button></a>
+          <a href="#"><img src="../images/vendormenu.png" alt=""></a>
+       </div>
+       <div class="rightresponsivediv">
+         <div class="shoping myshoping" id="myshopinghide">
+           <img src="../images/shopping-cart (1).png" alt="">
+           <span>0</span>
+   </div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon menusub"><img src="../images/vendormenu.png" alt=""></span>
+          </button>
+  </div>
+      <div class="collapse navbar-collapse mynavdesizn" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mynavs">
+          <li class="nav-item active vendorli">
+              <a><Button class="left-btn">Delivery</Button></a>
           </li>
-          <li>
-            <a href="#">Pick Up</a>
-          </li>
-          <li>
+          <li class="vendorli">
+              <a href="#" class="pickup">Pick Up</a>
+            </li>
+          <li class="vendorli">
             <div class="LocationSelect">
               <select>
                 <option>ASAP</option>
-                <option>Sample1</option>
-                <option>Sample2</option>
-                <option>Sample3</option>
-                <option>Sample4</option>
-
+                <option >Sample1</option>
+                <option >Sample2</option>
+                <option >Sample3</option>
+                <option >Sample4</option>
+                
               </select>
             </div>
-          </li>
-          <li>
-            <!-- <a href="#">To  Mumbai<img src="images/down-chevron (1).png" alt=""></a> -->
-            <div class="LocationSelect">
-              <select name="cars" id="cars">
-                <option value="volvo">Location</option>
-                <option value="saab">Mumbai</option>
-                <option value="opel">Delhi</option>
-                <option value="opel">Ghaziabad</option>
-                <option value="opel">Pune</option>
-                <option value="opel">Delhi</option>
-              </select>
-            </div>
-          </li>
-        </ul>
-        <div class="center-divlogo">
-          <img src="../images/cakemart.jpg" alt="">
+            </li>
+            <li class="vendorli">
+              <!-- <a href="#">To  Mumbai<img src="images/down-chevron (1).png" alt=""></a> -->
+              <div class="LocationSelect">
+                <select name="cars" id="cars">
+                  <option value="volvo">Location</option>
+                  <option value="saab">Mumbai</option>
+                  <option value="opel">Delhi</option>
+                  <option value="opel">Ghaziabad</option>
+                  <option value="opel">Pune</option>
+                  <option value="opel">Delhi</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+          <div class="center-div2">
+            <img src="../images/cakemart.jpg" alt="">
         </div>
         <form class="form-inline my-2 my-lg-0">
-          <div class="content">
-            <img src="../images/loupe.png" />
-            <input type="text" class="field" placeholder="Search for" />
-          </div>
+          <div class="content searchbarhide">
+              <img src="../images/loupe.png" />
+              <input type="text" class="field" placeholder="Search for" />
+            </div>
         </form>
         <div class="shoping">
           <img src="../images/shopping-cart (1).png" alt="">
           <span>0</span>
-        </div>
+      </div>
       </div>
     </nav>
-  </header>
-
+      </header> <!-- Nav -->
+  
+   <!-- Nav -->
 
   <section class="cakebanner">
     <div class="leftcat-Proimg">
@@ -139,13 +147,13 @@
         </ul>
 
 
-        <ul class="forlinkul">
+        <ul class="forlinkul somekinkshide">
           <li><a href="">Designer Cakes</a></li>
           <li> <a href=""> Cakes to Gurgaon</a></li>
           <li> <a href="">Cakes to Kolkata</a></li>
         </ul>
 
-        <ul class="forlinkul">
+        <ul class="forlinkul somekinkshide">
           <li><a href="">Designer Cakes</a></li>
           <li> <a href=""> Cakes to Gurgaon</a></li>
           <li> <a href="">Cakes to Kolkata</a></li>
@@ -156,61 +164,57 @@
 
 
   <!-- cards in photocake  -->
-
-  <!-- cards content  -->
-  <!-- cards content  -->
   <section class="Doordash-Card">
     <!-- <div class="title">
-       <h2>Most Ordered Near You</h2>
-       <button class="title-btn">View all</button>
-      </div> -->
+     <h2>Most Ordered Near You</h2>
+     <button class="title-btn">View all</button>
+    </div> -->
     <div class="card-deck">
       <div class="card">
-        <div class="vendor-card">
-          <a href="#">
+            <div class="vendor-card venordcardflex">
+             
             <img src="../images/landingback.jpg" class="card-img-top" alt="...">
             <div class="card-content">
-              <div class="card-body">
-                <h5 class="card-title TitCat"> <a href="../Cakes-Category/singleproduct.html"
-                  onclick="myFunction('Strowberry Cake')">Strowberry Cake</a></h5>
-                <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
-                <div class="rating">
-                  <div class="rating-star">
-                    <img src="../images/star.png" alt="">
-                    <span>4.6</span>
-                  </div>
+            <div class="card-body">
+              <h5 class="card-title TitCat"><a href="product.html">Strowberry Cake</a></h5>
+              <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
+              <div class="rating">
+                <div class="rating-star">
+                  <img src="../images/star.png" alt="">
+                  <span>4.6</span>
+                </div>
                   <div class="minuts">
                     <span>30 MINS</span>
                   </div>
                   <div class="minuts">
                     <span>Rs.200 For Two</span>
                   </div>
-                </div>
-                <div class="extracontent">
-                  <div class="innercontent">
-                    <img src="../images/discount.png" alt="">
-                    <label for="innercontent">30% off use cakemart order</label>
-                  </div>
-                  <div class="innercontent">
-                    <img src="../images/discount.png" alt="">
-                    <label for="innercontent">30% off use cakemart coupons</label>
-                  </div>
-                </div>
-                <div class="dis">
-                  <a href="../Cakes-Category/singleproduct.html"
-                onclick="myFunction('Strowberry Cake')">Order Now</a>
-                </div>
+              </div>
+              <div class="extracontent">
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
+              </div>
+              <div class="dis">
+                <a href="../Cakes-Category/singleproduct.html"
+              onclick="myFunction('Strowberry Cake')">Order Now</a>
               </div>
             </div>
-          </a>
-        </div>
-      </div>
+          </div>
+      
+          </div>
+          </div>
 
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback2.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
-            <div class="card-body">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback2.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
+            <div class="card-body ">
               <h5 class="card-title">Chocolate Cake</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
               <div class="rating">
@@ -218,119 +222,119 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="../Cakes-Category/singleproduct.html"
-                onclick="myFunction('Chocolate Cake')">Order Now</a>
+              onclick="myFunction('Chocolate-Cake')">Order Now</a>
+              </div>
+            </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
-              <h5 class="card-title">Cup Cakes</h5>
+              <h5 class="card-title">Cup Cake</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
               <div class="rating">
                 <div class="rating-star">
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="../Cakes-Category/singleproduct.html"
-                onclick="myFunction('Cup Cakes')">Order Now</a>
+              onclick="myFunction('Cup Cake')">Order Now</a>
               </div>
             </div>
+            </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
-              <h5 class="card-title">Cartoon Cakes</h5>
+              <h5 class="card-title">Designer Cake</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
               <div class="rating">
                 <div class="rating-star">
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="../Cakes-Category/singleproduct.html"
-                onclick="myFunction('Cartoon Cakes')">Order Now</a>
+              onclick="myFunction('Designer Cake')">Order Now</a>
               </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
 
-    <!-- second Card row  -->
-    <!-- <div class="title">
-            <h2>Most Popular Cakes</h2>
-            <button class="title-btn">View all</button>
-           </div> -->
-    <div class="card-deck">
-
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/mycake.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+        <!-- second Card row  -->
+        <!-- <div class="title">
+          <h2>Most Popular Cakes</h2>
+          <button class="title-btn">View all</button>
+         </div> -->
+        <div class="card-deck">
+         
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/mycake.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
@@ -339,71 +343,34 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
-                <a href="#">Order Now</a>
-              </div>
+                <a href="product.html">Order Now</a>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/gift1.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
-              <!-- <p class="card-text">55 min • Free delivery</p> -->
-              <div class="rating">
-                <div class="rating-star">
-                  <img src="../images/star.png" alt="">
-                  <span>4.6</span>
-                </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
-              </div>
-              <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
-              </div>
-              <div class="dis">
-                <a href="#">Order Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/gift3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/gift1.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
@@ -413,35 +380,34 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="#">Order Now</a>
-              </div>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/gift3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
@@ -451,43 +417,35 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
-                <a href="#">Order Now</a>
-              </div>
+                <a href="product.html">Order Now</a>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- tjird Card row  -->
-    <!-- <div class="title">
-            <h2>Most Popular Chocolates</h2>
-            <button class="title-btn">View all</button>
-           </div> -->
-    <div class="card-deck">
-
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
@@ -497,34 +455,40 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="#">Order Now</a>
-              </div>
+                </div>
             </div>
           </div>
+          </div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback2.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+
+        <!-- tjird Card row  -->
+     
+        <div class="card-deck">
+       
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
@@ -534,34 +498,34 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
-                <a href="#">Order Now</a>
-              </div>
+                <a href="product.html">Order Now</a>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback2.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
@@ -571,35 +535,34 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="#">Order Now</a>
-              </div>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
@@ -609,43 +572,77 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
+              </div>
+              <div class="dis">
+                <a href="product.html">Order Now</a>
                 </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"><small class="text-muted">Desert,Bakery,Cakes,Items</small></p>
+              <!-- <p class="card-text">55 min • Free delivery</p> -->
+              <div class="rating">
+                <div class="rating-star">
+                  <img src="../images/star.png" alt="">
+                  <span>4.6</span>
                 </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
+              </div>
+              <div class="extracontent">
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="#">Order Now</a>
-              </div>
+                </div>
             </div>
           </div>
+          </div>
+          </div>
         </div>
-      </div>
-    </div>
 
 
-    <!-- Forth Card Row  -->
-    <!-- <div class="title">
-            <h2>Try Something New</h2>
-            <button class="title-btn">View all</button>
-           </div> -->
-    <div class="card-deck">
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+        <!-- Forth Card Row  -->
+              <div class="card-deck">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -655,34 +652,34 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
-                <a href="#">Order Now</a>
-              </div>
+                <a href="product.html">Order Now</a>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback2.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback2.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -692,34 +689,34 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="#">Order Now</a>
-              </div>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -729,72 +726,73 @@
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
 
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="#">Order Now</a>
-              </div>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card">
-        <div class="vendor-card">
-          <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
-          <div class="card-content">
+          <div class="card">
+            <div class="vendor-card venordcardflex">
+            <img src="../images/landingback3.jpg" class="card-img-top" alt="...">
+            <div class="card-content">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p ><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               <!-- <p class="card-text">55 min • Free delivery</p> -->
               <div class="rating">
                 <div class="rating-star">
                   <img src="../images/star.png" alt="">
                   <span>4.6</span>
                 </div>
-                <div class="minuts">
-                  <span>30 MINS</span>
-                </div>
-                <div class="minuts">
-                  <span>Rs.200 For Two</span>
-                </div>
+                  <div class="minuts">
+                    <span>30 MINS</span>
+                  </div>
+                  <div class="minuts">
+                    <span>Rs.200 For Two</span>
+                  </div>
               </div>
               <div class="extracontent">
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart order</label>
-                </div>
+             <div class="innercontent">
+               <img src="../images/discount.png" alt="">
+               <label for="innercontent">30% off use cakemart order</label>
+             </div>
 
-                <div class="innercontent">
-                  <img src="../images/discount.png" alt="">
-                  <label for="innercontent">30% off use cakemart coupons</label>
-                </div>
+             <div class="innercontent innecontentnone">
+              <img src="../images/discount.png" alt="">
+              <label for="innercontent">30% off use cakemart coupons</label>
+            </div>
               </div>
               <div class="dis">
                 <a href="#">Order Now</a>
-              </div>
+                </div>
             </div>
           </div>
+          </div>
+          </div>
         </div>
-      </div>
-    </div>
   </section>
+ 
   
   <!-- for banner  -->
   <section class="probannerphotocake">
@@ -828,7 +826,7 @@
        </div>
       </div>
     <div class="MoreCardsinner">
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd" >
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -860,7 +858,7 @@
     </div>
 
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -891,7 +889,7 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -922,7 +920,7 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -953,7 +951,7 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -984,7 +982,7 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -1015,7 +1013,7 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -1046,7 +1044,7 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -1077,7 +1075,7 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -1107,38 +1105,7 @@
   <div class="lastpara"><small class="text-muted">New York</small></div>
 </div>
     </div>
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
-      <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
-      <div class="cakeprostarrating-main">
-        <div class="cakeprostarrating">
-          <img src="../images/star-on.png" alt="">
-          <img src="../images/star-on.png" alt="">
-          <img src="../images/star-on.png" alt="">
-          <img src="../images/star-on.png" alt="">
-          <img src="../images/star-on.png" alt="">
-        </div>
-        <div class="cardre text-success"><small>Recommended</small></div>
-      </div>
-      <div class="cardreing"><small>delicious cake Great Work</small></div>
-      <div class="card-content">
-      <div class="card-body">
-        <div class="setcontentin-newcards">
-        <div class="card-text "><small class="text-muted">Product :</small></div>
-        <p class="card-text ratngcardtext">delicious Cake</p>
-      </div>
-      <div class="setcontentin-newcards">
-        <div class="card-text "><small class="text-muted">Date :</small></div>
-        <p class="card-text ratngcardtext">10th October,2021</p>
-      </div>
-    </div>
-  </div>
-  <div class="setfooterincard">
-  <h6 class="marginset">Adword Corden</h6>
-  <div class="lastpara"><small class="text-muted">New York</small></div>
-</div>
-    </div>
-
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
@@ -1169,7 +1136,131 @@
 </div>
     </div>
 
-    <div class="card  mb-3 setpadd" style="max-width: 18rem;">
+    <div class="card  mb-3 setpadd" >
+      <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
+      <div class="cakeprostarrating-main">
+        <div class="cakeprostarrating">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+        </div>
+        <div class="cardre text-success"><small>Recommended</small></div>
+      </div>
+      <div class="cardreing"><small>delicious cake Great Work</small></div>
+      <div class="card-content">
+      <div class="card-body">
+        <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Product :</small></div>
+        <p class="card-text ratngcardtext">delicious Cake</p>
+      </div>
+      <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Date :</small></div>
+        <p class="card-text ratngcardtext">10th October,2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="setfooterincard">
+  <h6 class="marginset">Adword Corden</h6>
+  <div class="lastpara"><small class="text-muted">New York</small></div>
+</div>
+    </div>
+
+    <div class="card  mb-3 setpadd" >
+      <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
+      <div class="cakeprostarrating-main">
+        <div class="cakeprostarrating">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+        </div>
+        <div class="cardre text-success"><small>Recommended</small></div>
+      </div>
+      <div class="cardreing"><small>delicious cake Great Work</small></div>
+      <div class="card-content">
+      <div class="card-body">
+        <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Product :</small></div>
+        <p class="card-text ratngcardtext">delicious Cake</p>
+      </div>
+      <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Date :</small></div>
+        <p class="card-text ratngcardtext">10th October,2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="setfooterincard">
+  <h6 class="marginset">Adword Corden</h6>
+  <div class="lastpara"><small class="text-muted">New York</small></div>
+</div>
+    </div>
+
+    <div class="card  mb-3 setpadd">
+      <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
+      <div class="cakeprostarrating-main">
+        <div class="cakeprostarrating">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+        </div>
+        <div class="cardre text-success"><small>Recommended</small></div>
+      </div>
+      <div class="cardreing"><small>delicious cake Great Work</small></div>
+      <div class="card-content">
+      <div class="card-body">
+        <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Product :</small></div>
+        <p class="card-text ratngcardtext">delicious Cake</p>
+      </div>
+      <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Date :</small></div>
+        <p class="card-text ratngcardtext">10th October,2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="setfooterincard">
+  <h6 class="marginset">Adword Corden</h6>
+  <div class="lastpara"><small class="text-muted">New York</small></div>
+</div>
+    </div>
+
+    <div class="card  mb-3 setpadd">
+      <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
+      <div class="cakeprostarrating-main">
+        <div class="cakeprostarrating">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+          <img src="../images/star-on.png" alt="">
+        </div>
+        <div class="cardre text-success"><small>Recommended</small></div>
+      </div>
+      <div class="cardreing"><small>delicious cake Great Work</small></div>
+      <div class="card-content">
+      <div class="card-body">
+        <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Product :</small></div>
+        <p class="card-text ratngcardtext">delicious Cake</p>
+      </div>
+      <div class="setcontentin-newcards">
+        <div class="card-text "><small class="text-muted">Date :</small></div>
+        <p class="card-text ratngcardtext">10th October,2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="setfooterincard">
+  <h6 class="marginset">Adword Corden</h6>
+  <div class="lastpara"><small class="text-muted">New York</small></div>
+</div>
+    </div>
+
+    <div class="card  mb-3 setpadd">
       <div class="card-header bg-transparent" id="headerpadset"> Very delicious cake</div>
       <div class="cakeprostarrating-main">
         <div class="cakeprostarrating">
